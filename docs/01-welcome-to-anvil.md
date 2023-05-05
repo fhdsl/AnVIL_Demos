@@ -1,5 +1,5 @@
 
-# (PART\*) Welcome to AnVIL {-}
+# (PART\*) Welcome to AnVIL {-}   
 
 The Welcome to AnVIL demo provides an overview of the AnVIL platform, its purpose, and how it can benefit researchers and the broader genomics community. We highlight some of the historic challenges of analyzing and sharing large-scale genomic data and describe how AnVIL provides a cloud-based solution for accessing and analyzing such data. We also cover key features and functionalities of AnVIL, including its compatibility with popular analysis tools/ Finally, we emphasize the importance of collaboration and community engagement in driving AnVIL's development and future growth, providing resources to customize your journey with AnVIL.
 
@@ -56,4 +56,10 @@ The following link provides a link to Google Slides for this demo: https://docs.
 <br>
 
 <img src="01-welcome-to-anvil_files/figure-html//1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4_p.png" title="Title page of a series of slides for 'Welcome to AnVIL'." alt="Title page of a series of slides for 'Welcome to AnVIL'." width="100%" />
+
+# Demo Recording {-}
+
+Please check out our recording of this demo here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fcMUU7NrEeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
