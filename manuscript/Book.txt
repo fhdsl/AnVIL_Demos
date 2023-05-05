@@ -8,7 +8,8 @@
 8-Student-instructions.md
 9-User-Management.md
 10-Why-AnVIL.md
-11-References.md
+11-Instructor-modules.md
+12-References.md
 About-this-Book.md
 Learning-Objectives.md
 About-the-Authors.md
