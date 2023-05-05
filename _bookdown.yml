@@ -2,8 +2,7 @@ book_filename: "AnVIL Demos"
 chapter_name: ""
 repo: https://github.com/jhudsl/AnVIL_Demos/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "02-welcome-to-anvil.Rmd"]
+            "01-welcome-to-anvil.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
