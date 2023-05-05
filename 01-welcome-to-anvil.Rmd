@@ -1,8 +1,5 @@
-# (PART\*) Welcome to AnVIL {-}
 
-```{r, include = FALSE}
-ottrpal::set_knitr_image_path()
-```
+# (PART\*) Welcome to AnVIL {-}
 
 # Introduction {-}
 
@@ -38,11 +35,13 @@ AnVIL currently provides secure access to hundreds of thousands of NHGRI dataset
 | Q & A | 10 minutes |
 | **Total** | 30 minutes |
 
-# Google Slides {-}
+# Google Slides
 
 The following link provides a link to Google Slides for this demo: https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit?usp=sharing
 
-```{r, echo=FALSE, fig.alt="Title page of a series of slides for 'Welcome to AnVIL'."}
+<br>
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Title page of a series of slides for 'Welcome to AnVIL'."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.p")
 ```
 
