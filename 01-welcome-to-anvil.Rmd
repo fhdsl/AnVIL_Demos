@@ -3,7 +3,7 @@
 
 <br>
 
-# Introduction {-}
+# Background {-}
 
 Over the past 20 years, there has been tremendous growth in human genomics, with millions of human genomes sequenced and many more to come in the future. This data, along with other biomedical information, has the potential to greatly improve our understanding of healthy living and transform healthcare. To achieve these goals, we need new approaches to research that involve cloud computing, which is the only way to effectively share and analyze data at this scale. The traditional method of genomic data sharing through centralized data warehouses is becoming unsustainable and inefficient. It creates redundant infrastructure and administrative inefficiencies that make collaborative analysis challenging, especially as datasets increase in size. This approach also leads to high transfer and download costs and poses security and compliance risks.
 
