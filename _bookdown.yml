@@ -1,14 +1,10 @@
 book_filename: "AnVIL Demos"
-chapter_name: ""
 repo: https://github.com/jhudsl/AnVIL_Demos/
 rmd_files: ["index.Rmd",
             "01-welcome-to-anvil.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Chapter"
 output_dir: "docs"
 output:
     bookdown::html_book
