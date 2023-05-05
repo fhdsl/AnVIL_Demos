@@ -1,9 +1,9 @@
 
 # (PART\*) Welcome to AnVIL {-}
 
-<br>
+The Welcome to AnVIL demo provides an overview of the AnVIL platform, its purpose, and how it can benefit researchers and the broader genomics community. We highlight some of the historic challenges of analyzing and sharing large-scale genomic data and describe how AnVIL provides a cloud-based solution for accessing and analyzing such data. We also cover key features and functionalities of AnVIL, including its compatibility with popular analysis tools/ Finally, we emphasize the importance of collaboration and community engagement in driving AnVIL's development and future growth, providing resources to customize your journey with AnVIL.
 
-# Background {-}
+# Demo Details {-}
 
 Over the past 20 years, there has been tremendous growth in human genomics, with millions of human genomes sequenced and many more to come in the future. This data, along with other biomedical information, has the potential to greatly improve our understanding of healthy living and transform healthcare. To achieve these goals, we need new approaches to research that involve cloud computing, which is the only way to effectively share and analyze data at this scale. The traditional method of genomic data sharing through centralized data warehouses is becoming unsustainable and inefficient. It creates redundant infrastructure and administrative inefficiencies that make collaborative analysis challenging, especially as datasets increase in size. This approach also leads to high transfer and download costs and poses security and compliance risks.
 
@@ -13,7 +13,19 @@ AnVIL currently provides secure access to hundreds of thousands of NHGRI dataset
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XC5qzj-yZb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Learning Objectives {-}
+## Skills Level {-}
+
+::: {.notice}
+_Genetics_
+
+**Novice**: no genetics knowledge needed
+
+_Programming skills_
+
+**Novice**: no programming experience needed
+:::
+
+## Learning Objectives {-}
 
 1. Understand the benefits of using cloud computing for genomic data analysis and the limitations of traditional data-sharing paradigms.
 
@@ -25,7 +37,7 @@ AnVIL currently provides secure access to hundreds of thousands of NHGRI dataset
 
 1. Learn about additional resources to self-guide your discovery on AnVIL.
 
-# Timeline {-}
+## Timeline {-}
 
 | Activity | Duration |
 | :-- | :-- |
