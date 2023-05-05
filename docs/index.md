@@ -1,5 +1,5 @@
 ---
-title: "AnVIL Book Name"
+title: "AnVIL Demos"
 date: "May 05, 2023"
 site: bookdown::bookdown_site
 documentclass: book
@@ -11,30 +11,15 @@ favicon: assets/AnVIL_style/anvil_favicon.ico
 ---
 
 
-# About this Book {-}
+# About this Series {-}
+ 
+Welcome to our series of demos introducing the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). [The AnVIL](https://anvilproject.org/) is a cloud-based platform designed to provide researchers with secure and controlled access to genomic data, as well as tools for analysis and visualization. 
 
-This book is part of a series of books for the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
+With the increasing availability of genomic data, there is a growing need for efficient and effective tools for data analysis and interpretation. The AnVIL platform addresses this need by providing researchers with easy access to a growing collection of genomic data, as well as powerful tools for analysis and visualization. Our series of demos will guide you through the various features of the AnVIL platform, and show you how it can help you to accelerate your research and make new discoveries in the field of genomics. 
 
-## Skills Level {-} 
-
-::: {.notice}
-_Genetics_
-<!-- **Novice**: no genetics knowledge needed -->
-
-_Programming skills_
-<!-- **Novice**: no programming experience needed -->
-:::
+Whether you are new to the field of genomics or an experienced researcher, these demos will provide you with valuable insights into the AnVIL platform and its capabilities. We look forward to helping you unlock the full potential of genomic data science through the AnVIL platform. Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
 
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
 
-# Learning Objectives {-}
-
-<!-- Learning objectives for this activity come from the [Genetics Core Competencies](https://genetics-gsa.org/education/genetics-learning-framework/): -->
-
-<!-- - Objective 1 -->
-<!-- - Objective 2 -->
-<!-- - Objective 3 -->
-
-<!-- Please also see the Bioinformatics core competencies for undergraduate life sciences education from NIBLSE: https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0196878.t002 -->
