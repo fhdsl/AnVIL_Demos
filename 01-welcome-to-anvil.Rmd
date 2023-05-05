@@ -59,3 +59,9 @@ The following link provides a link to Google Slides for this demo: https://docs.
 ottrpal::include_slide("https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.p")
 ```
 
+# Demo Recording {-}
+
+Please check out our recording of this demo here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fcMUU7NrEeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
