@@ -31,9 +31,39 @@ Whether you are new to the field of genomics or an experienced researcher, these
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> none </td>
-   <td style="text-align:left;"> none </td>
-   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> May 2023 </td>
+   <td style="text-align:left;"> CSHL Biology of Genomes 2023 </td>
+   <td style="text-align:left;"> Cold Spring Harbor Laboratory, NY, USA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> May 2023 </td>
+   <td style="text-align:left;"> AnVIL Demos: WARP Pipelines in AnVIL/Terra </td>
+   <td style="text-align:left;"> Virtual </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Jun 2023 </td>
+   <td style="text-align:left;"> AnVIL Demos: How to use data across multiple AnVIL workspaces </td>
+   <td style="text-align:left;"> Virtual </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Jul 2023 </td>
+   <td style="text-align:left;"> Galaxy Community Conference 2023 </td>
+   <td style="text-align:left;"> Brisbane, Australia </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Jul 2023 </td>
+   <td style="text-align:left;"> AnVIL Demos: Interactive Genomic Data Science with Bioconductor </td>
+   <td style="text-align:left;"> Virtual </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Nov 2023 </td>
+   <td style="text-align:left;"> American Society of Human Genetics 2023 </td>
+   <td style="text-align:left;"> Walter E. Washington Convention Center, 801 Mt Vernon Pl NW, Washington, DC 20001 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Dec 2023 </td>
+   <td style="text-align:left;"> CSHL Genome Informatics 2023 </td>
+   <td style="text-align:left;"> Cold Spring Harbor, NY, USA </td>
   </tr>
 </tbody>
 </table>
