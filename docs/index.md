@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Demos"
-date: "May 05, 2023"
+date: "May 08, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -18,6 +18,25 @@ Welcome to our series of demos introducing the Genomic Data Science Analysis, Vi
 With the increasing availability of genomic data, there is a growing need for efficient and effective tools for data analysis and interpretation. The AnVIL platform addresses this need by providing researchers with easy access to a growing collection of genomic data, as well as powerful tools for analysis and visualization. Our series of demos will guide you through the various features of the AnVIL platform, and show you how it can help you to accelerate your research and make new discoveries in the field of genomics. 
 
 Whether you are new to the field of genomics or an experienced researcher, these demos will provide you with valuable insights into the AnVIL platform and its capabilities. We look forward to helping you unlock the full potential of genomic data science through the AnVIL platform. Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
+
+## Upcoming AnVIL Events {-}
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Date </th>
+   <th style="text-align:left;"> Event </th>
+   <th style="text-align:left;"> Location </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> none </td>
+  </tr>
+</tbody>
+</table>
 
 ## AnVIL Collection {-}
 
