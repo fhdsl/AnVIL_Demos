@@ -19,6 +19,14 @@ With the increasing availability of genomic data, there is a growing need for ef
 
 Whether you are new to the field of genomics or an experienced researcher, these demos will provide you with valuable insights into the AnVIL platform and its capabilities. We look forward to helping you unlock the full potential of genomic data science through the AnVIL platform. Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
 
+## Upcoming AnVIL Events {-}
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+source("scripts/render_events.R")
+
+knitr::kable(make_events_table(), format = "html")
+```
+
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
