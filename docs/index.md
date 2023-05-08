@@ -21,6 +21,8 @@ Whether you are new to the field of genomics or an experienced researcher, these
 
 ## Upcoming AnVIL Events {-}
 
+We'd love to see you at an upcoming event! Here are a few upcoming events that might meet your training needs:
+
 <table>
  <thead>
   <tr>
