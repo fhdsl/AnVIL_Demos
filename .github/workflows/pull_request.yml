@@ -49,6 +49,16 @@ jobs:
       toggle_render_preview: "${{ env.RENDER_PREVIEW }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       render_student_guide: "${{ env.RENDER_STUDENT_GUIDE }}"
+      
+  build-portal-events:
+    name: Gather Portal Events
+    needs: yaml-check
+    uses: ./.github/workflows/gather-portal-events.yml
+    with:
+      render-type: 'preview'
+      repository: $GITHUB_REPOSITORY
+    secrets:
+      gh_pat: ${{ secrets.GH_PAT }}
 
 ########################## Make the error reports ##############################
   spell-check:
