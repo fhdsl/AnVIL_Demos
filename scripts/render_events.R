@@ -1,4 +1,5 @@
 library(dplyr)
+library(tidyr)
 library(stringr)
 
 make_events_table <- function() {
