@@ -1,0 +1,48 @@
+# (PART\*) Scale with Workflows {-}   
+
+# Overview
+
+Here is a video overview of this demo.
+
+<br>
+
+<iframe src="https://drive.google.com/uc?id=1vq9l8jvTd8mIEUWdpzmSOQI7kn9vo_4g" width="640" height="360" allow="autoplay"></iframe>
+
+This AnVIL Demo will cover:
+
+- Identifying interesting datasets on AnVIL
+- Navigating an AnVIL Workspace
+- Using your own AnVIL Workspace to combine data from multiple existing datasets
+- Finding useful Workflows in Dockstore
+- Running a Workflow on AnVIL with your combined data
+
+# Walkthrough
+
+One of the great features of AnVIL is that it "brings the analysis to the data". Rather than downloading and storing your own copy of an AnVIL dataset, you can simply create links to the existing data, and run analyses using those links.
+
+The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces, and bringing that data into your own Workspace so that you can analyze it.
+
+## Preparation
+
+If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
+
+### Create AnVIL account
+
+You will need an AnVIL account in order to run analyses.
+
+- If you do not already have an account, follow [these instructions]() to set one up.
+- Make sure that your Instructor (if participating in a workshop) or PI / Lab Manager has your username, so that they can add you to an appropriate *Billing Project*.  You can't clone or create Workspaces on AnVIL without a Billing Project.
+
+### Clone Workspace
+
+When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propogate over to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready to go by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+
+## Explore Data Dashboard
+
+## Explore 1000G Workspace
+
+## Combine Data Workspace
+
+## Explore Dockstore Workflows
+
+## Run qc-analysis-pipeline
