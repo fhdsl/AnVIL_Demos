@@ -8,13 +8,25 @@ Here is a video overview of this demo.
 
 <iframe src="https://drive.google.com/uc?id=1vq9l8jvTd8mIEUWdpzmSOQI7kn9vo_4g" width="640" height="360" allow="autoplay"></iframe>
 
-This AnVIL Demo will cover:
+## Skills Level
 
-- Identifying interesting datasets on AnVIL
-- Navigating an AnVIL Workspace
-- Using your own AnVIL Workspace to combine data from multiple existing datasets
-- Finding useful Workflows in Dockstore
-- Running a Workflow on AnVIL with your combined data
+::: {.notice}
+_Genetics_
+
+**Novice**: no genetics knowledge needed
+
+_Programming skills_
+
+**Novice**: no programming experience needed
+:::
+
+## Learning Objectives
+
+1. Identify interesting datasets in the AnVIL Dataset Catalog
+1. Navigate an AnVIL Workspace
+1. Combine data from multiple existing datasets into your own Workspace
+1. Find Workflows in Dockstore
+1. Run a Workflow on AnVIL with your combined data
 
 # Walkthrough
 
@@ -30,18 +42,37 @@ If you plan to follow along with these exercises, there are a couple of things y
 
 You will need an AnVIL account in order to run analyses.
 
-- If you do not already have an account, follow [these instructions]() to set one up.
+- If you do not already have an account, follow [these instructions](https://jhudatascience.org/AnVIL_Book_Getting_Started/overview-analysts.html) to set one up.  (You do not need to link any external accounts for these exercises.)
 - Make sure that your Instructor (if participating in a workshop) or PI / Lab Manager has your username, so that they can add you to an appropriate *Billing Project*.  You can't clone or create Workspaces on AnVIL without a Billing Project.
 
 ### Clone Workspace
 
-When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propogate over to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready to go by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propogate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+
+Follow the instructions below to clone your own copy of the Workspace for this Demo.
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+# Specify variables
+AnVIL_module_settings <- list(
+  workspace_name = "shorts-combine-data-workspaces",
+  workspace_link = "https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces"
+)
+
+cow::borrow_chapter(
+  doc_path = "child/_child_student_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
 
 ## Explore Data Dashboard
 
 ## Explore 1000G Workspace
 
 ## Combine Data Workspace
+
+If you have not already cloned the Workspace, follow the instructions in the Preparation section to do so now.
 
 ## Explore Dockstore Workflows
 
