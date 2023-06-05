@@ -1,3 +1,7 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
 # (PART\*) Scale with Workflows {-}   
 
 # Overview
@@ -32,7 +36,7 @@ _Programming skills_
 
 One of the great features of AnVIL is that it "brings the analysis to the data". Rather than downloading and storing your own copy of an AnVIL dataset, you can simply create links to the existing data, and run analyses using those links.
 
-The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces, and bringing that data into your own Workspace so that you can analyze it.
+The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces and bringing that data into your own Workspace so that you can analyze it.
 
 ## Preparation
 
@@ -66,9 +70,51 @@ cow::borrow_chapter(
 ```
 ::::
 
+Now your Workspace should be ready for you by the time you need it below.  You are ready to begin!
+
 ## Explore Data Dashboard
 
+First we will take a look at the [AnVIL Data Dashboard]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
+
+```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Data Dashboad showing Workspaces from the GTEx project.  The "Workspaces" tab is highlighted and has been selected, and the "Terra Workspaces" column is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24306c8bf8a_0_0")
+```
+
+
+
+:::{.reflection}
+
+### Exercise {-}
+
+Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data/) and answer the following questions.
+
+**Q1.**  Which Consortium has the most participants?
+    
+- You can click on a column name to sort by that column.
+- Click again to switch between ascending and descending.
+    
+**Q2.**  Where would you find data from the Genotype-Tissue Expression (GTEx) Project?
+    
+- You can use the filters on the left to find specific datasets.  Click on either the Consortium or the Study filter to search for GTEx data.
+    
+**Q3.**  How many Workspaces have consent code NRES (No REStrictions on data use)?
+    
+- You can use the filters on the left to browse and narrow down on datasets that fit your needs.  Click on the Consent Code filter to select for datasets that you can access.
+
+:::
+    
+To access the data in these datasets, you will need to access the **Terra Workspace** where the data is stored.  You can find links to the Terra Workspaces in the Workspaces tab.
+
+```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Data Dashboad showing Workspaces from the GTEx project.  The "Workspaces" tab is highlighted and has been selected, and the "Terra Workspaces" column is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f1d151022_0_4")
+```
+
+Note that, if a Workspace contains protected data, you will need to obtain the appropriate permissions before you can open the Workspace.  For these GTEx datasets, `AnVIL_GTEx_public_data` (with consent code NRES) is available to anyone on AnVIL, but other GTEx Workspaces require permission to access.
+
+
 ## Explore 1000G Workspace
+
+
 
 ## Combine Data Workspace
 
