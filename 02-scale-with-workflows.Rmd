@@ -73,14 +73,13 @@ Now your Workspace should be ready for you by the time you need it below.  You a
 
 The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces and bringing that data into your own Workspace so that you can analyze it.
 
-## Explore Data Dashboard
+## Explore Dataset Catalog
 
-First we will take a look at the [AnVIL Data Dashboard]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
+First we will take a look at the [AnVIL Dataset Catalog]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
 
-```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Data Dashboad showing Workspaces from the GTEx project.  The "Workspaces" tab is highlighted and has been selected, and the "Terra Workspaces" column is highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Dataset Catalog'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24306c8bf8a_0_0")
 ```
-
 
 
 :::{.reflection}
@@ -115,6 +114,37 @@ Note that, if a Workspace contains protected data, you will need to obtain the a
 
 ## Explore 1000G Workspace
 
+Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so you can see where the data lives.  For this exercise, we will look at data from the [1000 Genomes Project](https://www.internationalgenome.org/).
+
+You can find the Workspace that contains the data by searching for the "1000G" Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019.
+
+```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Dataset Cataloge showing the 1000 Genomes Workspace.  The "Consortium" filter is highlighted and "1000G" has been selected; the "Workspaces" tab is highlighted and has been selected, and in the Terra Workspaces column the link to the "1000G-high-coverage-2019" Workspace is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f280a88cb_0_12")
+```
+
+### Workspace Overview
+
+### Dashboard
+
+When you first open a Workspace, you will be directed to the Dashboard.  The Dashboard is like a README for the Workspace - it should contain information to help you understand the purpose and organization of the Workspace.
+
+:::{.reflection}
+### Exercise {-}
+
+**Q1.** What versions of BWA-MEM and GATK were used?
+
+:::
+
+### Data
+
+:::{.reflection}
+### Exercise {-}
+
+**Q2.** What types of files are linked to in the Data Table named sample?
+
+**Q3.** What quality control statistics are available in the Data Table named qc_results_sample?
+
+:::
 
 
 ## Combine Data Workspace
