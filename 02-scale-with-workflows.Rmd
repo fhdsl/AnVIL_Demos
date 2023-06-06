@@ -35,13 +35,13 @@ _Programming skills_
 1. Run a Workflow on AnVIL with your combined data
 
 
-# Preparation
+# Preparation {#scale-with-workflows-preparation}
 
 If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
 
 ## Create AnVIL account
 
-You will need an AnVIL account in order to run analyses.
+You will need an AnVIL account in order to view Workspaces and run analyses.
 
 - If you do not already have an account, follow [these instructions](https://jhudatascience.org/AnVIL_Book_Getting_Started/overview-analysts.html) to set one up.  (You do not need to link any external accounts for these exercises.)
 - Make sure that your Instructor (if participating in a workshop) or PI / Lab Manager has your username, so that they can add you to an appropriate *Billing Project*.  You can't clone or create Workspaces on AnVIL without a Billing Project.
@@ -73,6 +73,10 @@ Now your Workspace should be ready for you by the time you need it below.  You a
 
 The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces and bringing that data into your own Workspace so that you can analyze it.
 
+:::{.notice}
+To follow along with these exercises, you will need to complete the steps described in the [Preparation](#scale-with-workflows-preparation) guide for this demo.
+:::
+
 ## Explore Dataset Catalog
 
 First we will take a look at the [AnVIL Dataset Catalog]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
@@ -103,9 +107,9 @@ Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject
 
 :::
     
-To access the data in these datasets, you will need to access the **Terra Workspace** where the data is stored.  You can find links to the Terra Workspaces in the Workspaces tab.
+Now you know how to find AnVIL datasets!  To access the data in these datasets, you will need to access the **Terra Workspace** where the data is stored.  You can find links to the Terra Workspaces in the Workspaces tab.
 
-```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Data Dashboad showing Workspaces from the GTEx project.  The "Workspaces" tab is highlighted and has been selected, and the "Terra Workspaces" column is highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The "Workspaces" tab is highlighted and has been selected, and the "Terra Workspaces" column is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f1d151022_0_4")
 ```
 
@@ -118,7 +122,7 @@ Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so yo
 
 You can find the Workspace that contains the data by searching for the "1000G" Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019.
 
-```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Dataset Cataloge showing the 1000 Genomes Workspace.  The "Consortium" filter is highlighted and "1000G" has been selected; the "Workspaces" tab is highlighted and has been selected, and in the Terra Workspaces column the link to the "1000G-high-coverage-2019" Workspace is highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Dataset Catalog showing the 1000 Genomes Workspace.  The "Consortium" filter is highlighted and "1000G" has been selected; the "Workspaces" tab is highlighted and has been selected, and in the Terra Workspaces column the link to the "1000G-high-coverage-2019" Workspace is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f280a88cb_0_12")
 ```
 
@@ -126,12 +130,16 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 ### Dashboard
 
-When you first open a Workspace, you will be directed to the Dashboard.  The Dashboard is like a README for the Workspace - it should contain information to help you understand the purpose and organization of the Workspace.
+When you first open a Workspace, you will be directed to the Dashboard tab.  The Dashboard is like a README for the Workspace - it should contain information to help you understand the purpose and organization of the Workspace.  On the right, you can see some basic information about the Workspace such as the usernames of the Owners as well as your permission level for the Workspace.  The left side typically contains a description of the Workspace's contents and purpose.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Dashboard for the 1000 Genomes Workspace.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f280a88cb_0_20")
+```
 
 :::{.reflection}
 ### Exercise {-}
 
-**Q1.** What versions of BWA-MEM and GATK were used?
+**Q1.** What versions of BWA-MEM and GATK were used to process the 1000 Genomes data?
 
 :::
 
