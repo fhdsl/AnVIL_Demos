@@ -176,7 +176,16 @@ A key feature of Terra is that **Data Tables can link to files in other Workspac
 
 ## Combine Data Workspace
 
-If you have not already cloned the Workspace, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to do so now.
+Next we will go over how to set up a Data Table so that you can use data from another Workspace in your own analysis.
+
+:::{.notice}
+For this exercise, you will need your own copy of the [`shorts-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces) Workspace.  If you have not already done so, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to clone a copy of the Workspace now.
+:::
+
+
+There are multiple ways to manage Data Tables; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package.
+
+
 
 ## Explore Dockstore Workflows
 
