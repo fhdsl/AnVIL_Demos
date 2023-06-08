@@ -183,9 +183,27 @@ For this exercise, you will need your own copy of the [`shorts-combine-data-work
 :::
 
 
-There are multiple ways to manage Data Tables; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package.
+### Open your Workspace
 
+To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menue, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).
 
+Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page with the "My Workspaces" tab selected.  The name of the Workspace is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f280a88cb_0_44")
+```
+
+### Open Jupyter Notebook
+
+There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The AnVIL package provides a wide range of functions for programatically interacting with AnVIL.
+
+To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
+
+:::{.reflection}
+### Exercise {-}
+
+In your Workspace, navigate to the "ANALYSIS" tab.
+:::
 
 ## Explore Dockstore Workflows
 
