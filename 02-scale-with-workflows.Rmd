@@ -154,7 +154,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 ### Data
 
-The **Data** tab contains all the files associated with the Workspace - data, scripts, outputs, etc.  Terra provides **Data Tables** to help organize data and results.
+The **Data** tab contains all the files associated with the Workspace - data, metadata, workflow outputs, etc.  Terra provides **Data Tables** to help organize data and results.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Data tab for the 1000 Genomes Workspace.  The "TABLES" menu is expanded and highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f280a88cb_0_25")
@@ -185,7 +185,7 @@ For this exercise, you will need your own copy of the [`shorts-combine-data-work
 
 ### Open your Workspace
 
-To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menue, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).
+To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).
 
 Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
 
@@ -199,10 +199,33 @@ There are multiple ways to manage Data Tables on AnVIL; for this exercise we wil
 
 To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
 
+In your Workspace, navigate to the "ANALYSIS" tab.  The ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
+
+[SCREENSHOT]
+
+By clicking on a Notebook, you can preview a static copy of the Notebook.  Clicking the "OPEN" button launches the Notebook in a cloud environment so that you can edit and run code.
+
+[SCREENSHOT]
+
 :::{.reflection}
 ### Exercise {-}
 
-In your Workspace, navigate to the "ANALYSIS" tab.
+Click on `combine-data-workspaces.ipynb` to view the Notebook for this exercise, and click the "Open" button so you can edit and run it.
+
+- The Notebook will launch quickly if you already have a Jupyter environment configured.
+- If Jupyter is not already set up, accept the default settings and click "Launch".  It will take a few minutes for Jupyter to start up.
+
+This Notebook has four code cells that you will run, after making some edits.
+
+#### Load Packages {-}
+
+The first code cell loads R packages that are needed for this exercise.  You do not need to make any adjustments here.  Click on the cell, then click the Run button.  You should see some messages appear below the cell.
+
+#### Retrieve original file locations
+
+The next two cells find the links to the original data.
+
+
 :::
 
 ## Explore Dockstore Workflows
