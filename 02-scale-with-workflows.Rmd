@@ -195,11 +195,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 ### Open Jupyter Notebook
 
-There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The AnVIL package provides a wide range of functions for programatically interacting with AnVIL.
+There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The `AnVIL` package provides a wide range of functions for programatically interacting with AnVIL.
 
 To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
 
-In your Workspace, navigate to the "ANALYSIS" tab.  The ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
+The ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
 
 [SCREENSHOT]
 
@@ -210,23 +210,94 @@ By clicking on a Notebook, you can preview a static copy of the Notebook.  Click
 :::{.reflection}
 ### Exercise {-}
 
+In your Workspace, navigate to the "ANALYSIS" tab.  
+
 Click on `combine-data-workspaces.ipynb` to view the Notebook for this exercise, and click the "Open" button so you can edit and run it.
 
 - The Notebook will launch quickly if you already have a Jupyter environment configured.
 - If Jupyter is not already set up, accept the default settings and click "Launch".  It will take a few minutes for Jupyter to start up.
+:::
 
 This Notebook has four code cells that you will run, after making some edits.
 
-#### Load Packages {-}
+### Load Packages
 
-The first code cell loads R packages that are needed for this exercise.  You do not need to make any adjustments here.  Click on the cell, then click the Run button.  You should see some messages appear below the cell.
+The first code cell loads R packages that are needed for this exercise.  You do not need to make any adjustments here.
 
-#### Retrieve original file locations
+:::{.reflection}
+### Exercise {-}
 
-The next two cells find the links to the original data.
+**1.** Click on the code cell under "Load Packages", then click the Run button to load the packages.
 
+You should see some messages appear below the cell.
+:::
+
+
+### Retrieve original file locations
+
+The next two cells find the links to the original data.  Here we are bringing in data from two different Workspaces, `1000G-AMR` and `1000G-EAS`, which contains 1000 Genomes Project data from the Americas and East Asia, respectively.
+
+- `avworkspace( "anvil-outreach/1000G-AMR" )` tells the AnVIL package what Workspace to access
+- `df_sample_amr <- avtable( "sample" ) %>% top_n( -2 )` tells it to look at the table named "sample" and to grab the bottom two samples.
+
+:::{.notice}
+It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before commiting to a large Workflow run.
+:::
+
+To keep this exercise short and cheap, we're just importing a few samples into your Workspace, but when working on your own projects you can use the same process to import whole tables.
+
+It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentially run an expensive analysis on a large table of samples.
+
+:::{.reflection}
+### Exercise {-}
+
+**2.** Modify the code in both cells to get 3 samples instead of 2, and run each cell.
+
+You should see a table listing out the samples appear below each cell.  Confirm that there are 3 samples in each table.
+:::
+
+This step chose the samples we want from the original Workspace, but has not yet created links to them in your own Workspace.
+
+### Exported combined Data Table
+
+The next code block accomplishes a few things:
+
+1. `bind_rows( "AMR"=df_sample_amr, "EAS"=df_sample_eas, .id="code" )` combines data from the two different 1000 Genomes Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows.  It also adds a column named "code" to keep track of which samples came from the AMR vs. EAS datasets.
+1. `select( sample_id, code, cram )` selects only the columns we care about for our analysis.  Here we are keeping the sample ID, the superpopulation code (AMR or EAS) and the cram file.
+1. `avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
+
+:::{.reflection}
+### Exercise {-}
+
+You will need two pieces of information so that the AnVIL package can locate your Workspace to create the new Data Table:
+
+1. The `namespace` (the Workspace's Billing Project)
+1. The Workspace `name`
+
+You can find both of these in the URL for your Workspace.  For example, for this Workspace:
+
+```
+https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces_KCox_20230609
+```
+
+- The `namespace` is `anvil-outreach`
+- The `name` is `shorts-combine-data-workspaces_KCox_20230609`
+
+
+**3.** Modify the code in your Notebook so that it points to your Workspace, and run the cell.
+
+If this command is successful, you will not see any output in the Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.  
 
 :::
+
+
+### Session Info
+
+It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that.
+
+### View your new Data Table
+
+(If it only has 4 rows...)
 
 ## Explore Dockstore Workflows
 
