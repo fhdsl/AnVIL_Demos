@@ -43,19 +43,9 @@ _Programming skills_
 
 # Preparation
 
-## Google Slides
+## Watch Video
 
-The following link provides a link to Google Slides for this demo: https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit?usp=sharing
-
-<br>
-
-```{r, echo=FALSE, out.width="100%", fig.alt="Title page of a series of slides for 'Welcome to AnVIL'."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.p")
-```
-
-## Demo Recording
-
-Please check out our recording of this demo here:
+Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is being used, and how to get started in this ~20 min video ([slides](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4))
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fcMUU7NrEeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
