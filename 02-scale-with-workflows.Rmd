@@ -313,13 +313,35 @@ As a last step, take a look at the Data Tab in your Workspace.  You should now s
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_19")
 ```
 
+
+:::{.notice}
 Note that for this exercise we preloaded the Workspace with 4 samples - if you only see 4 rows then double check your Notebook:
 
 - Did you remember to "Run" each code cell after you edited it?
 - Did you change the number of samples to link from 2 to 3 for each table?
 - Did you update the `avtable_import` command to point to your Workspace?
 
+If you run into any trouble, don't worry!  You can carry out the remaining exercises using the 4 samples we provided for you, and you can visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org/) with any questions.
+:::
+
+
 ## Explore Dockstore Workflows
+
+Once you have set up Data Tables in your Workspace, you can analyze the data using Workflows.  To introduce you to Workflows, we will first take a look at the AnVIL Workflows available through [Dockstore](https://dockstore.org/).
+
+The Dockstore platform is a repository for scalable bioinformatics tools and workflows.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Dockstore home page.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g24306c8bf8a_0_30")
+```
+
+You can find Workflows for AnVIL by clicking on the "Organizations" tab and searching for AnVIL.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text "anvil" has been entered.  The card for the AnVIL organization is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g24306c8bf8a_0_390")
+```
+
+
 
 ## Run qc-analysis-pipeline
 
