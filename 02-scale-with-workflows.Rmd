@@ -4,7 +4,7 @@ knitr::opts_chunk$set(out.width = "100%")
 
 # (PART\*) Scale with Workflows {-}   
 
-# Overview
+# Overview {#scale-with-workflows-overview}
 
 One of the great features of AnVIL is that it "brings the analysis to the data". Rather than downloading and storing your own copy of an AnVIL dataset, you can simply create links to the existing data, and run analyses using those links.
 
@@ -69,7 +69,7 @@ cow::borrow_chapter(
 
 Now your Workspace should be ready for you by the time you need it below.  You are ready to begin!
 
-# Exercises
+# Exercises {#scale-with-workflows-exercises}
 
 The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces and bringing that data into your own Workspace so that you can analyze it.
 
@@ -185,9 +185,9 @@ For this exercise, you will need your own copy of the [`shorts-combine-data-work
 
 ### Open your Workspace
 
-To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).
+To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  
 
-Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
+You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).  Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspaces page with the "My Workspaces" tab selected.  The name of the Workspace is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24f280a88cb_0_44")
@@ -199,13 +199,17 @@ There are multiple ways to manage Data Tables on AnVIL; for this exercise we wil
 
 To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
 
-The ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
+Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
 
-[SCREENSHOT]
+```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "ANALYSES" tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_0")
+```
 
-By clicking on a Notebook, you can preview a static copy of the Notebook.  Clicking the "OPEN" button launches the Notebook in a cloud environment so that you can edit and run code.
+By clicking on a Notebook, you can preview a static copy of the Notebook.  Clicking the "OPEN" button launches the Notebook in a cloud environment so that you can edit and run code.  (The "PLAYGROUND" option also lets you edit and run code, but your changes will not be saved.)
 
-[SCREENSHOT]
+```{r, echo=FALSE, fig.alt='Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The "OPEN" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_13")
+```
 
 :::{.reflection}
 ### Exercise {-}
@@ -214,8 +218,8 @@ In your Workspace, navigate to the "ANALYSIS" tab.
 
 Click on `combine-data-workspaces.ipynb` to view the Notebook for this exercise, and click the "Open" button so you can edit and run it.
 
-- The Notebook will launch quickly if you already have a Jupyter environment configured.
-- If Jupyter is not already set up, accept the default settings and click "Launch".  It will take a few minutes for Jupyter to start up.
+- The Notebook will launch quickly if you already have a Jupyter Cloud Environment set up.
+- If Jupyter is not already set up, the configuration menu will appear.  The default settings are fine for this exercise, so scroll to the bottom and click "Create".  It will take a few minutes for Jupyter to start up.
 :::
 
 This Notebook has four code cells that you will run, after making some edits.
@@ -274,7 +278,13 @@ You will need two pieces of information so that the AnVIL package can locate you
 1. The `namespace` (the Workspace's Billing Project)
 1. The Workspace `name`
 
-You can find both of these in the URL for your Workspace.  For example, for this Workspace:
+You can find both of these at the end of the URL for your Workspace which is structured like this:
+
+```
+anvil.terra.bio/#workspaces/namespace/name
+```
+
+For example, for this Workspace:
 
 ```
 https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces_KCox_20230609
@@ -286,7 +296,7 @@ https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspace
 
 **3.** Modify the code in your Notebook so that it points to your Workspace, and run the cell.
 
-If this command is successful, you will not see any output in the Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.  
+If this command is successful, you will not see much output in the Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.
 
 :::
 
@@ -297,12 +307,22 @@ It's generally a good idea to document information about the packages (and their
 
 ### View your new Data Table
 
-(If it only has 4 rows...)
+As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with code "EAS" and 3 with code "AMR".
+
+```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "DATA" tab selected.  The "sample" Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_19")
+```
+
+Note that for this exercise we preloaded the Workspace with 4 samples - if you only see 4 rows then double check your Notebook:
+
+- Did you remember to "Run" each code cell after you edited it?
+- Did you change the number of samples to link from 2 to 3 for each table?
+- Did you update the `avtable_import` command to point to your Workspace?
 
 ## Explore Dockstore Workflows
 
 ## Run qc-analysis-pipeline
 
-# Instructor Guide
+# Instructor Guide {#scale-with-workflows-instructor-guide}
 
 ## Timeline
