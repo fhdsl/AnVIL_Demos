@@ -8,7 +8,7 @@ knitr::opts_chunk$set(out.width = "100%")
 
 One of the great features of AnVIL is that it "brings the analysis to the data". Rather than downloading and storing your own copy of an AnVIL dataset, you can simply create links to the existing data, and run analyses using those links.
 
-Here is a video overview of this demo.
+Here is a video overview of this demo ([slides](https://docs.google.com/presentation/d/19A1h1t_hy14sb1W80LYmACRTT6Hl-azKuKxEBWxjtRc)).
 
 <br>
 
@@ -39,6 +39,10 @@ _Programming skills_
 
 If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
 
+## Watch Video
+
+This 5-min video provides a high level summary of the exercises to follow.  Several important concepts are introduced to provide context for the exercises including 1) the AnVIL data flow that minimizes costs and redundancy and 2) increasing number of production quality workflows in Dockstore ([slides](https://docs.google.com/presentation/d/1szpGrvCQodF1R2AaeqsvmNlJWTgzAsO8QurYfQagCf0)).
+
 ## Create AnVIL account
 
 You will need an AnVIL account in order to view Workspaces and run analyses.
@@ -56,8 +60,8 @@ Follow the instructions below to clone your own copy of the Workspace for this D
 ```{r, echo = FALSE, results='asis'}
 # Specify variables
 AnVIL_module_settings <- list(
-  workspace_name = "shorts-combine-data-workspaces",
-  workspace_link = "https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces"
+  workspace_name = "demos-combine-data-workspaces",
+  workspace_link = "https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces"
 )
 
 cow::borrow_chapter(
@@ -68,6 +72,8 @@ cow::borrow_chapter(
 ::::
 
 Now your Workspace should be ready for you by the time you need it below.  You are ready to begin!
+
+## Start Cloud Environment
 
 # Exercises {#scale-with-workflows-exercises}
 
