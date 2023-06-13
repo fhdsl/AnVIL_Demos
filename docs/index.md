@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Demos"
-date: "May 08, 2023"
+date: "June 13, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -73,4 +73,5 @@ We'd love to see you at an upcoming event! Here are a few upcoming events that m
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
+
 
