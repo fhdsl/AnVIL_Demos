@@ -3,14 +3,6 @@ background
 about-this-demo
 skills-level
 learning-objectives
-preparation
-watch-video
-exercises
-exercise-1-launch-terra
-exercise-2-clone-hprc-workspace
-exercise-3-start-a-cloud-environment
-exercise-4-find-tidbits
-exercise-5-enter-terminal
-exercise-6-shut-down
-instructor-guide
 timeline
+google-slides
+demo-recording
