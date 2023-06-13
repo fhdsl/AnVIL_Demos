@@ -1,0 +1,370 @@
+
+
+# (PART\*) Scale with Workflows {-}   
+
+# Overview {#scale-with-workflows-overview}
+
+One of the great features of AnVIL is that it "brings the analysis to the data". Rather than downloading and storing your own copy of an AnVIL dataset, you can simply create links to the existing data, and run analyses using those links.
+
+Here is a video overview of this demo ([slides](https://docs.google.com/presentation/d/19A1h1t_hy14sb1W80LYmACRTT6Hl-azKuKxEBWxjtRc)).
+
+<br>
+
+<iframe src="https://drive.google.com/uc?id=1vq9l8jvTd8mIEUWdpzmSOQI7kn9vo_4g" width="640" height="360" allow="autoplay"></iframe>
+
+## Skills Level
+
+::: {.notice}
+_Genetics_
+
+**Novice**: no genetics knowledge needed
+
+_Programming skills_
+
+**Novice**: no programming experience needed
+:::
+
+## Learning Objectives
+
+1. Identify interesting datasets in the AnVIL Dataset Catalog
+1. Navigate an AnVIL Workspace
+1. Combine data from multiple existing datasets into your own Workspace
+1. Find Workflows in Dockstore
+1. Run a Workflow on AnVIL with your combined data
+
+
+# Preparation {#scale-with-workflows-preparation}
+
+If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
+
+## Watch Video
+
+This 5-min video provides a high level summary of the exercises to follow.  Several important concepts are introduced to provide context for the exercises including 1) the AnVIL data flow that minimizes costs and redundancy and 2) increasing number of production quality workflows in Dockstore ([slides](https://docs.google.com/presentation/d/1szpGrvCQodF1R2AaeqsvmNlJWTgzAsO8QurYfQagCf0)).
+
+## Create AnVIL account
+
+You will need an AnVIL account in order to view Workspaces and run analyses.
+
+- If you do not already have an account, follow [these instructions](https://jhudatascience.org/AnVIL_Book_Getting_Started/overview-analysts.html) to set one up.  (You do not need to link any external accounts for these exercises.)
+- Make sure that your Instructor (if participating in a workshop) or PI / Lab Manager has your username, so that they can add you to an appropriate *Billing Project*.  You can't clone or create Workspaces on AnVIL without a Billing Project.
+
+## Clone Workspace
+
+When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propogate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+
+Follow the instructions below to clone your own copy of the Workspace for this Demo.
+
+:::: {.borrowed_chunk}
+
+:::{.warning}
+This **will not work** until your instructor has given you permission to spend money to "rent" the computers that will power your analyses (by adding you to a "Billing Project").
+:::
+
+On AnVIL, you access files and computers through **Workspaces**.  Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.  This will give you access to
+
+- the files you will need (data, code)
+- the computing environment you will use
+
+:::{.notice}
+**Tip**
+At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
+:::
+
+To clone an AnVIL Workspace:
+
+1. Open Terra - use a web browser to go to [`anvil.terra.bio`](https://anvil.terra.bio/)
+
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117989bd49c_0_150.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
+
+1. You are automatically directed to the "MY WORKSPACES" tab.  Here you can see any Workspaces that have been shared with you, along with your permission level.  Depending on how your instructor has set things up, you may or may not see any Workspaces in this tab.
+
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_303.png" title="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected.  The &quot;MY WORKSPACES&quot; tab and the column showing permission level are highlighted." alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected.  The &quot;MY WORKSPACES&quot; tab and the column showing permission level are highlighted." width="100%" />
+    
+1. Locate the Workspace **demos-combine-data-workspaces**.  (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Workspace  **demos-combine-data-workspaces**.)
+    a. If it has been shared with you ahead of time, it will appear in "MY WORKSPACES".  
+
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_337.png" title="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected. The &quot;MY WORKSPACES&quot; tab and a Workspace name are highlighted." alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected. The &quot;MY WORKSPACES&quot; tab and a Workspace name are highlighted." width="100%" />
+    b. Otherwise, select the "PUBLIC" tab.  In the top search bar, type the Workspace name **demos-combine-data-workspaces**.
+
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_327.png" title="Screenshot of Terra Workspaces page with the &quot;PUBLIC&quot; tab selected. The &quot;PUBLIC&quot; tab and search box are highlighted.  The the user has typed in the term &quot;sars&quot;. A Workspace related to SARS appears in the results." alt="Screenshot of Terra Workspaces page with the &quot;PUBLIC&quot; tab selected. The &quot;PUBLIC&quot; tab and search box are highlighted.  The the user has typed in the term &quot;sars&quot;. A Workspace related to SARS appears in the results." width="100%" />
+    c. You can also go directly to the Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces.
+    
+1. Clone the workspace by clicking the teardrop button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".  Or, if you have opened the Workspace, you can find the teardrop button on the top right of the Workspace.
+
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_344.png" title="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" title="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="100%" />
+
+1. You will see a popup box appear, asking you to configure your Workspace
+    a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"demos-combine-data-workspaces_Firstname_Lastname\".
+    a. Select the Billing Project provided by your instructor.
+    a. Leave the bottom two boxes as-is.
+    a. Click “CLONE WORKSPACE”.
+    
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_352.png" title="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" />
+
+1. The new Workspace should now show up under "MY WORKSPACES".  You now have your own copy of the Workspace to work in.
+::::
+
+Now your Workspace should be ready for you by the time you need it below.  You are ready to begin!
+
+## Start Cloud Environment
+
+# Exercises {#scale-with-workflows-exercises}
+
+The following exercises will walk you through the process of finding datasets that are stored in AnVIL Workspaces and bringing that data into your own Workspace so that you can analyze it.
+
+:::{.notice}
+To follow along with these exercises, you will need to complete the steps described in the [Preparation](#scale-with-workflows-preparation) guide for this demo.
+:::
+
+## Explore Dataset Catalog
+
+First we will take a look at the [AnVIL Dataset Catalog]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_0.png" title="Screenshot of AnVIL Dataset Catalog" alt="Screenshot of AnVIL Dataset Catalog" width="100%" />
+
+
+:::{.reflection}
+
+### Exercise {-}
+
+Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data/) and answer the following questions.
+
+**Q1.**  Which Consortium has the most participants?
+    
+- You can click on a column name to sort by that column.
+- Click again to switch between ascending and descending.
+    
+**Q2.**  Where would you find data from the Genotype-Tissue Expression (GTEx) Project?
+    
+- You can use the filters on the left to find specific datasets.  Click on either the Consortium or the Study filter to search for GTEx data.
+    
+**Q3.**  How many Workspaces have consent code NRES (No REStrictions on data use)?
+    
+- You can use the filters on the left to browse and narrow down on datasets that fit your needs.  Click on the Consent Code filter to select for datasets that you can access.
+
+:::
+    
+Now you know how to find AnVIL datasets!  To access the data in these datasets, you will need to access the **Terra Workspace** where the data is stored.  You can find links to the Terra Workspaces in the Workspaces tab.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f1d151022_0_4.png" title="Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The &quot;Workspaces&quot; tab is highlighted and has been selected, and the &quot;Terra Workspaces&quot; column is highlighted." alt="Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The &quot;Workspaces&quot; tab is highlighted and has been selected, and the &quot;Terra Workspaces&quot; column is highlighted." width="100%" />
+
+Note that, if a Workspace contains protected data, you will need to obtain the appropriate permissions before you can open the Workspace.  For these GTEx datasets, `AnVIL_GTEx_public_data` (with consent code NRES) is available to anyone on AnVIL, but other GTEx Workspaces require permission to access.
+
+
+## Explore 1000G Workspace
+
+Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so you can see where the data lives.  For this exercise, we will look at data from the [1000 Genomes Project](https://www.internationalgenome.org/).
+
+You can find the Workspace that contains the data by searching for the "1000G" Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_12.png" title="Screenshot of AnVIL Dataset Catalog showing the 1000 Genomes Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;1000G&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;1000G-high-coverage-2019&quot; Workspace is highlighted." alt="Screenshot of AnVIL Dataset Catalog showing the 1000 Genomes Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;1000G&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;1000G-high-coverage-2019&quot; Workspace is highlighted." width="100%" />
+
+### What is a Workspace?
+
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results.  The `1000G-high-coverage-2019` Workspace is being used to store and share data from the 1000 Genomes Project.
+
+Note that, since you are only a "Reader", you will be unable to do any computations directly in this Workspace.  To run analyses, you will need a Workspace of your own.
+
+Workspaces can serve different purposes.  For example, it's often useful to use one Workspace just for organizing primary data, and then to carry out analyses in a separate Workspace.  Storing data in a standalone Workspace helps keep it clean and organized, since it won't get cluttered up with results and intermediate files from your analyses.  It also ensures you can easily see and manage who has access to the data, and allows multiple AnVIL users to use the data without getting in each others' way.
+
+
+### Dashboard
+
+When you first open a Workspace, you will be directed to the **Dashboard** tab.  The Dashboard is like a README for the Workspace - it should contain information to help you understand the purpose and organization of the Workspace.  On the right, you can see some basic information about the Workspace such as the usernames of the Owners as well as your permission level for the Workspace.  The left side typically contains a description of the Workspace's contents and purpose.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_20.png" title="Screenshot of the Dashboard for the 1000 Genomes Workspace." alt="Screenshot of the Dashboard for the 1000 Genomes Workspace." width="100%" />
+
+:::{.reflection}
+### Exercise {-}
+
+**Q1.** What versions of BWA-MEM and GATK were used to process the 1000 Genomes data?
+
+- Look through the Workspace's description to see what information has been provided about the data in this Workspace.
+
+:::
+
+### Data
+
+The **Data** tab contains all the files associated with the Workspace - data, metadata, workflow outputs, etc.  Terra provides **Data Tables** to help organize data and results.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" title="Screenshot of the Data tab for the 1000 Genomes Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." alt="Screenshot of the Data tab for the 1000 Genomes Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" />
+
+:::{.reflection}
+### Exercise {-}
+
+Take a minute to look through the Data Tables for the `1000G-high-coverage-2019` Workspace.
+
+**Q2.** What types of files are linked to in the Data Table named `sample`?
+
+**Q3.** What quality control statistics are available in the Data Table named `qc_results_sample`?
+
+:::
+
+A key feature of Terra is that **Data Tables can link to files in other Workspaces** or even files that live outside of Terra.  This means that you don't need to maintain your own copy of AnVIL datasets; you can simply link to the data from a Data Table within your own Workspace to use it in your workflows.
+
+
+## Combine Data Workspace
+
+Next we will go over how to set up a Data Table so that you can use data from another Workspace in your own analysis.
+
+:::{.notice}
+For this exercise, you will need your own copy of the [`shorts-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces) Workspace.  If you have not already done so, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to clone a copy of the Workspace now.
+:::
+
+
+### Open your Workspace
+
+To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  
+
+You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).  Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_44.png" title="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." width="100%" />
+
+### Open Jupyter Notebook
+
+There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The `AnVIL` package provides a wide range of functions for programatically interacting with AnVIL.
+
+To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
+
+Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_0.png" title="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." width="100%" />
+
+By clicking on a Notebook, you can preview a static copy of the Notebook.  Clicking the "OPEN" button launches the Notebook in a cloud environment so that you can edit and run code.  (The "PLAYGROUND" option also lets you edit and run code, but your changes will not be saved.)
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_13.png" title="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." alt="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." width="100%" />
+
+:::{.reflection}
+### Exercise {-}
+
+In your Workspace, navigate to the "ANALYSIS" tab.  
+
+Click on `combine-data-workspaces.ipynb` to view the Notebook for this exercise, and click the "Open" button so you can edit and run it.
+
+- The Notebook will launch quickly if you already have a Jupyter Cloud Environment set up.
+- If Jupyter is not already set up, the configuration menu will appear.  The default settings are fine for this exercise, so scroll to the bottom and click "Create".  It will take a few minutes for Jupyter to start up.
+:::
+
+This Notebook has four code cells that you will run, after making some edits.
+
+### Load Packages
+
+The first code cell loads R packages that are needed for this exercise.  You do not need to make any adjustments here.
+
+:::{.reflection}
+### Exercise {-}
+
+**1.** Click on the code cell under "Load Packages", then click the Run button to load the packages.
+
+You should see some messages appear below the cell.
+:::
+
+
+### Retrieve original file locations
+
+The next two cells find the links to the original data.  Here we are bringing in data from two different Workspaces, `1000G-AMR` and `1000G-EAS`, which contains 1000 Genomes Project data from the Americas and East Asia, respectively.
+
+- `avworkspace( "anvil-outreach/1000G-AMR" )` tells the AnVIL package what Workspace to access
+- `df_sample_amr <- avtable( "sample" ) %>% top_n( -2 )` tells it to look at the table named "sample" and to grab the bottom two samples.
+
+:::{.notice}
+It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before commiting to a large Workflow run.
+:::
+
+To keep this exercise short and cheap, we're just importing a few samples into your Workspace, but when working on your own projects you can use the same process to import whole tables.
+
+It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentially run an expensive analysis on a large table of samples.
+
+:::{.reflection}
+### Exercise {-}
+
+**2.** Modify the code in both cells to get 3 samples instead of 2, and run each cell.
+
+You should see a table listing out the samples appear below each cell.  Confirm that there are 3 samples in each table.
+:::
+
+This step chose the samples we want from the original Workspace, but has not yet created links to them in your own Workspace.
+
+### Exported combined Data Table
+
+The next code block accomplishes a few things:
+
+1. `bind_rows( "AMR"=df_sample_amr, "EAS"=df_sample_eas, .id="code" )` combines data from the two different 1000 Genomes Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows.  It also adds a column named "code" to keep track of which samples came from the AMR vs. EAS datasets.
+1. `select( sample_id, code, cram )` selects only the columns we care about for our analysis.  Here we are keeping the sample ID, the superpopulation code (AMR or EAS) and the cram file.
+1. `avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
+
+:::{.reflection}
+### Exercise {-}
+
+You will need two pieces of information so that the AnVIL package can locate your Workspace to create the new Data Table:
+
+1. The `namespace` (the Workspace's Billing Project)
+1. The Workspace `name`
+
+You can find both of these at the end of the URL for your Workspace which is structured like this:
+
+```
+anvil.terra.bio/#workspaces/namespace/name
+```
+
+For example, for this Workspace:
+
+```
+https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces_KCox_20230609
+```
+
+- The `namespace` is `anvil-outreach`
+- The `name` is `shorts-combine-data-workspaces_KCox_20230609`
+
+
+**3.** Modify the code in your Notebook so that it points to your Workspace, and run the cell.
+
+If this command is successful, you will not see much output in the Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.
+
+:::
+
+
+### Session Info
+
+It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that.
+
+### View your new Data Table
+
+As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with code "EAS" and 3 with code "AMR".
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png" title="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." alt="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." width="100%" />
+
+
+:::{.notice}
+Note that for this exercise we preloaded the Workspace with 4 samples - if you only see 4 rows then double check your Notebook:
+
+- Did you remember to "Run" each code cell after you edited it?
+- Did you change the number of samples to link from 2 to 3 for each table?
+- Did you update the `avtable_import` command to point to your Workspace?
+
+If you run into any trouble, don't worry!  You can carry out the remaining exercises using the 4 samples we provided for you, and you can visit our community support forum at [`help.anvilproject.org`](https://help.anvilproject.org/) with any questions.
+:::
+
+
+## Explore Dockstore Workflows
+
+Once you have set up Data Tables in your Workspace, you can analyze the data using Workflows.  To introduce you to Workflows, we will first take a look at the AnVIL Workflows available through [Dockstore](https://dockstore.org/).
+
+The Dockstore platform is a repository for scalable bioinformatics tools and workflows.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_30.png" title="Screenshot of Dockstore home page." alt="Screenshot of Dockstore home page." width="100%" />
+
+You can find Workflows for AnVIL by clicking on the "Organizations" tab and searching for AnVIL.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_390.png" title="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." alt="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." width="100%" />
+
+
+
+## Run qc-analysis-pipeline
+
+# Instructor Guide {#scale-with-workflows-instructor-guide}
+
+## Timeline
