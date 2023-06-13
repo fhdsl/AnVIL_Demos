@@ -1,7 +1,7 @@
 book_filename: "AnVIL Demos"
 repo: https://github.com/jhudsl/AnVIL_Demos/
 rmd_files: ["index.Rmd",
-            "01-welcome-to-anvil.Rmd",
+            "01-what-is-anvil.Rmd",
             "02-scale-with-workflows.Rmd"]
 new_session: yes
 bibliography: [book.bib]

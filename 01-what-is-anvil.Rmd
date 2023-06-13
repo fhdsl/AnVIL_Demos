@@ -1,5 +1,5 @@
 
-# (PART\*) Welcome to AnVIL {-}   
+# (PART\*) What is AnVIL {-}   
 
 # Overview
 
@@ -41,6 +41,54 @@ _Programming skills_
 
 1. Learn about additional resources to self-guide your discovery on AnVIL.
 
+# Preparation
+
+## Watch Video
+
+Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is being used, and how to get started in this ~20 min video ([slides](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4))
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fcMUU7NrEeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# Exercises
+
+## Exercise 1: Launch Terra
+
+```{r, echo=FALSE, out.width="100%", fig.alt=""}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24303c0c340_0_0" )
+```
+
+## Exercise 2: Clone HPRC Workspace
+
+```{r, echo=FALSE, out.width="100%", fig.alt=""}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
+```
+
+## Exercise 3: Start a Cloud Environment
+
+```{r, echo=FALSE, out.width="100%", fig.alt=""}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_26" )
+```
+
+## Exercise 4: Find Tidbits
+
+```{r, echo=FALSE, out.width="100%", fig.alt=""}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_53" )
+```
+
+## Exercise 5: Enter Terminal
+
+```{r, echo=FALSE, out.width="100%", fig.alt=""}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_109" )
+```
+
+## Exercise 6: Shut Down
+
+```{r, echo=FALSE, out.width="100%", fig.alt=""}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_181" )
+```
+
+# Instructor Guide
+
 ## Timeline
 
 | Activity | Duration |
@@ -52,20 +100,4 @@ _Programming skills_
 | [Getting Started](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.g21756f91cc3_2_15) | 2 minutes |
 | Q & A | 10 minutes |
 | **Total** | 30 minutes |
-
-# Google Slides
-
-The following link provides a link to Google Slides for this demo: https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit?usp=sharing
-
-<br>
-
-```{r, echo=FALSE, out.width="100%", fig.alt="Title page of a series of slides for 'Welcome to AnVIL'."}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.p")
-```
-
-# Demo Recording
-
-Please check out our recording of this demo here:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fcMUU7NrEeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
