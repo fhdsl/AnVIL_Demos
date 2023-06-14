@@ -94,7 +94,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 :::{.reflection}
 
-### Exercise {-}
+### Exercise {- .unlisted}
 
 Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data/) and answer the following questions.
 
@@ -150,7 +150,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 ```
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 **Q1.** What versions of BWA-MEM and GATK were used to process the 1000 Genomes data?
 
@@ -167,7 +167,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 ```
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 Take a minute to look through the Data Tables for the `1000G-high-coverage-2019` Workspace.
 
@@ -218,7 +218,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 ```
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 In your Workspace, navigate to the "ANALYSIS" tab.  
 
@@ -235,7 +235,7 @@ This Notebook has four code cells that you will run, after making some edits.
 The first code cell loads R packages that are needed for this exercise.  You do not need to make any adjustments here.
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 **1.** Click on the code cell under "Load Packages", then click the Run button to load the packages.
 
@@ -259,7 +259,7 @@ To keep this exercise short and cheap, we're just importing a few samples into y
 It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentially run an expensive analysis on a large table of samples.
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 **2.** Modify the code in both cells to get 3 samples instead of 2, and run each cell.
 
@@ -277,7 +277,7 @@ The next code block accomplishes a few things:
 1. `avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 You will need two pieces of information so that the AnVIL package can locate your Workspace to create the new Data Table:
 
@@ -347,7 +347,38 @@ You can find Workflows for AnVIL by clicking on the "Organizations" tab and sear
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g24306c8bf8a_0_390")
 ```
 
+Here you can find many Workflows which you can import into your AnVIL Workspace to use in your own analyses.  These Workflows are organized into collections to make them easier to find.
 
+:::{.reflection}
+### Exercise {- .unlisted}
+
+Go to [`dockstore.org`](https://dockstore.org/), find the AnVIL Organization, and take a look at the Workflows that are available.
+
+**Q1.** How many GATK4 workflows focus on CNVs?
+
+:::
+
+Now let's take a look at the `qc-analysis-pipeline`, which we will be running on our data.
+
+Under the AnVIL Organization is a collection called "Quality Control Workflows".  Here you can find the `qc-analysis-pipeline`.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Dockstore page for the Quality Control Workflows collection from the AnVIL organization.  The card for the qc-analysis-pipeline Workflow is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_44")
+```
+
+Clicking on the name of the Workflow will bring you to a page with detailed information about the Workflow, including the .wdl files for the Workflow.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Files tab is highlighted and has been selected, and part of a wdl files can be seen.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_35")
+```
+
+From here, you can import the Workflow into your Workspace using the Launch button.  **Don't do this right now**, or, if you do, import it with a different name (not `qc-analysis-pipeline`) so you don't overwrite the Workflow that already exists in your Workspace.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Launch button for AnVIL is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_52")
+```
+
+There are some additional configuration steps that are needed to make sure the Workflow is set up properly to run on the desired files in your Workspace.  For the sake of time, we have provided a preconfigured version of this Workflow in the Workspace you cloned.  You can learn more about configuring Workflows in the [Terra Documentation on Workflows](https://support.terra.bio/hc/en-us/sections/360004147011).
 
 ## Run qc-analysis-pipeline
 
