@@ -52,7 +52,7 @@ You will need an AnVIL account in order to view Workspaces and run analyses.
 
 ## Clone Workspace
 
-When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propogate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propagate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
 
 Follow the instructions below to clone your own copy of the Workspace for this Demo.
 
@@ -201,11 +201,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 ### Open Jupyter Notebook
 
-There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The `AnVIL` package provides a wide range of functions for programatically interacting with AnVIL.
+There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The `AnVIL` package provides a wide range of functions for programmatically interacting with AnVIL.
 
 To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
 
-Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
+Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and R Markdown).
 
 ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "ANALYSES" tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_0")
@@ -251,12 +251,12 @@ The next two cells find the links to the original data.  Here we are bringing in
 - `df_sample_amr <- avtable( "sample" ) %>% top_n( -2 )` tells it to look at the table named "sample" and to grab the bottom two samples.
 
 :::{.notice}
-It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before commiting to a large Workflow run.
+It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before committing to a large Workflow run.
 :::
 
 To keep this exercise short and cheap, we're just importing a few samples into your Workspace, but when working on your own projects you can use the same process to import whole tables.
 
-It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentially run an expensive analysis on a large table of samples.
+It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentionally run an expensive analysis on a large table of samples.
 
 :::{.reflection}
 ### Exercise {- .unlisted}
