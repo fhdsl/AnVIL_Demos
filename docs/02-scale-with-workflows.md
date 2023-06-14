@@ -50,7 +50,7 @@ You will need an AnVIL account in order to view Workspaces and run analyses.
 
 ## Clone Workspace
 
-When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propogate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propagate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
 
 Follow the instructions below to clone your own copy of the Workspace for this Demo.
 
@@ -128,7 +128,7 @@ First we will take a look at the [AnVIL Dataset Catalog]((https://anvilproject.o
 
 :::{.reflection}
 
-### Exercise {-}
+### Exercise {- .unlisted}
 
 Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data/) and answer the following questions.
 
@@ -178,7 +178,7 @@ When you first open a Workspace, you will be directed to the **Dashboard** tab. 
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_20.png" title="Screenshot of the Dashboard for the 1000 Genomes Workspace." alt="Screenshot of the Dashboard for the 1000 Genomes Workspace." width="100%" />
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 **Q1.** What versions of BWA-MEM and GATK were used to process the 1000 Genomes data?
 
@@ -193,7 +193,7 @@ The **Data** tab contains all the files associated with the Workspace - data, me
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" title="Screenshot of the Data tab for the 1000 Genomes Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." alt="Screenshot of the Data tab for the 1000 Genomes Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" />
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 Take a minute to look through the Data Tables for the `1000G-high-coverage-2019` Workspace.
 
@@ -225,11 +225,11 @@ You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown
 
 ### Open Jupyter Notebook
 
-There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The `AnVIL` package provides a wide range of functions for programatically interacting with AnVIL.
+There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the [`Anvil`](https://bioconductor.org/packages/release/bioc/html/AnVIL.html) R package, which we will run using a Jupyter cloud environment.  The `AnVIL` package provides a wide range of functions for programmatically interacting with AnVIL.
 
 To help you get started, we have provided a copy of a Jupyter Notebook that uses the `AnVIL` package to create Data Tables linking out to data in another Workspace.  For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to *your* Workspace (instead of the original Workspace).
 
-Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and RMarkdown).
+Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and R Markdown).
 
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_0.png" title="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." width="100%" />
 
@@ -238,7 +238,7 @@ By clicking on a Notebook, you can preview a static copy of the Notebook.  Click
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_13.png" title="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." alt="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." width="100%" />
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 In your Workspace, navigate to the "ANALYSIS" tab.  
 
@@ -255,7 +255,7 @@ This Notebook has four code cells that you will run, after making some edits.
 The first code cell loads R packages that are needed for this exercise.  You do not need to make any adjustments here.
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 **1.** Click on the code cell under "Load Packages", then click the Run button to load the packages.
 
@@ -271,15 +271,15 @@ The next two cells find the links to the original data.  Here we are bringing in
 - `df_sample_amr <- avtable( "sample" ) %>% top_n( -2 )` tells it to look at the table named "sample" and to grab the bottom two samples.
 
 :::{.notice}
-It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before commiting to a large Workflow run.
+It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before committing to a large Workflow run.
 :::
 
 To keep this exercise short and cheap, we're just importing a few samples into your Workspace, but when working on your own projects you can use the same process to import whole tables.
 
-It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentially run an expensive analysis on a large table of samples.
+It does not cost anything to add these samples to your Data Table, since you are not storing them in your own Workspace, only linking to them in another Workspace.  Costs come into it when you start running analyses on the samples (as we will in a later exercise), so take care not to unintentionally run an expensive analysis on a large table of samples.
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 **2.** Modify the code in both cells to get 3 samples instead of 2, and run each cell.
 
@@ -297,7 +297,7 @@ The next code block accomplishes a few things:
 1. `avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
 
 :::{.reflection}
-### Exercise {-}
+### Exercise {- .unlisted}
 
 You will need two pieces of information so that the AnVIL package can locate your Workspace to create the new Data Table:
 
@@ -361,7 +361,32 @@ You can find Workflows for AnVIL by clicking on the "Organizations" tab and sear
 
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_390.png" title="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." alt="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." width="100%" />
 
+Here you can find many Workflows which you can import into your AnVIL Workspace to use in your own analyses.  These Workflows are organized into collections to make them easier to find.
 
+:::{.reflection}
+### Exercise {- .unlisted}
+
+Go to [`dockstore.org`](https://dockstore.org/), find the AnVIL Organization, and take a look at the Workflows that are available.
+
+**Q1.** How many GATK4 workflows focus on CNVs?
+
+:::
+
+Now let's take a look at the `qc-analysis-pipeline`, which we will be running on our data.
+
+Under the AnVIL Organization is a collection called "Quality Control Workflows".  Here you can find the `qc-analysis-pipeline`.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_44.png" title="Screenshot of Dockstore page for the Quality Control Workflows collection from the AnVIL organization.  The card for the qc-analysis-pipeline Workflow is highlighted." alt="Screenshot of Dockstore page for the Quality Control Workflows collection from the AnVIL organization.  The card for the qc-analysis-pipeline Workflow is highlighted." width="100%" />
+
+Clicking on the name of the Workflow will bring you to a page with detailed information about the Workflow, including the .wdl files for the Workflow.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_35.png" title="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Files tab is highlighted and has been selected, and part of a wdl files can be seen." alt="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Files tab is highlighted and has been selected, and part of a wdl files can be seen." width="100%" />
+
+From here, you can import the Workflow into your Workspace using the Launch button.  **Don't do this right now**, or, if you do, import it with a different name (not `qc-analysis-pipeline`) so you don't overwrite the Workflow that already exists in your Workspace.
+
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_52.png" title="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Launch button for AnVIL is highlighted." alt="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Launch button for AnVIL is highlighted." width="100%" />
+
+There are some additional configuration steps that are needed to make sure the Workflow is set up properly to run on the desired files in your Workspace.  For the sake of time, we have provided a preconfigured version of this Workflow in the Workspace you cloned.  You can learn more about configuring Workflows in the [Terra Documentation on Workflows](https://support.terra.bio/hc/en-us/sections/360004147011).
 
 ## Run qc-analysis-pipeline
 
