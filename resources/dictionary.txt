@@ -36,6 +36,8 @@ NRES
 Onboarding
 OTTR
 ottrpal
+Pangenome
+pangenomes
 plotMDS
 precompiled
 preconfigured
