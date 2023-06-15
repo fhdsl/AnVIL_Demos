@@ -154,17 +154,17 @@ Now you know how to find AnVIL datasets!  To access the data in these datasets, 
 Note that, if a Workspace contains protected data, you will need to obtain the appropriate permissions before you can open the Workspace.  For these GTEx datasets, `AnVIL_GTEx_public_data` (with consent code NRES) is available to anyone on AnVIL, but other GTEx Workspaces require permission to access.
 
 
-## Explore 1000G Workspace
+## Explore HPRC Workspace
 
-Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so you can see where the data lives.  For this exercise, we will look at data from the [1000 Genomes Project](https://www.internationalgenome.org/).
+Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so you can see where the data lives.  For this exercise, we will look at data from the [Human Pangenome Reference Consortium](https://humanpangenome.org/).
 
-You can find the Workspace that contains the data by searching for the "1000G" Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019.
+You can find the Workspace that contains the data by searching for the "HPRC" Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_12.png" title="Screenshot of AnVIL Dataset Catalog showing the 1000 Genomes Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;1000G&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;1000G-high-coverage-2019&quot; Workspace is highlighted." alt="Screenshot of AnVIL Dataset Catalog showing the 1000 Genomes Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;1000G&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;1000G-high-coverage-2019&quot; Workspace is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_85.png" title="Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;HPRC&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;AnVIL_HPRC&quot; Workspace is highlighted." alt="Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;HPRC&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;AnVIL_HPRC&quot; Workspace is highlighted." width="100%" />
 
 ### What is a Workspace?
 
-Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results.  The `1000G-high-coverage-2019` Workspace is being used to store and share data from the 1000 Genomes Project.
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results.  The `AnVIL_HPRC` Workspace is being used to store and share data from the Human Pangenome Reference Consortium.
 
 Note that, since you are only a "Reader", you will be unable to do any computations directly in this Workspace.  To run analyses, you will need a Workspace of your own.
 
@@ -175,12 +175,12 @@ Workspaces can serve different purposes.  For example, it's often useful to use 
 
 When you first open a Workspace, you will be directed to the **Dashboard** tab.  The Dashboard is like a README for the Workspace - it should contain information to help you understand the purpose and organization of the Workspace.  On the right, you can see some basic information about the Workspace such as the usernames of the Owners as well as your permission level for the Workspace.  The left side typically contains a description of the Workspace's contents and purpose.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_20.png" title="Screenshot of the Dashboard for the 1000 Genomes Workspace." alt="Screenshot of the Dashboard for the 1000 Genomes Workspace." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_94.png" title="Screenshot of the Dashboard for the Human Pangenome Reference Consortium Workspace." alt="Screenshot of the Dashboard for the Human Pangenome Reference Consortium Workspace." width="100%" />
 
 :::{.reflection}
 ### Exercise {- .unlisted}
 
-**Q1.** What versions of BWA-MEM and GATK were used to process the 1000 Genomes data?
+**Q1.** What three strategies were used to build pangenomes?
 
 - Look through the Workspace's description to see what information has been provided about the data in this Workspace.
 
@@ -190,16 +190,18 @@ When you first open a Workspace, you will be directed to the **Dashboard** tab. 
 
 The **Data** tab contains all the files associated with the Workspace - data, metadata, workflow outputs, etc.  Terra provides **Data Tables** to help organize data and results.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" title="Screenshot of the Data tab for the 1000 Genomes Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." alt="Screenshot of the Data tab for the 1000 Genomes Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" title="Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." alt="Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" />
 
 :::{.reflection}
 ### Exercise {- .unlisted}
 
-Take a minute to look through the Data Tables for the `1000G-high-coverage-2019` Workspace.
+Take a minute to look through the Data Tables for the `AnVIL_HPRC` Workspace.
 
-**Q2.** What types of files are linked to in the Data Table named `sample`?
+**Q2.** What demographic information is available in the Data Table named `participant`?
 
-**Q3.** What quality control statistics are available in the Data Table named `qc_results_sample`?
+**Q3.** What types of files are linked to in the Data Table named `assembly_sample`?
+
+- If you're not sure what these files are from looking at the column and file names, check the Workspace Dashboard for more information about the assemblies.
 
 :::
 

@@ -24,7 +24,7 @@ clone-workspace
 start-cloud-environment
 scale-with-workflows-exercises
 explore-dataset-catalog
-explore-1000g-workspace
+explore-hprc-workspace
 what-is-a-workspace
 dashboard
 data
