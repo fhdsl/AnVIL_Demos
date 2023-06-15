@@ -382,6 +382,44 @@ There are some additional configuration steps that are needed to make sure the W
 
 ## Run qc-analysis-pipeline
 
+For our final exercise, we will run the `qc-analysis-pipeline` on the data we retrieved.  Note that Workflow runs can take a few hours to go through, so this exercise will walk you through submitting it, but you will need to check back later for the results.  You should receive an email when it's done (at the email address you use for AnVIL).
+
+AnVIL Workspaces have two tabs dedicated to Workflows
+
+- The "WORKFLOWS" tab is where you configure and submit Workflow runs for processing.
+- The "JOB HISTORY" tab is where you monitor the progress of submitted Workflows.
+
+Under the "WORKFLOWS" tab you will see any Workflows that have been imported into your Workspace.  If you import a Workflow from Dockstore (using the Launch with AnVIL button) or from another Workspace, you will see it here.  For this exercise, the `qc-analysis-pipeline` has already been imported for you.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "WORKFLOWS" tab selected.  The qc-analysis-pipeline card is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_65")
+```
+
+:::{.reflection}
+### Exercise {- .unlisted}
+
+Go to your Workspace on AnVIL and open the "WORKFLOWS" tab.
+
+**1.** Click on the `qc-analysis-pipeline` card to configure the Workflow.
+
+**2.** Confirm settings
+
+- "Run workflow(s) with inputs defined by data table" is selected
+- The root entity type should be "sample".  This means it will look at the "sample" Data Table to find inputs.
+
+**3.** Choose samples - click the "SELECT DATA" button and check the samples you want to run the Workflow on.  You should see 6 samples.
+
+**4.** Click the "RUN ANALYSIS" button.
+:::
+
+You can view the status of your Workflow run by navigating to the "JOB HISTORY" tab.  You can see more details by clicking on the name of the Workflow in the "Submission" column.
+
+```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "JOB HISTORY" tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_78")
+```
+
+Once your Workflow run is complete, you will be able to view the results in your Workspace's "DATA" tab.
+
 # Instructor Guide {#scale-with-workflows-instructor-guide}
 
 ## Timeline
