@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2023-06-14" />
+<meta name="date" content="2023-06-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -382,6 +382,29 @@
 </div>
 <div id="run-qc-analysis-pipeline" class="section level2" number="7.5">
 <h2><span class="header-section-number">7.5</span> Run qc-analysis-pipeline</h2>
+<p>For our final exercise, we will run the <code>qc-analysis-pipeline</code> on the data we retrieved. Note that Workflow runs can take a few hours to go through, so this exercise will walk you through submitting it, but you will need to check back later for the results. You should receive an email when it’s done (at the email address you use for AnVIL).</p>
+<p>AnVIL Workspaces have two tabs dedicated to Workflows</p>
+<ul>
+<li>The “WORKFLOWS” tab is where you configure and submit Workflow runs for processing.</li>
+<li>The “JOB HISTORY” tab is where you monitor the progress of submitted Workflows.</li>
+</ul>
+<p>Under the “WORKFLOWS” tab you will see any Workflows that have been imported into your Workspace. If you import a Workflow from Dockstore (using the Launch with AnVIL button) or from another Workspace, you will see it here. For this exercise, the <code>qc-analysis-pipeline</code> has already been imported for you.</p>
+<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_65.png" title="Screenshot of Terra Workspace with the &quot;WORKFLOWS&quot; tab selected.  The qc-analysis-pipeline card is highlighted." alt="Screenshot of Terra Workspace with the &quot;WORKFLOWS&quot; tab selected.  The qc-analysis-pipeline card is highlighted." width="100%" /></p>
+<div id="exercise-8" class="section level3 unnumbered unlisted reflection">
+<h3>Exercise</h3>
+<p>Go to your Workspace on AnVIL and open the “WORKFLOWS” tab.</p>
+<p><strong>1.</strong> Click on the <code>qc-analysis-pipeline</code> card to configure the Workflow.</p>
+<p><strong>2.</strong> Confirm settings</p>
+<ul>
+<li>“Run workflow(s) with inputs defined by data table” is selected</li>
+<li>The root entity type should be “sample”. This means it will look at the “sample” Data Table to find inputs.</li>
+</ul>
+<p><strong>3.</strong> Choose samples - click the “SELECT DATA” button and check the samples you want to run the Workflow on. You should see 6 samples.</p>
+<p><strong>4.</strong> Click the “RUN ANALYSIS” button.</p>
+</div>
+<p>You can view the status of your Workflow run by navigating to the “JOB HISTORY” tab. You can see more details by clicking on the name of the Workflow in the “Submission” column.</p>
+<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_78.png" title="Screenshot of Terra Workspace with the &quot;JOB HISTORY&quot; tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted." alt="Screenshot of Terra Workspace with the &quot;JOB HISTORY&quot; tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted." width="100%" /></p>
+<p>Once your Workflow run is complete, you will be able to view the results in your Workspace’s “DATA” tab.</p>
 </div>
 </div>
 <hr>
