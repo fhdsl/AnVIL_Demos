@@ -173,7 +173,7 @@ Take a minute to look through the Data Tables for the `AnVIL_HPRC` Workspace.
 
 **Q2.** What demographic information is available in the Data Table named `participant`?
 
-**Q2.** What types of files are linked to in the Data Table named `assembly_sample`?
+**Q3.** What types of files are linked to in the Data Table named `assembly_sample`?
 
 - If you're not sure what these files are from looking at the column and file names, check the Workspace Dashboard for more information about the assemblies.
 
