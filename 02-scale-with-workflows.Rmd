@@ -187,13 +187,13 @@ A key feature of Terra is that **Data Tables can link to files in other Workspac
 Next we will go over how to set up a Data Table so that you can use data from another Workspace in your own analysis.
 
 :::{.notice}
-For this exercise, you will need your own copy of the [`shorts-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces) Workspace.  If you have not already done so, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to clone a copy of the Workspace now.
+For this exercise, you will need your own copy of the [`demos-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces) Workspace.  If you have not already done so, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to clone a copy of the Workspace now.
 :::
 
 
 ### Open your Workspace
 
-To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  
+To get started, navigate to your cloned copy of `demos-combine-data-workspaces`.  
 
 You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).  Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
 
@@ -239,7 +239,7 @@ The first code cell loads R packages that are needed for this exercise.  You do 
 :::{.reflection}
 ### Exercise {- .unlisted}
 
-**1.** Click on the code cell under "Load Packages", then click the Run button to load the packages.
+**1.** Click on the first code cell, then click the Run button to load the packages.
 
 You should see some messages appear below the cell.
 :::
@@ -268,7 +268,7 @@ It does not cost anything to add these samples to your Data Table, since you are
 You should see a table listing out the samples appear below each cell.  Confirm that there are 3 samples in each table.
 :::
 
-This step chose the samples we want from the original Workspace, but has not yet created links to them in your own Workspace.
+This step chose the samples we want from the original Workspace, but has not yet created a Data Table that links to them in your own Workspace.
 
 ### Exported combined Data Table
 
