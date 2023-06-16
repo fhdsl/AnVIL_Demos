@@ -241,16 +241,17 @@ The first code cell loads R packages that are needed for this exercise.  You do 
 
 **1.** Click on the first code cell, then click the Run button to load the packages.
 
-You should see some messages appear below the cell.
 :::
 
 
 ### Retrieve original file locations
 
-The next two cells find the links to the original data.  Here we are bringing in data from two different Workspaces, `1000G-AMR` and `1000G-EAS`, which contains 1000 Genomes Project data from the Americas and East Asia, respectively.
+The next two cells find the links to the original data.  Here we are bringing in data from two different Workspaces, [`AnVIL_HPRC`](https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC) and [`1000G-high-coverage-2019`](https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019), which contains data from the [Human Pangenome Reference Consortium](https://humanpangenome.org/) and the [1000 Genomes Project](https://www.internationalgenome.org/), respectively.
 
-- `avworkspace( "anvil-outreach/1000G-AMR" )` tells the AnVIL package what Workspace to access
-- `df_sample_amr <- avtable( "sample" ) %>% top_n( -2 )` tells it to look at the table named "sample" and to grab the bottom two samples.
+- `avworkspace( "anvil-datastorage/AnVIL_HPRC" )` tells the AnVIL package what Workspace to access
+- `df_sample_HPRC <- avtable( "sample" ) %>%` tells it to look at the table named "sample".
+- The subsequent commands select which columns and rows to import into our Workspace.  These commands differ between the two code blocks because the Tables in the two source Workspaces have different structures.
+- `slice_head( n=2 )` gets only the first two samples.
 
 :::{.notice}
 It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before committing to a large Workflow run.
@@ -274,9 +275,8 @@ This step chose the samples we want from the original Workspace, but has not yet
 
 The next code block accomplishes a few things:
 
-1. `bind_rows( "AMR"=df_sample_amr, "EAS"=df_sample_eas, .id="code" )` combines data from the two different 1000 Genomes Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows.  It also adds a column named "code" to keep track of which samples came from the AMR vs. EAS datasets.
-1. `select( sample_id, code, cram )` selects only the columns we care about for our analysis.  Here we are keeping the sample ID, the superpopulation code (AMR or EAS) and the cram file.
-1. `avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
+1. The `bind_rows()` command combines data from the two different Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows.  It also adds a column to keep track of which samples came from which original Workspace.
+1. `avtable_import( entity="sample_id", namespace="anvil-outreach", name="demos-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
 
 :::{.reflection}
 ### Exercise {- .unlisted}
