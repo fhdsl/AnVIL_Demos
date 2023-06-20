@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2023-06-15" />
+<meta name="date" content="2023-06-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -260,11 +260,11 @@
 <h2><span class="header-section-number">7.3</span> Combine Data Workspace</h2>
 <p>Next we will go over how to set up a Data Table so that you can use data from another Workspace in your own analysis.</p>
 <div class="notice">
-<p>For this exercise, you will need your own copy of the <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces"><code>shorts-combine-data-workspaces</code></a> Workspace. If you have not already done so, follow the instructions in the <a href="scale-with-workflows-preparation.html#scale-with-workflows-preparation">Preparation</a> section to clone a copy of the Workspace now.</p>
+<p>For this exercise, you will need your own copy of the <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces"><code>demos-combine-data-workspaces</code></a> Workspace. If you have not already done so, follow the instructions in the <a href="scale-with-workflows-preparation.html#scale-with-workflows-preparation">Preparation</a> section to clone a copy of the Workspace now.</p>
 </div>
 <div id="open-your-workspace" class="section level3" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> Open your Workspace</h3>
-<p>To get started, navigate to your cloned copy of <code>shorts-combine-data-workspaces</code>.</p>
+<p>To get started, navigate to your cloned copy of <code>demos-combine-data-workspaces</code>.</p>
 <p>You can find your Workspace in Terra by clicking on “Workspaces” in the dropdown menu, or you can go there directly at <a href="https://anvil.terra.bio/#workspaces"><code>anvil.terra.bio/#workspaces</code></a>. Once there, you should see your Workspace under the “MY WORKSPACES” tab. It may also show up in your recently viewed Workspaces. Click on the Workspace name to open it. <strong>Make sure you are in <em>your copy</em> of the Workspace.</strong> If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.</p>
 <p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_44.png" title="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." width="100%" /></p>
 </div>
@@ -293,15 +293,16 @@
 </div>
 <div id="exercise-4" class="section level3 unnumbered unlisted reflection">
 <h3>Exercise</h3>
-<p><strong>1.</strong> Click on the code cell under “Load Packages”, then click the Run button to load the packages.</p>
-<p>You should see some messages appear below the cell.</p>
+<p><strong>1.</strong> Click on the first code cell, then click the Run button to load the packages.</p>
 </div>
 <div id="retrieve-original-file-locations" class="section level3" number="7.3.4">
 <h3><span class="header-section-number">7.3.4</span> Retrieve original file locations</h3>
-<p>The next two cells find the links to the original data. Here we are bringing in data from two different Workspaces, <code>1000G-AMR</code> and <code>1000G-EAS</code>, which contains 1000 Genomes Project data from the Americas and East Asia, respectively.</p>
+<p>The next two cells find the links to the original data. Here we are bringing in data from two different Workspaces, <a href="https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC"><code>AnVIL_HPRC</code></a> and <a href="https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019"><code>1000G-high-coverage-2019</code></a>, which contains data from the <a href="https://humanpangenome.org/">Human Pangenome Reference Consortium</a> and the <a href="https://www.internationalgenome.org/">1000 Genomes Project</a>, respectively.</p>
 <ul>
-<li><code>avworkspace( "anvil-outreach/1000G-AMR" )</code> tells the AnVIL package what Workspace to access</li>
-<li><code>df_sample_amr &lt;- avtable( "sample" ) %&gt;% top_n( -2 )</code> tells it to look at the table named “sample” and to grab the bottom two samples.</li>
+<li><code>avworkspace( "anvil-datastorage/AnVIL_HPRC" )</code> tells the AnVIL package what Workspace to access</li>
+<li><code>df_sample_HPRC &lt;- avtable( "sample" ) %&gt;%</code> tells it to look at the table named “sample”.</li>
+<li>The subsequent commands select which columns and rows to import into our Workspace. These commands differ between the two code blocks because the Tables in the two source Workspaces have different structures.</li>
+<li><code>slice_head( n=2 )</code> gets only the first two samples.</li>
 </ul>
 <div class="notice">
 <p>It’s often a good idea to start off a new analysis by working with just a few samples. This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before committing to a large Workflow run.</p>
@@ -314,14 +315,13 @@
 <p><strong>2.</strong> Modify the code in both cells to get 3 samples instead of 2, and run each cell.</p>
 <p>You should see a table listing out the samples appear below each cell. Confirm that there are 3 samples in each table.</p>
 </div>
-<p>This step chose the samples we want from the original Workspace, but has not yet created links to them in your own Workspace.</p>
+<p>This step chose the samples we want from the original Workspace, but has not yet created a Data Table that links to them in your own Workspace.</p>
 <div id="exported-combined-data-table" class="section level3" number="7.3.5">
 <h3><span class="header-section-number">7.3.5</span> Exported combined Data Table</h3>
 <p>The next code block accomplishes a few things:</p>
 <ol style="list-style-type: decimal">
-<li><code>bind_rows( "AMR"=df_sample_amr, "EAS"=df_sample_eas, .id="code" )</code> combines data from the two different 1000 Genomes Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows. It also adds a column named “code” to keep track of which samples came from the AMR vs. EAS datasets.</li>
-<li><code>select( sample_id, code, cram )</code> selects only the columns we care about for our analysis. Here we are keeping the sample ID, the superpopulation code (AMR or EAS) and the cram file.</li>
-<li><code>avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )</code> creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses. <strong>This is the line that we need to modify</strong> so that the Data Table is created in <em>your</em> Workspace.</li>
+<li>The <code>bind_rows()</code> command combines data from the two different Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows. It also adds a column to keep track of which samples came from which original Workspace.</li>
+<li><code>avtable_import( entity="sample_id", namespace="anvil-outreach", name="demos-combine-data-workspaces" )</code> creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses. <strong>This is the line that we need to modify</strong> so that the Data Table is created in <em>your</em> Workspace.</li>
 </ol>
 </div>
 <div id="exercise-6" class="section level3 unnumbered unlisted reflection">
@@ -334,13 +334,13 @@
 <p>You can find both of these at the end of the URL for your Workspace which is structured like this:</p>
 <pre><code>anvil.terra.bio/#workspaces/namespace/name</code></pre>
 <p>For example, for this Workspace:</p>
-<pre><code>https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces_KCox_20230609</code></pre>
+<pre><code>https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces_KCox_20230616</code></pre>
 <ul>
 <li>The <code>namespace</code> is <code>anvil-outreach</code></li>
-<li>The <code>name</code> is <code>shorts-combine-data-workspaces_KCox_20230609</code></li>
+<li>The <code>name</code> is <code>demos-combine-data-workspaces_KCox_20230616</code></li>
 </ul>
 <p><strong>3.</strong> Modify the code in your Notebook so that it points to your Workspace, and run the cell.</p>
-<p>If this command is successful, you will not see much output in the Notebook, but if you look in the Data tab of your Workspace you should now see the <code>sample</code> Data Table has 6 rows in it.</p>
+<p>If this command is successful, you will not see your new table in your Notebook, but if you look in the Data tab of your Workspace you should now see the <code>sample</code> Data Table has 6 rows in it.</p>
 </div>
 <div id="session-info" class="section level3" number="7.3.6">
 <h3><span class="header-section-number">7.3.6</span> Session Info</h3>
@@ -348,7 +348,7 @@
 </div>
 <div id="view-your-new-data-table" class="section level3" number="7.3.7">
 <h3><span class="header-section-number">7.3.7</span> View your new Data Table</h3>
-<p>As a last step, take a look at the Data Tab in your Workspace. You should now see a table named <code>sample</code> that contains 6 rows - 3 with code “EAS” and 3 with code “AMR”.</p>
+<p>As a last step, take a look at the Data Tab in your Workspace. You should now see a table named <code>sample</code> that contains 6 rows - 3 with project “HPRC” and 3 with project “1000G”.</p>
 <p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png" title="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." alt="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." width="100%" /></p>
 <div class="notice">
 <p>Note that for this exercise we preloaded the Workspace with 4 samples - if you only see 4 rows then double check your Notebook:</p>

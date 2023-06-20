@@ -213,13 +213,13 @@ A key feature of Terra is that **Data Tables can link to files in other Workspac
 Next we will go over how to set up a Data Table so that you can use data from another Workspace in your own analysis.
 
 :::{.notice}
-For this exercise, you will need your own copy of the [`shorts-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces) Workspace.  If you have not already done so, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to clone a copy of the Workspace now.
+For this exercise, you will need your own copy of the [`demos-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces) Workspace.  If you have not already done so, follow the instructions in the [Preparation](#scale-with-workflows-preparation) section to clone a copy of the Workspace now.
 :::
 
 
 ### Open your Workspace
 
-To get started, navigate to your cloned copy of `shorts-combine-data-workspaces`.  
+To get started, navigate to your cloned copy of `demos-combine-data-workspaces`.  
 
 You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).  Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
 
@@ -259,18 +259,19 @@ The first code cell loads R packages that are needed for this exercise.  You do 
 :::{.reflection}
 ### Exercise {- .unlisted}
 
-**1.** Click on the code cell under "Load Packages", then click the Run button to load the packages.
+**1.** Click on the first code cell, then click the Run button to load the packages.
 
-You should see some messages appear below the cell.
 :::
 
 
 ### Retrieve original file locations
 
-The next two cells find the links to the original data.  Here we are bringing in data from two different Workspaces, `1000G-AMR` and `1000G-EAS`, which contains 1000 Genomes Project data from the Americas and East Asia, respectively.
+The next two cells find the links to the original data.  Here we are bringing in data from two different Workspaces, [`AnVIL_HPRC`](https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC) and [`1000G-high-coverage-2019`](https://anvil.terra.bio/#workspaces/anvil-datastorage/1000G-high-coverage-2019), which contains data from the [Human Pangenome Reference Consortium](https://humanpangenome.org/) and the [1000 Genomes Project](https://www.internationalgenome.org/), respectively.
 
-- `avworkspace( "anvil-outreach/1000G-AMR" )` tells the AnVIL package what Workspace to access
-- `df_sample_amr <- avtable( "sample" ) %>% top_n( -2 )` tells it to look at the table named "sample" and to grab the bottom two samples.
+- `avworkspace( "anvil-datastorage/AnVIL_HPRC" )` tells the AnVIL package what Workspace to access
+- `df_sample_HPRC <- avtable( "sample" ) %>%` tells it to look at the table named "sample".
+- The subsequent commands select which columns and rows to import into our Workspace.  These commands differ between the two code blocks because the Tables in the two source Workspaces have different structures.
+- `slice_head( n=2 )` gets only the first two samples.
 
 :::{.notice}
 It's often a good idea to start off a new analysis by working with just a few samples.  This can help you minimize wasted time and computing expenses while you figure out your pipeline, and can also help you estimate what your costs will be for processing larger dataset before committing to a large Workflow run.
@@ -288,15 +289,14 @@ It does not cost anything to add these samples to your Data Table, since you are
 You should see a table listing out the samples appear below each cell.  Confirm that there are 3 samples in each table.
 :::
 
-This step chose the samples we want from the original Workspace, but has not yet created links to them in your own Workspace.
+This step chose the samples we want from the original Workspace, but has not yet created a Data Table that links to them in your own Workspace.
 
 ### Exported combined Data Table
 
 The next code block accomplishes a few things:
 
-1. `bind_rows( "AMR"=df_sample_amr, "EAS"=df_sample_eas, .id="code" )` combines data from the two different 1000 Genomes Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows.  It also adds a column named "code" to keep track of which samples came from the AMR vs. EAS datasets.
-1. `select( sample_id, code, cram )` selects only the columns we care about for our analysis.  Here we are keeping the sample ID, the superpopulation code (AMR or EAS) and the cram file.
-1. `avtable_import( namespace="anvil-outreach", name="shorts-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
+1. The `bind_rows()` command combines data from the two different Workspaces into a single data table, so that you can conveniently work with all the data at once in your Workflows.  It also adds a column to keep track of which samples came from which original Workspace.
+1. `avtable_import( entity="sample_id", namespace="anvil-outreach", name="demos-combine-data-workspaces" )` creates a Data Table in your Workspace that links to the original data, so that you can easily use it in your analyses.  **This is the line that we need to modify** so that the Data Table is created in *your* Workspace.
 
 :::{.reflection}
 ### Exercise {- .unlisted}
@@ -315,16 +315,16 @@ anvil.terra.bio/#workspaces/namespace/name
 For example, for this Workspace:
 
 ```
-https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces_KCox_20230609
+https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces_KCox_20230616
 ```
 
 - The `namespace` is `anvil-outreach`
-- The `name` is `shorts-combine-data-workspaces_KCox_20230609`
+- The `name` is `demos-combine-data-workspaces_KCox_20230616`
 
 
 **3.** Modify the code in your Notebook so that it points to your Workspace, and run the cell.
 
-If this command is successful, you will not see much output in the Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.
+If this command is successful, you will not see your new table in your Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.
 
 :::
 
@@ -335,7 +335,7 @@ It's generally a good idea to document information about the packages (and their
 
 ### View your new Data Table
 
-As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with code "EAS" and 3 with code "AMR".
+As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with project "HPRC" and 3 with project "1000G".
 
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png" title="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." alt="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." width="100%" />
 
