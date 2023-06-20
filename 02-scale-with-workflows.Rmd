@@ -295,16 +295,16 @@ anvil.terra.bio/#workspaces/namespace/name
 For example, for this Workspace:
 
 ```
-https://anvil.terra.bio/#workspaces/anvil-outreach/shorts-combine-data-workspaces_KCox_20230609
+https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces_KCox_20230616
 ```
 
 - The `namespace` is `anvil-outreach`
-- The `name` is `shorts-combine-data-workspaces_KCox_20230609`
+- The `name` is `demos-combine-data-workspaces_KCox_20230616`
 
 
 **3.** Modify the code in your Notebook so that it points to your Workspace, and run the cell.
 
-If this command is successful, you will not see much output in the Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.
+If this command is successful, you will not see your new table in your Notebook, but if you look in the Data tab of your Workspace you should now see the `sample` Data Table has 6 rows in it.
 
 :::
 
@@ -315,7 +315,7 @@ It's generally a good idea to document information about the packages (and their
 
 ### View your new Data Table
 
-As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with code "EAS" and 3 with code "AMR".
+As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with project "HPRC" and 3 with project "1000G".
 
 ```{r, echo=FALSE, fig.alt='Screenshot of Terra Workspace with the "DATA" tab selected.  The "sample" Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit?pli=1#slide=id.g251288a74c6_0_19")
