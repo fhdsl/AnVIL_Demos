@@ -43,7 +43,7 @@ _Programming skills_
 
 # Preparation
 
-## Watch Video
+## Review Key Concepts
 
 Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is being used, and how to get started in this ~20 min video ([slides](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4))
 
@@ -51,23 +51,23 @@ Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is
 
 # Exercises
 
-## Exercise 1: Launch Terra
+## Launch Terra
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24303c0c340_0_0.png" width="100%" />
 
-## Exercise 2: Clone HPRC Workspace
+## Clone HPRC Workspace
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_1.png" width="100%" />
 
-## Exercise 3: Start a Cloud Environment
+## Start a Cloud Environment
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_26.png" width="100%" />
 
-## Exercise 4: Find Tidbits
+## Find Tidbits
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_53.png" width="100%" />
 
-## Exercise 5: Enter Terminal
+## Enter Terminal
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_109.png" width="100%" />
 
@@ -79,13 +79,23 @@ Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is
 
 ## Timeline
 
+Here is one possible way to budget time for a synchronous event:
+
 | Activity | Duration |
 | :-- | :-- |
-| [Introduction](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.p) | 3 minutes |
-| [Why AnVIL](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.g21756f91cc3_2_5) | 5 minutes |
-| [What is AnVIL](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.g21756f91cc3_2_26) | 7 minutes |
-| [Use Cases](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.g21756f91cc3_2_44) | 3 minutes |
-| [Getting Started](https://docs.google.com/presentation/d/1wTcGBM-ZOo7SmyR7x_BCvau2bBig01Er59s4lXb1Bg4/edit#slide=id.g21756f91cc3_2_15) | 2 minutes |
-| Q & A | 10 minutes |
-| **Total** | 30 minutes |
+| Review Key Concepts | 15 min |
+| Q & A | 5 min |
+| Exercises | 15 min |
+| Q & A | 5 min |
+
+Here is one way to balance exercises between hands-on (HO) and follow-along (FA):
+
+| Activity | Style |
+| :-- | :-- |
+| Launch Terra | HO |
+| Clone HPRC Workspace | HO |
+| Start a Cloud Environment | FA |
+| Find Tidbits | HO |
+| Enter Terminal | FA |
+| Shut Down | FA |
 
