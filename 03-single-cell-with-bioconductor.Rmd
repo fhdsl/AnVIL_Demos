@@ -67,6 +67,35 @@ Now your Workspace should be ready for you by the time you need it below.  You a
 
 ## Start Cloud Environment
 
+You will need to launch the interactive RStudio environment to proceed.
+
+### Video Overview
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_video.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Launching RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Touring RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_tour.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
 # Exercises {#single-cell-with-bioconductor-exercises}
 
 The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SummarizedExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
