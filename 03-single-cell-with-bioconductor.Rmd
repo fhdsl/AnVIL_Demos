@@ -130,9 +130,43 @@ library(iSEE)
 
 First we will take a look at the interactive plots that iSEE can display.
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_53")
+```
+
 ## Visualize Cell Type Assignment
 
 Next, let's focus specifically on visualizing cell type assignment by cluster membership. The goal is to identify the predominant cell type in each cluster. We can do this by plotting the column data in a `ColumnDataPlot`.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_12")
+```
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_114")
+```
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_100")
+```
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_124")
+```
+
+We can also save the R code used to create our iSEE plots.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_25")
+```
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_134")
+```
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_139")
+```
 
 ## Visualize Expression of a Single Gene
 
