@@ -85,7 +85,7 @@ To follow along with these exercises, you will need to complete the steps descri
 
 ## Explore Dataset Catalog
 
-First we will take a look at the [AnVIL Dataset Catalog]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
+First we will take a look at the [AnVIL Dataset Catalog](https://anvilproject.org/data/).  Here you can browse the datasets available on AnVIL.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of AnVIL Dataset Catalog'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc/edit#slide=id.g24306c8bf8a_0_0")
@@ -96,7 +96,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 ### Exercise {- .unlisted}
 
-Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data) and answer the following questions.
+Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data/) and answer the following questions.
 
 **Q1.**  Which Consortium has the most participants?
     
