@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Demos"
-date: "June 24, 2023"
+date: "June 26, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -32,11 +32,6 @@ We'd love to see you at an upcoming event! Here are a few upcoming events that m
   </tr>
  </thead>
 <tbody>
-  <tr>
-   <td style="text-align:left;"> Jun 2023 </td>
-   <td style="text-align:left;"> AnVIL Demos: How to use data across multiple AnVIL workspaces </td>
-   <td style="text-align:left;"> Virtual </td>
-  </tr>
   <tr>
    <td style="text-align:left;"> Jul 2023 </td>
    <td style="text-align:left;"> Galaxy Community Conference 2023 </td>
