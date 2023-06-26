@@ -1,0 +1,155 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
+# (PART\*) Orchestrate Single Cell with Bioconductor {-}   
+
+# Overview {#single-cell-with-bioconductor-overview}
+
+The `iSEE` Bioconductor package is a powerful tool for visualizing and exploring single-cell RNA-seq data. The iSEE viewer provides an interactive interface for exploring gene expression patterns, performing dimensionality reduction, clustering cells, visualizing metadata, and conducting differential expression analysis. 
+
+In this demo, we'll learn how to launch the iSEE viewer in AnVIL's RStudio environment.
+
+## Skills Level
+
+::: {.notice}
+_Genetics_
+
+**Novice**: no genetics knowledge needed
+
+_Programming skills_
+
+**Novice**: no programming experience needed
+:::
+
+## Learning Objectives
+
+1. LEARNING OBJECTIVES GO HERE
+
+
+# Preparation {#single-cell-with-bioconductor-preparation}
+
+If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
+
+## Review Background
+
+If you aren't already familiar with RStudio, Bioconductor, and single cell RNA sequencing data analysis, we encourage you to check out our background slides [here](https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit?usp=sharing).
+
+## Create AnVIL account
+
+You will need an AnVIL account in order to view Workspaces and run analyses.
+
+- If you do not already have an account, follow [these instructions](https://jhudatascience.org/AnVIL_Book_Getting_Started/overview-analysts.html) to set one up.  (You do not need to link any external accounts for these exercises.)
+- Make sure that your Instructor (if participating in a workshop) or PI / Lab Manager has your username, so that they can add you to an appropriate *Billing Project*.  You can't clone or create Workspaces on AnVIL without a Billing Project.
+
+## Clone Workspace
+
+When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propagate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
+
+Follow the instructions below to clone your own copy of the Workspace for this Demo.
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+# Specify variables
+AnVIL_module_settings <- list(
+  workspace_name = "demos-combine-data-workspaces",
+  workspace_link = "https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces"
+)
+
+cow::borrow_chapter(
+  doc_path = "child/_child_student_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+Now your Workspace should be ready for you by the time you need it below.  You are ready to begin!
+
+## Start Cloud Environment
+
+You will need to launch the interactive RStudio environment to proceed.
+
+### Video Overview
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_video.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Launching RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_launch.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+### Touring RStudio
+
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_tour.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+# Exercises {#single-cell-with-bioconductor-exercises}
+
+The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SummarizedExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
+
+These exercises were adapted from [iSEEWorkshopEuroBioc2020/](https://isee.github.io/iSEEWorkshopEuroBioc2020/).
+
+:::{.notice}
+To follow along with these exercises, you will need to complete the steps described in the [Preparation](#scale-with-workflows-preparation) guide for this demo.
+:::
+
+## Loading the Data
+
+First, we'll want to load the data that we'll be using. To do that, we'll need to load the `AnVIL` package created by the Bioconductor team for interfacing with files on AnVIL. Luckily, it's already installed.
+
+```{r, eval=F}
+library(AnVIL)
+```
+
+Next, we'll use the `avfiles_restore()` function from the `AnVIL` package to actually bring the data into our environment's persistent disk. 
+
+```{r, eval=F}
+avfiles_restore( 
+  source = "sc_bioconductor_data.RData",
+  namespace = "anvil-outreach",
+  name = "demos-single-cell-bioconductor"
+)
+```
+
+In the code above, we are copying the file `sc_bioconductor_data.RData` from the Workspace `demos-single-cell-bioconductor`. It was created under the `anvil-outreach` Billing Project.
+
+## Installing `iSEE`
+
+Once you've loaded the data, you'll want to install and load the `iSEE` library. You can easily install it into your own personal RStudio environment using the pre-installed `BiocManager` commands.
+
+```{r, eval=F}
+BiocManager::install('iSEE')
+library(iSEE)
+```
+
+## Panel Display
+
+First we will take a look at the interactive plots that iSEE can display.
+
+## Visualize Cell Type Assignment
+
+Next, let's focus specifically on visualizing cell type assignment by cluster membership. The goal is to identify the predominant cell type in each cluster. We can do this by plotting the column data in a `ColumnDataPlot`.
+
+## Visualize Expression of a Single Gene
+
+Now let's take a look at the expression data of a single gene across all the clusters. We can use the `FeatureAssayPlot` panel to plot the distribution of the logcount values for a particular gene. In this case, let's start by looking at the gene ??? 
+
+### Session Info
+
+It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that.
+
+# Shutting Down
+

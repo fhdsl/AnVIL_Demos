@@ -25,11 +25,14 @@ GTEx
 HPRC
 impactful
 Inclusivity
+iSEE
+iSEEWorkshopEuroBioc
 Jupyter
 limma
 MDS
 MEM
 mentorship
+mononuclear
 NCI
 NHGRI
 NRES
@@ -43,6 +46,7 @@ precompiled
 preconfigured
 preloaded
 preprint
+preprocessed
 programmatically
 px
 qc
@@ -52,6 +56,7 @@ REStrictions
 Rmd
 RStudio
 scalable
+SummarizedExperiment
 timeframe
 underserved
 wdl
