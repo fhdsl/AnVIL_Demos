@@ -138,23 +138,37 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EO
 
 Next, let's focus specifically on visualizing cell type assignment by cluster membership. The goal is to identify the predominant cell type in each cluster. We can do this by plotting the column data in a `ColumnDataPlot`.
 
+First, select the panel organization button and select "Organize panels".
+
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_12")
 ```
+
+Remove all plots except for the column data plot. This will make things easier to view. Change the width to `12`.
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_114")
 ```
 
+You should now see a large scatter plot. Select "Data parameters" underneath the plot.
+
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_100")
 ```
+
+First, select "labels_fine" under "Column of interest (Y-axis)". Directly below, select the "Column data" button for "X-axis". Once the dropdown menu appears for "Column of interest (X-axis)", select "Cluster". 
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_124")
 ```
 
-We can also save the R code used to create our iSEE plots.
+Since both cell annotations and the cluster are categorical, `iSEE` will generate a visual representation of a matrix called a "Hinton plot".
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_129")
+```
+
+We can also save the R code used to create our iSEE plots. This helps make our work reproducible!
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_25")
