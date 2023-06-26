@@ -1,0 +1,81 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
+# (PART\*) Create Workflows With Galaxy {-}   
+
+# Overview {#create-workflows-with-galaxy-overview}
+
+## Learning Objectives
+
+1. Learn how to launch Galaxy in AnVIL and import data
+1. Understand how to find, import, and run workflows
+1. Visualize a sample variant using JBrowse
+1. Learn how to save your history back to AnVIL
+1. Show how to shut down Galaxy in AnVIL
+
+# Preparation {#create-workflows-with-galaxy-preparation}
+
+## Review Key Concepts
+
+This 5-min video provides a high level summary of the exercises to follow.  Several important concepts are introduced to provide context for the exercises ([slides](https://docs.google.com/presentation/d/1nZIlyA-YIxRDYUiozl1UTXIhJJeBb7VbqlXWig7jXAk)).
+
+## Clone Workspace
+
+:::{.notice}
+For this demo, you will need your own copy of the [`SARS-CoV-2-Genome`](https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome) Workspace.  These instructions will walk you through cloning a copy of the Workspace.
+:::
+
+## Start Cloud Environment
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_start.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+# Exercises {#create-workflows-with-galaxy-exercises}
+
+## Import Data
+
+```{r, echo=FALSE}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1KnuhIqChw7dD6IuG8T35bfqMRpvkraQGkkc7mDhHbpk/edit#slide=id.g25530dc4fb7_0_0" )
+```
+
+## Find Workflow
+
+```{r, echo=FALSE}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1KnuhIqChw7dD6IuG8T35bfqMRpvkraQGkkc7mDhHbpk/edit#slide=id.g25530dc4fb7_0_149" )
+```
+
+## Run Workflow
+
+```{r, echo=FALSE}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1KnuhIqChw7dD6IuG8T35bfqMRpvkraQGkkc7mDhHbpk/edit#slide=id.g25530dc4fb7_0_298" )
+```
+
+## Explore Results
+
+```{r, echo=FALSE}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1KnuhIqChw7dD6IuG8T35bfqMRpvkraQGkkc7mDhHbpk/edit#slide=id.g25530dc4fb7_0_447" )
+```
+
+## Export History
+
+```{r, echo=FALSE}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1KnuhIqChw7dD6IuG8T35bfqMRpvkraQGkkc7mDhHbpk/edit#slide=id.g25530dc4fb7_0_599" )
+```
+
+## Shut Down
+
+```{r, echo=FALSE}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1KnuhIqChw7dD6IuG8T35bfqMRpvkraQGkkc7mDhHbpk/edit#slide=id.g25530dc4fb7_0_748" )
+```
+
+# Instructor Guide {#create-workflows-with-galaxy-instructor-guide}
+
+## Timeline
+

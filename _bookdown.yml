@@ -2,7 +2,8 @@ book_filename: "AnVIL Demos"
 repo: https://github.com/jhudsl/AnVIL_Demos/
 rmd_files: ["index.Rmd",
             "01-what-is-anvil.Rmd",
-            "02-scale-with-workflows.Rmd"]
+            "02-scale-with-workflows.Rmd",
+            "04-create-workflows-with-galaxy.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
