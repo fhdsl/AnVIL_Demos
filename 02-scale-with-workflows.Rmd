@@ -39,14 +39,16 @@ _Programming skills_
 
 If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
 
+<br>
+
 :::{.notice}
 ### Quickstart {-}
 
 For this Demo, you will need to:
 
-- Clone your own copy of the [`demos-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces) Workspace.
-- Launch a Jupyter Cloud Environment with the default settings (in your cloned Workspace).
-- Review a few key AnVIL concepts to set context for the Demo.  (If you are participating in a live workshop, these will be covered by the instructor.  Otherwise, watch the video below.)
+1. Clone your own copy of the [`demos-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces) Workspace.
+1. Launch a Jupyter Cloud Environment with the default settings (in your cloned Workspace).
+1. Review a few key AnVIL concepts to set context for the Demo.  (If you are participating in a live workshop, these will be covered by the instructor.  Otherwise, watch the video below.)
 
 If you feel comfortable, you can take care of these things yourself and then proceed to the Exercises.  Otherwise, the instructions below will walk you through the process.
 :::
