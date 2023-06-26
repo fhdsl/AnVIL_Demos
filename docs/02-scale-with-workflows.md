@@ -125,7 +125,7 @@ To follow along with these exercises, you will need to complete the steps descri
 
 ## Explore Dataset Catalog
 
-First we will take a look at the [AnVIL Dataset Catalog]((https://anvilproject.org/data/)).  Here you can browse the datasets available on AnVIL.
+First we will take a look at the [AnVIL Dataset Catalog](https://anvilproject.org/data/).  Here you can browse the datasets available on AnVIL.
 
 <img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_0.png" title="Screenshot of AnVIL Dataset Catalog" alt="Screenshot of AnVIL Dataset Catalog" width="100%" />
 
