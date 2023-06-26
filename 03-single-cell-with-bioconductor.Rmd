@@ -2,7 +2,7 @@
 knitr::opts_chunk$set(out.width = "100%")
 ```
 
-# (PART\*) Orchestrate Single Cell with Bioconductor {-}   
+# (PART\*) Single Cell with Bioconductor {-}   
 
 # Overview {#single-cell-with-bioconductor-overview}
 
@@ -87,15 +87,6 @@ cow::borrow_chapter(
 )
 ```
 
-### Touring RStudio
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_rstudio_tour.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
-```
-
 # Exercises {#single-cell-with-bioconductor-exercises}
 
 The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SummarizedExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
@@ -149,7 +140,11 @@ Now let's take a look at the expression data of a single gene across all the clu
 
 ### Session Info
 
-It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that.
+It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that. Here's an example of what that might look like:
+
+```{r}
+sessionInfo()
+```
 
 # Shutting Down
 
