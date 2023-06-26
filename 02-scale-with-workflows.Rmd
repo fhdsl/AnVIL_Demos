@@ -96,7 +96,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1K2qqm02W_zPhrOZs
 
 ### Exercise {- .unlisted}
 
-Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data/) and answer the following questions.
+Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject.org/data) and answer the following questions.
 
 **Q1.**  Which Consortium has the most participants?
     
