@@ -171,10 +171,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EO
 We can also save the R code used to create our iSEE plots. This helps make our work reproducible!
 
 ```{r, echo=FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_25")
-```
-
-```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_134")
 ```
 
