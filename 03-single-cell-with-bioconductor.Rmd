@@ -6,10 +6,9 @@ knitr::opts_chunk$set(out.width = "100%")
 
 # Overview {#single-cell-with-bioconductor-overview}
 
-BRIEF OVERVIEW
+The `iSEE` Bioconductor package is a powerful tool for visualizing and exploring single-cell RNA-seq data. The iSEE viewer provides an interactive interface for exploring gene expression patterns, performing dimensionality reduction, clustering cells, visualizing metadata, and conducting differential expression analysis. 
 
-AnVIL gives you access to Shiny apps! BRIEF OVERVIEW
-
+In this demo, we'll learn how to launch the iSEE viewer in AnVIL's RStudio environment.
 
 ## Skills Level
 
@@ -32,9 +31,9 @@ _Programming skills_
 
 If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
 
-## Watch Video
+## Review Background
 
-VIDEO OVERVIEW?
+If you aren't already familiar with RStudio, Bioconductor, and single cell RNA sequencing data analysis, we encourage you to check out our background slides [here](https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit?usp=sharing).
 
 ## Create AnVIL account
 
@@ -78,18 +77,38 @@ These exercises were adapted from [iSEEWorkshopEuroBioc2020/](https://isee.githu
 To follow along with these exercises, you will need to complete the steps described in the [Preparation](#scale-with-workflows-preparation) guide for this demo.
 :::
 
-## Panel Display
+## Loading the Data
 
-First we will take a look at the interactive plots that iSEE can display.
+First, we'll want to load the data that we'll be using. To do that, we'll need to load the `AnVIL` package created by the Bioconductor team for interfacing with files on AnVIL. Luckily, it's already installed.
 
-Once you've cloned the workspace, you'll want to load the `iSEE` library. This has already been installed in the Docker image, but you can easily install it into your own personal workspace using `BiocManager` commands.
+```{r, eval=F}
+library(AnVIL)
+```
 
-```{r, warning=F}
-#BiocManager::install('iSEE')
+Next, we'll use the `avfiles_restore()` function from the `AnVIL` package to actually bring the data into our environment's persistent disk. 
 
+```{r, eval=F}
+avfiles_restore( 
+  source = "sc_bioconductor_data.RData",
+  namespace = "anvil-outreach",
+  name = "demos-single-cell-bioconductor"
+)
+```
+
+In the code above, we are copying the file `sc_bioconductor_data.RData` from the Workspace `demos-single-cell-bioconductor`. It was created under the `anvil-outreach` Billing Project.
+
+## Installing `iSEE`
+
+Once you've loaded the data, you'll want to install and load the `iSEE` library. You can easily install it into your own personal RStudio environment using the pre-installed `BiocManager` commands.
+
+```{r, eval=F}
+BiocManager::install('iSEE')
 library(iSEE)
 ```
 
+## Panel Display
+
+First we will take a look at the interactive plots that iSEE can display.
 
 ## Visualize Cell Type Assignment
 
