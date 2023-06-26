@@ -24,8 +24,15 @@ _Programming skills_
 
 ## Learning Objectives
 
-1. LEARNING OBJECTIVES GO HERE
+1. Launch Terra
 
+1. Clone Workspace
+
+1. Launch RStudio-Bioconductor maintained cloud environment
+
+1. Launch iSEE viewer
+
+1. Shut down RStudio
 
 # Preparation {#single-cell-with-bioconductor-preparation}
 
@@ -178,17 +185,29 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EO
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_139")
 ```
 
-## Visualize Expression of a Single Gene
+<!-- ## Visualize Expression of a Single Gene -->
 
-Now let's take a look at the expression data of a single gene across all the clusters. We can use the `FeatureAssayPlot` panel to plot the distribution of the logcount values for a particular gene. In this case, let's start by looking at the gene ??? 
+<!-- Now let's take a look at the expression data of a single gene across all the clusters. We can use the `FeatureAssayPlot` panel to plot the distribution of the logcount values for a particular gene. In this case, let's start by looking at the gene ???  -->
 
-### Session Info
+<!-- Commenting out for now, will add in a separate PR -->
 
-It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that. Here's an example of what that might look like:
+##  Get Session Info
+
+It's a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that. Here's an example of what that might look like:
 
 ```{r}
 sessionInfo()
 ```
 
-# Shutting Down
+## Shutting Down
 
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+
+# Instructor Guide
+
+Coming soon!
