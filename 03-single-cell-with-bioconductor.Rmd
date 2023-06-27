@@ -15,23 +15,20 @@ In this demo, we'll learn how to launch the iSEE viewer in AnVIL's RStudio envir
 ::: {.notice}
 _Genetics_
 
-**Novice**: no genetics knowledge needed
+**Beginner**: some genetics knowledge helpful
 
 _Programming skills_
 
-**Novice**: no programming experience needed
+**Beginner**: some programming experience helpful
 :::
 
 ## Learning Objectives
 
 1. Launch Terra
-
 1. Clone Workspace
-
 1. Launch RStudio-Bioconductor maintained cloud environment
-
 1. Launch iSEE viewer
-
+1. Create plots for investigating expression of different cell types
 1. Shut down RStudio
 
 # Preparation {#single-cell-with-bioconductor-preparation}
