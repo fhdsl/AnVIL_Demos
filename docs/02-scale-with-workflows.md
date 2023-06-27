@@ -37,6 +37,20 @@ _Programming skills_
 
 If you plan to follow along with these exercises, there are a couple of things you will need to take care of first:
 
+<br>
+
+:::{.notice}
+### Quickstart {-}
+
+For this Demo, you will need to:
+
+1. Clone your own copy of the [`demos-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces) Workspace.
+1. Launch a Jupyter Cloud Environment with the default settings (in your cloned Workspace).
+1. Review a few key AnVIL concepts to set context for the Demo.  (If you are participating in a live workshop, these will be covered by the instructor.  Otherwise, watch the video below.)
+
+If you feel comfortable, you can take care of these things yourself and then proceed to the Exercises.  Otherwise, the instructions below will walk you through the process.
+:::
+
 ## Review Key Concepts
 
 This 5-min video provides a high level summary of the exercises to follow.  Several important concepts are introduced to provide context for the exercises including 1) the AnVIL data flow that minimizes costs and redundancy and 2) increasing number of production quality workflows in Dockstore ([slides](https://docs.google.com/presentation/d/1szpGrvCQodF1R2AaeqsvmNlJWTgzAsO8QurYfQagCf0)).
@@ -49,10 +63,6 @@ You will need an AnVIL account in order to view Workspaces and run analyses.
 - Make sure that your Instructor (if participating in a workshop) or PI / Lab Manager has your username, so that they can add you to an appropriate *Billing Project*.  You can't clone or create Workspaces on AnVIL without a Billing Project.
 
 ## Clone Workspace
-
-:::{.notice}
-For this demo, you will need your own copy of the [`demos-combine-data-workspaces`](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces) Workspace.  These instructions will walk you through cloning a copy of the Workspace.
-:::
 
 When you "clone" a copy of an AnVIL Workspace, it can take a few minutes for everything to propagate to your new Workspace. If you are participating in a course or workshop, your instructor may have you start by cloning the Workspace, so that it is ready by the time you need it. (If you are working at your own pace, feel free to come back to this step later, when you're ready to start using the Workspace.)
 
@@ -111,7 +121,7 @@ To clone an AnVIL Workspace:
 1. The new Workspace should now show up under "MY WORKSPACES".  You now have your own copy of the Workspace to work in.
 ::::
 
-Now your Workspace should be ready for you by the time you need it below.  You are ready to begin!
+Now your Workspace should be ready for you by the time you need it.  You are ready to begin!
 
 ## Start Cloud Environment
 
