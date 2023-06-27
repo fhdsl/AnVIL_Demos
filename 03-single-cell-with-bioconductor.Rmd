@@ -93,7 +93,7 @@ cow::borrow_chapter(
 
 # Exercises {#single-cell-with-bioconductor-exercises}
 
-The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SummarizedExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
+The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SingleCellExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
 
 These exercises were adapted from [iSEEWorkshopEuroBioc2020/](https://isee.github.io/iSEEWorkshopEuroBioc2020/).
 
