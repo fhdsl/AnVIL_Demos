@@ -185,11 +185,68 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EO
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_139")
 ```
 
-<!-- ## Visualize Expression of a Single Gene -->
+## Visualize Expression of a Single Gene
 
-<!-- Now let's take a look at the expression data of a single gene across all the clusters. We can use the `FeatureAssayPlot` panel to plot the distribution of the logcount values for a particular gene. In this case, let's start by looking at the gene ???  -->
+Now let's take a look at the expression data of a single gene across all the clusters. We can use the "Feature assay plot" panel to plot the distribution of the logcount values for a particular gene.
 
-<!-- Commenting out for now, will add in a separate PR -->
+Click on the “Organize Panels” icon in the top right corner. Remove the “column plot” and choose “feature assay plot”. Change the width of the plot to 12.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_33")
+```
+
+You should now see a rather underwhelming bar plot. We still need to change the data parameters, so click on the “Data parameters” box.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_130")
+```
+
+Next, change the “Y-axis feature” to “LYZ”. This is the gene whose expression we’ll be examining. Change the feature selection box to “logcounts.” 
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_60")
+```
+
+:::{.notice}
+**LYZ**
+The LYZ gene encodes an enzyme called lysozyme, which plays a crucial role in the immune system's defense against bacterial infections. The primary function of lysozyme is to break down bacterial cell walls. The highest levels of LYZ gene expression are typically observed in tissues with direct contact with the external environment, such as the epithelial cells of the respiratory tract, gastrointestinal tract, and genitourinary system. These tissues are often exposed to potential pathogens, and the expression of lysozyme helps provide an additional line of defense against bacterial invasion.
+:::
+
+Next, click the “column data” button under the “X-axis” header. Finally, choose “Cluster” from the drop down menu of “X-axis column data.”
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_66")
+```
+
+Now we have a much more exciting violin plot of LYZ gene expression levels across the 14 clusters in our dataset. LYZ is expressed more in clusters 4, 8, 9, and 13. We might be interested in also displaying cell type information in this plot, which we can do using the Visual Parameters options. Click the “Visual parameters” box.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_77")
+```
+
+Make sure “Color” is checked in the first row. Choose “Column Data” under the “Color by” options and change the drop down menu to “labels_main”. We could also choose to color the data by “labels_fine”.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_46")
+```
+
+We should see the dots in our violin plot colored by cell type annotation. Three of the clusters which have higher LYZ expression contain large numbers of cells identified as monocytes. Since LYZ codes for a human lyzosome protein and is often used as a marker gene for monocytes, this makes a lot of sense. 
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_50")
+```
+
+Let’s download this plot. Click on the “download” button in the top right corner like we did before, but this time choose “Download panel output”. A box will pop up asking you to choose which plots to download. This means you could have multiple plots being displayed in your panel but only choose to download a subset of them. Make sure “Feature assay plot” is checked and click “Download”. Your figure will be saved in a zip file in your Downloads folder.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_54")
+```
+
+::: {.reflection}
+**Your turn!**
+
+CD14 is a marker gene for the same type of cells as LYZ. Does it have the same cluster expression pattern as what we saw for LYZ?
+:::
 
 ##  Get Session Info
 
@@ -201,12 +258,14 @@ sessionInfo()
 
 ## Shutting Down
 
+:::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_rstudio_delete.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
 )
 ```
+::::
 
 # Instructor Guide
 
