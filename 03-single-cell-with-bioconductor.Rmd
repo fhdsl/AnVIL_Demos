@@ -175,6 +175,10 @@ Since both cell annotations and the cluster are categorical, `iSEE` will generat
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_129")
 ```
 
+:::{.notice}
+Now we know that cluster 4 contains almost all the cells that were annotated as classical monocytes. On the other hand, T cells can be found in multiple clusters.
+:::
+
 We can also save the R code used to create our iSEE plots. This helps make our work reproducible!
 
 ```{r, echo=FALSE}
@@ -208,8 +212,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EO
 ```
 
 :::{.notice}
-**LYZ**
-The LYZ gene encodes an enzyme called lysozyme, which plays a crucial role in the immune system's defense against bacterial infections. The primary function of lysozyme is to break down bacterial cell walls. The highest levels of LYZ gene expression are typically observed in tissues with direct contact with the external environment, such as the epithelial cells of the respiratory tract, gastrointestinal tract, and genitourinary system. These tissues are often exposed to potential pathogens, and the expression of lysozyme helps provide an additional line of defense against bacterial invasion.
+The **LYZ** gene encodes an enzyme called **lysozyme**, which plays a crucial role in the immune system's defense against bacterial infections. The primary function of lysozyme is to break down bacterial cell walls. 
+
+The highest levels of LYZ gene expression are typically observed in tissues with direct contact with the external environment, such as the epithelial cells of the respiratory tract, gastrointestinal tract, and genitourinary system. These tissues are often exposed to potential pathogens, and the expression of lysozyme helps provide an additional line of defense against bacterial invasion.
 :::
 
 Next, click the “column data” button under the “X-axis” header. Finally, choose “Cluster” from the drop down menu of “X-axis column data.”
@@ -237,8 +242,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EO
 ```
 
 :::{.notice}
-**Monocytes**
-Monocytes are a subset of white blood cells that play a pivotal role in our immune defense against infections. Upon encountering an infection or inflammation, they migrate from the bloodstream to the affected tissues, where they differentiate into specialized cells that engulf and eliminate pathogens.
+**Monocytes** are a subset of white blood cells that play a pivotal role in our immune defense against infections. Upon encountering an infection or inflammation, they migrate from the bloodstream to the affected tissues, where they differentiate into specialized cells that engulf and eliminate pathogens.
 :::
 
 Let’s download this plot. Click on the “download” button in the top right corner like we did before, but this time choose “Download panel output”. A box will pop up asking you to choose which plots to download. This means you could have multiple plots being displayed in your panel but only choose to download a subset of them. Make sure “Feature assay plot” is checked and click “Download”. Your figure will be saved in a zip file in your Downloads folder.
