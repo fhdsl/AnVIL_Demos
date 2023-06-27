@@ -230,7 +230,7 @@ Make sure “Color” is checked in the first row. Choose “Column Data” unde
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_46")
 ```
 
-We should see the dots in our violin plot colored by cell type annotation. Three of the clusters which have higher LYZ expression contain large numbers of cells identified as monocytes. Since LYZ codes for a human lyzosome protein and is often used as a marker gene for monocytes, this makes a lot of sense. 
+We should see the dots in our violin plot colored by cell type annotation. Three of the clusters which have higher LYZ expression contain large numbers of cells identified as monocytes. Since LYZ codes for a human lysosome protein and is often used as a marker gene for monocytes, this makes a lot of sense. 
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_50")
