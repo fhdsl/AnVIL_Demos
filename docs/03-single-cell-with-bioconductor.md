@@ -147,7 +147,7 @@ Note that, in order to use RStudio, you must have access to a Terra Workspace wi
 
     <img src="03-single-cell-with-bioconductor_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_22.png" title="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
 
-1. In the dialogue box, click the "Settings" button under RStudio
+1. In the dialogue box, click the "Settings" button under RStudio.
 
     <img src="03-single-cell-with-bioconductor_files/figure-html//1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" title="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under RStudio is highlighted." width="100%" />
 

@@ -121,9 +121,78 @@ To clone an AnVIL Workspace:
 1. The new Workspace should now show up under "MY WORKSPACES".  You now have your own copy of the Workspace to work in.
 ::::
 
-Now your Workspace should be ready for you by the time you need it.  You are ready to begin!
+Now your Workspace should be ready for you by the time you need it.
 
 ## Start Cloud Environment
+
+:::{.warning}
+**Pause here** if you are not going to be doing the Exercises right away.  Once you start up Jupyter, it will cost money to keep it running.  It costs a few cents an hour, so it's quite cheap as long as you use it responsibly.  But it can add up if you leave it running for days or weeks when you don't need it.
+:::
+
+If you are ready to proceed through the Exercises, go ahead and follow the instructions below to start Jupyter.  It will take a few minutes to start up.  You can work through the first couple of Exercises while you wait.
+
+:::: {.borrowed_chunk}
+
+:::{.warning}
+AnVIL is very versatile and can scale up to use very powerful cloud computers. It's very important that you select the cloud computing environment described here to avoid runaway costs.
+:::
+
+
+
+1. Open Terra - use a web browser to go to [`anvil.terra.bio`](https://anvil.terra.bio/)
+
+1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g117989bd49c_0_150.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
+
+1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
+
+1. Click on the cloud icon on the far right to access your Cloud Environment options.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_22.png" title="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
+
+1. In the dialogue box, click the "Settings" button under Jupyter.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_18.png" title="Screenshot of the Cloud Environment Details dialogue box. The Settings button under Jupyter is highlighted." alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under Jupyter is highlighted." width="100%" />
+
+1. You will see some configuration options for the Jupyter cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_0.png" title="Screenshot of the Jupyter Cloud Environment dialogue box. The cost to run the environment is highlighted." alt="Screenshot of the Jupyter Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+1. Leave everything else as-is. To create your Jupyter Cloud Environment, scroll down and click the "CREATE" button.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_41.png" title="Screenshot of the Jupyter Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." alt="Screenshot of the Jupyter Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
+
+1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the Jupyter icon.  It will take a few minutes for Terra to request computers and install software.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_60.png" title="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." alt="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" />
+
+1. When your environment is ready, its status will change to "Running".  Click on the "ANALYSES" tab to create or open a Jupyter Notebook.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_66.png" title="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;.  The ANALYSES tab is also highlighted" alt="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;.  The ANALYSES tab is also highlighted" width="100%" />
+
+1. From the ANALYSES tab, you can click on the name of an existing Jupyter Notebook to view and launch it, or click the "START" button to create a new Notebook.
+
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_73.png" title="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter Notebooks.  The Notebook names and the START button are highlighted." alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter Notebooks.  The Notebook names and the START button are highlighted." width="100%" />
+
+    
+::::
+
+Once you have clicked "CREATE" and your cloud environment status is "Creating", you can go ahead and start the Exercises.  Your cloud environment should be ready by the time you need it.
 
 # Exercises {#scale-with-workflows-exercises}
 
