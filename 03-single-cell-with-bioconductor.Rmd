@@ -2,7 +2,7 @@
 knitr::opts_chunk$set(out.width = "100%")
 ```
 
-# (PART\*) Orchestrate Single Cell with Bioconductor {-}   
+# (PART\*) Single Cell with Bioconductor {-}   
 
 # Overview {#single-cell-with-bioconductor-overview}
 
@@ -15,17 +15,21 @@ In this demo, we'll learn how to launch the iSEE viewer in AnVIL's RStudio envir
 ::: {.notice}
 _Genetics_
 
-**Novice**: no genetics knowledge needed
+**Beginner**: some genetics knowledge helpful
 
 _Programming skills_
 
-**Novice**: no programming experience needed
+**Beginner**: some programming experience helpful
 :::
 
 ## Learning Objectives
 
-1. LEARNING OBJECTIVES GO HERE
-
+1. Launch Terra
+1. Clone Workspace
+1. Launch RStudio-Bioconductor maintained cloud environment
+1. Launch iSEE viewer
+1. Create plots for investigating expression of different cell types
+1. Shut down RStudio
 
 # Preparation {#single-cell-with-bioconductor-preparation}
 
@@ -87,18 +91,9 @@ cow::borrow_chapter(
 )
 ```
 
-### Touring RStudio
-
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_rstudio_tour.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
-```
-
 # Exercises {#single-cell-with-bioconductor-exercises}
 
-The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SummarizedExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
+The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SingleCellExperiment object. You will use the `pbmc3k` dataset from the `TENxPBMCData` package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found [here](https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html).
 
 These exercises were adapted from [iSEEWorkshopEuroBioc2020/](https://isee.github.io/iSEEWorkshopEuroBioc2020/).
 
@@ -139,17 +134,145 @@ library(iSEE)
 
 First we will take a look at the interactive plots that iSEE can display.
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_53")
+```
+
 ## Visualize Cell Type Assignment
 
 Next, let's focus specifically on visualizing cell type assignment by cluster membership. The goal is to identify the predominant cell type in each cluster. We can do this by plotting the column data in a `ColumnDataPlot`.
 
+First, select the panel organization button and select "Organize panels".
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_12")
+```
+
+Remove all plots except for the column data plot. This will make things easier to view. Change the width to `12`.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_114")
+```
+
+You should now see a large scatter plot. Select "Data parameters" underneath the plot.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_100")
+```
+
+First, select "labels_fine" under "Column of interest (Y-axis)". Directly below, select the "Column data" button for "X-axis". Once the dropdown menu appears for "Column of interest (X-axis)", select "Cluster". 
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_124")
+```
+
+Since both cell annotations and the cluster are categorical, `iSEE` will generate a visual representation of a matrix called a "Hinton plot".
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_129")
+```
+
+:::{.notice}
+Now we know that cluster 4 contains almost all the cells that were annotated as classical monocytes. On the other hand, T cells can be found in multiple clusters.
+:::
+
+We can also save the R code used to create our iSEE plots. This helps make our work reproducible!
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_134")
+```
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g24f58a64a6b_0_139")
+```
+
 ## Visualize Expression of a Single Gene
 
-Now let's take a look at the expression data of a single gene across all the clusters. We can use the `FeatureAssayPlot` panel to plot the distribution of the logcount values for a particular gene. In this case, let's start by looking at the gene ??? 
+Now let's take a look at the expression data of a single gene across all the clusters. We can use the "Feature assay plot" panel to plot the distribution of the logcount values for a particular gene.
 
-### Session Info
+Click on the “Organize Panels” icon in the top right corner. Remove the “column plot” and choose “feature assay plot”. Change the width of the plot to 12.
 
-It's generally a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that.
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_33")
+```
 
-# Shutting Down
+You should now see a rather underwhelming bar plot. We still need to change the data parameters, so click on the “Data parameters” box.
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_130")
+```
+
+Next, change the “Y-axis feature” to “LYZ”. This is the gene whose expression we’ll be examining. Change the feature selection box to “logcounts.” 
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_60")
+```
+
+:::{.notice}
+The **LYZ** gene encodes an enzyme called **lysozyme**, which plays a crucial role in the immune system's defense against bacterial infections. The primary function of lysozyme is to break down bacterial cell walls. 
+
+The highest levels of LYZ gene expression are typically observed in tissues with direct contact with the external environment, such as the epithelial cells of the respiratory tract, gastrointestinal tract, and genitourinary system. These tissues are often exposed to potential pathogens, and the expression of lysozyme helps provide an additional line of defense against bacterial invasion.
+:::
+
+Next, click the “column data” button under the “X-axis” header. Finally, choose “Cluster” from the drop down menu of “X-axis column data.”
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_66")
+```
+
+Now we have a much more exciting violin plot of LYZ gene expression levels across the 14 clusters in our dataset. LYZ is expressed more in clusters 4, 8, 9, and 13. We might be interested in also displaying cell type information in this plot, which we can do using the Visual Parameters options. Click the “Visual parameters” box.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_77")
+```
+
+Make sure “Color” is checked in the first row. Choose “Column Data” under the “Color by” options and change the drop down menu to “labels_main”. We could also choose to color the data by “labels_fine”.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_46")
+```
+
+We should see the dots in our violin plot colored by cell type annotation. Three of the clusters which have higher LYZ expression contain large numbers of cells identified as monocytes. Since LYZ codes for a human lysosome protein and is often used as a marker gene for monocytes, this makes a lot of sense. 
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_50")
+```
+
+:::{.notice}
+**Monocytes** are a subset of white blood cells that play a pivotal role in our immune defense against infections. Upon encountering an infection or inflammation, they migrate from the bloodstream to the affected tissues, where they differentiate into specialized cells that engulf and eliminate pathogens.
+:::
+
+Let’s download this plot. Click on the “download” button in the top right corner like we did before, but this time choose “Download panel output”. A box will pop up asking you to choose which plots to download. This means you could have multiple plots being displayed in your panel but only choose to download a subset of them. Make sure “Feature assay plot” is checked and click “Download”. Your figure will be saved in a zip file in your Downloads folder.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU/edit#slide=id.g254b1a8b951_0_54")
+```
+
+::: {.reflection}
+**Your turn!**
+
+CD14 is a marker gene for the same type of cells as LYZ. Does it have the same cluster expression pattern as what we saw for LYZ?
+:::
+
+##  Get Session Info
+
+It's a good idea to document information about the packages (and their versions) you used while running the analysis.  The last codeblock uses the `sessionInfo()` command to do just that. Here's an example of what that might look like:
+
+```{r}
+sessionInfo()
+```
+
+## Shutting Down
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_rstudio_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+# Instructor Guide
+
+Coming soon!
