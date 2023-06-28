@@ -93,7 +93,7 @@ Now your Workspace should be ready for you by the time you need it.
 **Pause here** if you are not going to be doing the Exercises right away.  Once you start up Jupyter, it will cost money to keep it running.  It costs a few cents an hour, so it's quite cheap as long as you use it responsibly.  But it can add up if you leave it running for days or weeks when you don't need it.
 :::
 
-If you are ready to proceed through the exercises, go ahead and follow the instructions below to start Jupyter.  It will take a few minutes to start up.  You can work through the first couple of Exercises while you wait.
+If you are ready to proceed through the Exercises, go ahead and follow the instructions below to start Jupyter.  It will take a few minutes to start up.  You can work through the first couple of Exercises while you wait.
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
