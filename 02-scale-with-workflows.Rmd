@@ -109,7 +109,7 @@ cow::borrow_chapter(
 ```
 ::::
 
-Once you have clicked "Create" and your cloud environment status is "Creating", you can go ahead and start the Exercises.  Your cloud environment should be ready by the time you need it.
+Once you have clicked "CREATE" and your cloud environment status is "Creating", you can go ahead and start the Exercises.  Your cloud environment should be ready by the time you need it.
 
 # Exercises {#scale-with-workflows-exercises}
 
