@@ -1,4 +1,5 @@
 AnVIL
+anvilproject
 AnVIL's
 BiocManager
 bioinformatics
@@ -23,6 +24,7 @@ glimmaMDS
 Gmail
 GTEx
 HPRC
+ilmn
 impactful
 Inclusivity
 iSEE
@@ -73,9 +75,12 @@ Rmd
 RStudio
 scalable
 SummarizedExperiment
+superpopulations
+terra
 timeframe
 underserved
 wdl
+workspaces
 Workspaces
 Workspace's
 www
