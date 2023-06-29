@@ -1,7 +1,7 @@
 
 # (PART\*) What is AnVIL {-}   
 
-# Overview
+# Overview {#what-is-anvil-overview}
 
 ## Background
 
@@ -41,7 +41,7 @@ _Programming skills_
 
 1. Learn about additional resources to self-guide your discovery on AnVIL.
 
-# Preparation
+# Preparation {#what-is-anvil-preparation}
 
 ## Review Key Concepts
 
@@ -49,33 +49,66 @@ Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fcMUU7NrEeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-# Exercises
+# Exercises {#what-is-anvil-exercises}
 
 ## Launch Terra
+
+Open [anvilproject.org](https://anvilproject.org) and click on "Launch" Terra
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24303c0c340_0_0.png" width="100%" />
 
 ## Clone HPRC Workspace
 
+At [anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces)
+
+- Enter `hprc` in the search box
+- Click on the "Public" tab
+- Click on AnVIL_HPRC
+- Click on the circle with three vertical dots in the upper right corner and select "Clone"
+
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_1.png" width="100%" />
 
 ## Start a Cloud Environment
+
+- Click on the Environment Configuration (cloud icon)
+- Select Jupyter Settings
+- Scroll down and click "Create"
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_26.png" width="100%" />
 
 ## Find Tidbits
 
+- In the Dashboard tab, what are three types of sequencing data that are available?
+- In the Data tab `participant` table, what two superpopulations have the most participants?
+- In the Data tab `sample` table, how many samples lack any ilmn data?
+- In the Data tab `assembly_sample` table, what is the command to download the HG002 `mat_fasta` file?
+
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_53.png" width="100%" />
 
 ## Enter Terminal
 
+- In the Analysis tab, click on Terminal
+- Make a working copy of the HG002 `mat_fasta`
+    - NOTE: Requester pays buckets require `-u <google-project-id>` [[ref](https://support.terra.bio/hc/en-us/articles/360029801491)]
+- Examine file with `ls -l` and `zcat *.fa.gz | head`
+
+```
+gsutil cp 'gs://fc-4310e737-a388-4a10-8c9e-babe06aaf0cf/working/HPRC_PLUS/HG002/assemblies/year1_f1_assembly_v2_genbank/HG002.maternal.f1_assembly_v2_genbank.fa.gz' .
+```
+
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_109.png" width="100%" />
 
-## Exercise 6: Shut Down
+## Shut Down
+
+- Click on the Environment Configuration (cloud icon)
+- Select Jupyter Settings
+- Scroll down and click "Delete Environment"
+- Select "Delete" after deciding to keep or delete your persistent disk
+- Click "hamburger" icon in the upper left, expand your name, select Cloud Environments and confirm no unnecessary resources are running
 
 <img src="01-what-is-anvil_files/figure-html//1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU_g24f58a64a6b_0_181.png" width="100%" />
 
-# Instructor Guide
+# Instructor Guide {#what-is-anvil-instructor-guide}
 
 ## Timeline
 
