@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Demos"
-date: "June 29, 2023"
+date: "December 01, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -19,41 +19,15 @@ With the increasing availability of genomic data, there is a growing need for ef
 
 Whether you are new to the field of genomics or an experienced researcher, these demos will provide you with valuable insights into the AnVIL platform and its capabilities. We look forward to helping you unlock the full potential of genomic data science through the AnVIL platform. Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
 
-## Upcoming AnVIL Events {-}
+<!-- ## Upcoming AnVIL Events {-} -->
 
-We'd love to see you at an upcoming event! Here are a few upcoming events that might meet your training needs:
+<!-- We'd love to see you at an upcoming event! Here are a few upcoming events that might meet your training needs: -->
 
-<table>
- <thead>
-  <tr>
-   <th style="text-align:left;"> Date </th>
-   <th style="text-align:left;"> Event </th>
-   <th style="text-align:left;"> Location </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Jul 2023 </td>
-   <td style="text-align:left;"> Galaxy Community Conference 2023 </td>
-   <td style="text-align:left;"> Brisbane, Australia </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Jul 2023 </td>
-   <td style="text-align:left;"> AnVIL Demos: Interactive Genomic Data Science with Bioconductor </td>
-   <td style="text-align:left;"> Virtual </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Nov 2023 </td>
-   <td style="text-align:left;"> American Society of Human Genetics 2023 </td>
-   <td style="text-align:left;"> Walter E. Washington Convention Center, 801 Mt Vernon Pl NW, Washington, DC 20001 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Dec 2023 </td>
-   <td style="text-align:left;"> CSHL Genome Informatics 2023 </td>
-   <td style="text-align:left;"> Cold Spring Harbor, NY, USA </td>
-  </tr>
-</tbody>
-</table>
+<!-- ```{r, echo = FALSE, message = FALSE, warning = FALSE} -->
+<!-- source("scripts/render_events.R") -->
+
+<!-- knitr::kable(make_events_table(), format = "html") -->
+<!-- ``` -->
 
 ## AnVIL Collection {-}
 
