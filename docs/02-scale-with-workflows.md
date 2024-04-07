@@ -6,11 +6,11 @@
 
 One of the great features of AnVIL is that it "brings the analysis to the data". Rather than downloading and storing your own copy of an AnVIL dataset, you can simply create links to the existing data, and run analyses using those links.
 
-Here is a video overview of this demo ([slides](https://docs.google.com/presentation/d/19A1h1t_hy14sb1W80LYmACRTT6Hl-azKuKxEBWxjtRc)).
+You can find a slide overview of this demo [here](https://docs.google.com/presentation/d/19A1h1t_hy14sb1W80LYmACRTT6Hl-azKuKxEBWxjtRc). You can also check out the video version [here](https://drive.google.com/file/d/1vq9l8jvTd8mIEUWdpzmSOQI7kn9vo_4g/view?usp=sharing).
 
-<br>
+<!-- <br> -->
 
-<iframe src="https://drive.google.com/uc?id=1vq9l8jvTd8mIEUWdpzmSOQI7kn9vo_4g" width="640" height="360" allow="autoplay"></iframe>
+<!-- <iframe src="https://drive.google.com/uc?id=1vq9l8jvTd8mIEUWdpzmSOQI7kn9vo_4g" width="640" height="360" allow="autoplay"></iframe> -->
 
 ## Skills Level
 
@@ -226,7 +226,8 @@ Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject
     
 **Q3.**  How many Workspaces have consent code NRES (No REStrictions on data use)?
     
-- You can use the filters on the left to browse and narrow down on datasets that fit your needs.  Click on the Consent Code filter to select for datasets that you can access.
+- You can use the filters on the left to browse and narrow down on datasets that fit your needs.  Click on the Consent Code filter to select for datasets that you can access.  
+- Learn more about consent codes [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4721915/).
 
 :::
     
