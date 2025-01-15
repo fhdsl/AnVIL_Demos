@@ -1,5 +1,5 @@
 book_filename: "AnVIL Demos"
-repo: https://github.com/jhudsl/AnVIL_Demos/
+repo: https://github.com/fhdsl/AnVIL_Demos/
 rmd_files: ["index.Rmd",
             "01-what-is-anvil.Rmd",
             "02-scale-with-workflows.Rmd",
