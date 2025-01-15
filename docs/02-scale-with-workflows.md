@@ -90,25 +90,25 @@ To clone an AnVIL Workspace:
 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
 
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117989bd49c_0_150.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
 
 1. You are automatically directed to the "MY WORKSPACES" tab.  Here you can see any Workspaces that have been shared with you, along with your permission level.  Depending on how your instructor has set things up, you may or may not see any Workspaces in this tab.
 
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_303.png" title="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected.  The &quot;MY WORKSPACES&quot; tab and the column showing permission level are highlighted." alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected.  The &quot;MY WORKSPACES&quot; tab and the column showing permission level are highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_303.png" alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected.  The &quot;MY WORKSPACES&quot; tab and the column showing permission level are highlighted." width="100%" />
     
 1. Locate the Workspace **demos-combine-data-workspaces**.  (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Workspace  **demos-combine-data-workspaces**.)
     a. If it has been shared with you ahead of time, it will appear in "MY WORKSPACES".  
 
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_337.png" title="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected. The &quot;MY WORKSPACES&quot; tab and a Workspace name are highlighted." alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected. The &quot;MY WORKSPACES&quot; tab and a Workspace name are highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_337.png" alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected. The &quot;MY WORKSPACES&quot; tab and a Workspace name are highlighted." width="100%" />
     b. Otherwise, select the "PUBLIC" tab.  In the top search bar, type the Workspace name **demos-combine-data-workspaces**.
 
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_327.png" title="Screenshot of Terra Workspaces page with the &quot;PUBLIC&quot; tab selected. The &quot;PUBLIC&quot; tab and search box are highlighted.  The the user has typed in the term &quot;sars&quot;. A Workspace related to SARS appears in the results." alt="Screenshot of Terra Workspaces page with the &quot;PUBLIC&quot; tab selected. The &quot;PUBLIC&quot; tab and search box are highlighted.  The the user has typed in the term &quot;sars&quot;. A Workspace related to SARS appears in the results." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_327.png" alt="Screenshot of Terra Workspaces page with the &quot;PUBLIC&quot; tab selected. The &quot;PUBLIC&quot; tab and search box are highlighted.  The the user has typed in the term &quot;sars&quot;. A Workspace related to SARS appears in the results." width="100%" />
     c. You can also go directly to the Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-combine-data-workspaces.
     
 1. Clone the workspace by clicking the teardrop button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".  Or, if you have opened the Workspace, you can find the teardrop button on the top right of the Workspace.
 
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_344.png" title="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="100%" />
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" title="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_344.png" alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="100%" />
 
 1. You will see a popup box appear, asking you to configure your Workspace
     a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"demos-combine-data-workspaces_Firstname_Lastname\".
@@ -116,7 +116,7 @@ To clone an AnVIL Workspace:
     a. Leave the bottom two boxes as-is.
     a. Click “CLONE WORKSPACE”.
     
-    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_352.png" title="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_352.png" alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" />
 
 1. The new Workspace should now show up under "MY WORKSPACES".  You now have your own copy of the Workspace to work in.
 ::::
@@ -143,21 +143,21 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g117989bd49c_0_150.png" title="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
 
 1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
 
-1. Click on the cloud icon on the far right to access your Cloud Environment options.
+1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_22.png" title="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_22.png" alt="Screenshot of a Terra Workspace. The cloud icon to create a new cloud environment is highlighted." width="100%" />
 
 1. In the dialogue box, click the "Settings" button under Jupyter.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_18.png" title="Screenshot of the Cloud Environment Details dialogue box. The Settings button under Jupyter is highlighted." alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under Jupyter is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_18.png" alt="Screenshot of the Cloud Environment Details dialogue box. The Settings button under Jupyter is highlighted." width="100%" />
 
 1. You will see some configuration options for the Jupyter cloud environment, and a list of costs because it costs a small amount of money to use cloud computing.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_0.png" title="Screenshot of the Jupyter Cloud Environment dialogue box. The cost to run the environment is highlighted." alt="Screenshot of the Jupyter Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_0.png" alt="Screenshot of the Jupyter Cloud Environment dialogue box. The cost to run the environment is highlighted." width="100%" />
 
     
 
@@ -175,19 +175,19 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
 1. Leave everything else as-is. To create your Jupyter Cloud Environment, scroll down and click the "CREATE" button.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_41.png" title="Screenshot of the Jupyter Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." alt="Screenshot of the Jupyter Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_41.png" alt="Screenshot of the Jupyter Cloud Environment dialogue box. The &quot;CREATE&quot; button is highlighted." width="100%" />
 
 1. The dialogue box will close and you will be returned to your Workspace.  You can see the status of your cloud environment by hovering over the Jupyter icon.  It will take a few minutes for Terra to request computers and install software.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_60.png" title="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." alt="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_60.png" alt="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Creating&quot;." width="100%" />
 
 1. When your environment is ready, its status will change to "Running".  Click on the "ANALYSES" tab to create or open a Jupyter Notebook.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_66.png" title="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;.  The ANALYSES tab is also highlighted" alt="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;.  The ANALYSES tab is also highlighted" width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_66.png" alt="Screenshot of a Terra Workspace. The hovertext for the Jupyter icon is highlighted, and indicates that the status of the environment is &quot;Running&quot;.  The ANALYSES tab is also highlighted" width="100%" />
 
 1. From the ANALYSES tab, you can click on the name of an existing Jupyter Notebook to view and launch it, or click the "START" button to create a new Notebook.
 
-    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_73.png" title="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter Notebooks.  The Notebook names and the START button are highlighted." alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter Notebooks.  The Notebook names and the START button are highlighted." width="100%" />
+    <img src="02-scale-with-workflows_files/figure-html//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_73.png" alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter Notebooks.  The Notebook names and the START button are highlighted." width="100%" />
 
     
 ::::
@@ -206,7 +206,7 @@ To follow along with these exercises, you will need to complete the steps descri
 
 First we will take a look at the [AnVIL Dataset Catalog](https://anvilproject.org/data/).  Here you can browse the datasets available on AnVIL.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_0.png" title="Screenshot of AnVIL Dataset Catalog" alt="Screenshot of AnVIL Dataset Catalog" width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_0.png" alt="Screenshot of AnVIL Dataset Catalog" width="100%" />
 
 
 :::{.reflection}
@@ -233,7 +233,7 @@ Use a web browser to navigate to [`anvilproject.org/data/`](https://anvilproject
     
 Now you know how to find AnVIL datasets!  To access the data in these datasets, you will need to access the **Terra Workspace** where the data is stored.  You can find links to the Terra Workspaces in the Workspaces tab.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f1d151022_0_4.png" title="Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The &quot;Workspaces&quot; tab is highlighted and has been selected, and the &quot;Terra Workspaces&quot; column is highlighted." alt="Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The &quot;Workspaces&quot; tab is highlighted and has been selected, and the &quot;Terra Workspaces&quot; column is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f1d151022_0_4.png" alt="Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The &quot;Workspaces&quot; tab is highlighted and has been selected, and the &quot;Terra Workspaces&quot; column is highlighted." width="100%" />
 
 Note that, if a Workspace contains protected data, you will need to obtain the appropriate permissions before you can open the Workspace.  For these GTEx datasets, `AnVIL_GTEx_public_data` (with consent code NRES) is available to anyone on AnVIL, but other GTEx Workspaces require permission to access.
 
@@ -244,7 +244,7 @@ Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so yo
 
 You can find the Workspace that contains the data by searching for the "HPRC" Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_85.png" title="Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;HPRC&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;AnVIL_HPRC&quot; Workspace is highlighted." alt="Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;HPRC&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;AnVIL_HPRC&quot; Workspace is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_85.png" alt="Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;HPRC&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;AnVIL_HPRC&quot; Workspace is highlighted." width="100%" />
 
 ### What is a Workspace?
 
@@ -259,7 +259,7 @@ Workspaces can serve different purposes.  For example, it's often useful to use 
 
 When you first open a Workspace, you will be directed to the **Dashboard** tab.  The Dashboard is like a README for the Workspace - it should contain information to help you understand the purpose and organization of the Workspace.  On the right, you can see some basic information about the Workspace such as the usernames of the Owners as well as your permission level for the Workspace.  The left side typically contains a description of the Workspace's contents and purpose.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_94.png" title="Screenshot of the Dashboard for the Human Pangenome Reference Consortium Workspace." alt="Screenshot of the Dashboard for the Human Pangenome Reference Consortium Workspace." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_94.png" alt="Screenshot of the Dashboard for the Human Pangenome Reference Consortium Workspace." width="100%" />
 
 :::{.reflection}
 ### Exercise {- .unlisted}
@@ -274,7 +274,7 @@ When you first open a Workspace, you will be directed to the **Dashboard** tab. 
 
 The **Data** tab contains all the files associated with the Workspace - data, metadata, workflow outputs, etc.  Terra provides **Data Tables** to help organize data and results.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" title="Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." alt="Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" alt="Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" />
 
 :::{.reflection}
 ### Exercise {- .unlisted}
@@ -307,7 +307,7 @@ To get started, navigate to your cloned copy of `demos-combine-data-workspaces`.
 
 You can find your Workspace in Terra by clicking on "Workspaces" in the dropdown menu, or you can go there directly at [`anvil.terra.bio/#workspaces`](https://anvil.terra.bio/#workspaces).  Once there, you should see your Workspace under the "MY WORKSPACES" tab.  It may also show up in your recently viewed Workspaces.  Click on the Workspace name to open it.  **Make sure you are in *your copy* of the Workspace.**  If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_44.png" title="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_44.png" alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." width="100%" />
 
 ### Open Jupyter Notebook
 
@@ -317,11 +317,11 @@ To help you get started, we have provided a copy of a Jupyter Notebook that uses
 
 Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and R Markdown).
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_0.png" title="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_0.png" alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." width="100%" />
 
 By clicking on a Notebook, you can preview a static copy of the Notebook.  Clicking the "OPEN" button launches the Notebook in a cloud environment so that you can edit and run code.  (The "PLAYGROUND" option also lets you edit and run code, but your changes will not be saved.)
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_13.png" title="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." alt="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_13.png" alt="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." width="100%" />
 
 :::{.reflection}
 ### Exercise {- .unlisted}
@@ -421,7 +421,7 @@ It's generally a good idea to document information about the packages (and their
 
 As a last step, take a look at the Data Tab in your Workspace.  You should now see a table named `sample` that contains 6 rows - 3 with project "HPRC" and 3 with project "1000G".
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png" title="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." alt="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png" alt="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." width="100%" />
 
 
 :::{.notice}
@@ -441,11 +441,11 @@ Once you have set up Data Tables in your Workspace, you can analyze the data usi
 
 The Dockstore platform is a repository for scalable bioinformatics tools and workflows.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_30.png" title="Screenshot of Dockstore home page." alt="Screenshot of Dockstore home page." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_30.png" alt="Screenshot of Dockstore home page." width="100%" />
 
 You can find Workflows for AnVIL by clicking on the "Organizations" tab and searching for AnVIL.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_390.png" title="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." alt="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_390.png" alt="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." width="100%" />
 
 Here you can find many Workflows which you can import into your AnVIL Workspace to use in your own analyses.  These Workflows are organized into collections to make them easier to find.
 
@@ -462,15 +462,15 @@ Now let's take a look at the `qc-analysis-pipeline`, which we will be running on
 
 Under the AnVIL Organization is a collection called "Quality Control Workflows".  Here you can find the `qc-analysis-pipeline`.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_44.png" title="Screenshot of Dockstore page for the Quality Control Workflows collection from the AnVIL organization.  The card for the qc-analysis-pipeline Workflow is highlighted." alt="Screenshot of Dockstore page for the Quality Control Workflows collection from the AnVIL organization.  The card for the qc-analysis-pipeline Workflow is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_44.png" alt="Screenshot of Dockstore page for the Quality Control Workflows collection from the AnVIL organization.  The card for the qc-analysis-pipeline Workflow is highlighted." width="100%" />
 
 Clicking on the name of the Workflow will bring you to a page with detailed information about the Workflow, including the .wdl files for the Workflow.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_35.png" title="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Files tab is highlighted and has been selected, and part of a wdl files can be seen." alt="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Files tab is highlighted and has been selected, and part of a wdl files can be seen." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_35.png" alt="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Files tab is highlighted and has been selected, and part of a wdl files can be seen." width="100%" />
 
 From here, you can import the Workflow into your Workspace using the Launch button.  **Don't do this right now**, or, if you do, import it with a different name (not `qc-analysis-pipeline`) so you don't overwrite the Workflow that already exists in your Workspace.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_52.png" title="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Launch button for AnVIL is highlighted." alt="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Launch button for AnVIL is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_52.png" alt="Screenshot of Dockstore page for the qc-analysis-pipeline Workflow.  The Launch button for AnVIL is highlighted." width="100%" />
 
 There are some additional configuration steps that are needed to make sure the Workflow is set up properly to run on the desired files in your Workspace.  For the sake of time, we have provided a preconfigured version of this Workflow in the Workspace you cloned.  You can learn more about configuring Workflows in the [Terra Documentation on Workflows](https://support.terra.bio/hc/en-us/sections/360004147011).
 
@@ -485,7 +485,7 @@ AnVIL Workspaces have two tabs dedicated to Workflows
 
 Under the "WORKFLOWS" tab you will see any Workflows that have been imported into your Workspace.  If you import a Workflow from Dockstore (using the Launch with AnVIL button) or from another Workspace, you will see it here.  For this exercise, the `qc-analysis-pipeline` has already been imported for you.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_65.png" title="Screenshot of Terra Workspace with the &quot;WORKFLOWS&quot; tab selected.  The qc-analysis-pipeline card is highlighted." alt="Screenshot of Terra Workspace with the &quot;WORKFLOWS&quot; tab selected.  The qc-analysis-pipeline card is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_65.png" alt="Screenshot of Terra Workspace with the &quot;WORKFLOWS&quot; tab selected.  The qc-analysis-pipeline card is highlighted." width="100%" />
 
 :::{.reflection}
 ### Exercise {- .unlisted}
@@ -506,7 +506,7 @@ Go to your Workspace on AnVIL and open the "WORKFLOWS" tab.
 
 You can view the status of your Workflow run by navigating to the "JOB HISTORY" tab.  You can see more details by clicking on the name of the Workflow in the "Submission" column.
 
-<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_78.png" title="Screenshot of Terra Workspace with the &quot;JOB HISTORY&quot; tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted." alt="Screenshot of Terra Workspace with the &quot;JOB HISTORY&quot; tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted." width="100%" />
+<img src="02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_78.png" alt="Screenshot of Terra Workspace with the &quot;JOB HISTORY&quot; tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted." width="100%" />
 
 Once your Workflow run is complete, you will be able to view the results in your Workspace's "DATA" tab.
 

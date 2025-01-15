@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>11 Exercises | AnVIL Demos</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="11 Exercises | AnVIL Demos" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2024-04-07" />
+<meta name="date" content="2025-01-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="single-cell-with-bioconductor-preparation.html"/>
 <link rel="next" href="instructor-guide.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4S1S1ZKYM"></script>
@@ -100,11 +99,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -113,14 +112,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -128,6 +127,10 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
@@ -275,7 +278,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
 <a href="https://hutchdatascience.org/" target="_blank"><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/style-sets/fhdasl/copy_to_assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
-<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/AK12iVXTjsB7yCUUA"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=AnVIL+Demos"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+
 </ul>
 
       </nav>
@@ -304,38 +308,38 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="single-cell-with-bioconductor-exercises" class="section level1" number="11">
-<h1><span class="header-section-number">11</span> Exercises</h1>
+<div id="single-cell-with-bioconductor-exercises" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">11</span> Exercises<a href="single-cell-with-bioconductor-exercises.html#single-cell-with-bioconductor-exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The following exercises will walk you through the process of using iSEE to explore single cell RNA-seq data. You will use data that have already been prepared and is saved in a SingleCellExperiment object. You will use the <code>pbmc3k</code> dataset from the <code>TENxPBMCData</code> package, which contains gene expression profiles for 2,700 single peripheral blood mononuclear cells. Information on how the data were preprocessed can be found <a href="https://isee.github.io/iSEEWorkshopEuroBioc2020/articles/dataset.html">here</a>.</p>
 <p>These exercises were adapted from <a href="https://isee.github.io/iSEEWorkshopEuroBioc2020/">iSEEWorkshopEuroBioc2020/</a>.</p>
 <div class="notice">
 <p>To follow along with these exercises, you will need to complete the steps described in the <a href="scale-with-workflows-preparation.html#scale-with-workflows-preparation">Preparation</a> guide for this demo.</p>
 </div>
-<div id="loading-the-data" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> Loading the Data</h2>
+<div id="loading-the-data" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> Loading the Data<a href="single-cell-with-bioconductor-exercises.html#loading-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>First, we’ll want to load the data that we’ll be using. To do that, we’ll need to load the <code>AnVIL</code> package created by the Bioconductor team for interfacing with files on AnVIL. Luckily, it’s already installed.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="single-cell-with-bioconductor-exercises.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(AnVIL)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="single-cell-with-bioconductor-exercises.html#cb4-1" tabindex="-1"></a><span class="fu">library</span>(AnVIL)</span></code></pre></div>
 <p>Next, we’ll use the <code>avfiles_restore()</code> function from the <code>AnVIL</code> package to actually bring the data into our environment’s persistent disk.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="single-cell-with-bioconductor-exercises.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">avfiles_restore</span>( </span>
-<span id="cb5-2"><a href="single-cell-with-bioconductor-exercises.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">source =</span> <span class="st">&quot;sc_bioconductor_data.RData&quot;</span>,</span>
-<span id="cb5-3"><a href="single-cell-with-bioconductor-exercises.html#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;anvil-outreach&quot;</span>,</span>
-<span id="cb5-4"><a href="single-cell-with-bioconductor-exercises.html#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;demos-single-cell-bioconductor&quot;</span></span>
-<span id="cb5-5"><a href="single-cell-with-bioconductor-exercises.html#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="single-cell-with-bioconductor-exercises.html#cb5-1" tabindex="-1"></a><span class="fu">avfiles_restore</span>( </span>
+<span id="cb5-2"><a href="single-cell-with-bioconductor-exercises.html#cb5-2" tabindex="-1"></a>  <span class="at">source =</span> <span class="st">&quot;sc_bioconductor_data.RData&quot;</span>,</span>
+<span id="cb5-3"><a href="single-cell-with-bioconductor-exercises.html#cb5-3" tabindex="-1"></a>  <span class="at">namespace =</span> <span class="st">&quot;anvil-outreach&quot;</span>,</span>
+<span id="cb5-4"><a href="single-cell-with-bioconductor-exercises.html#cb5-4" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">&quot;demos-single-cell-bioconductor&quot;</span></span>
+<span id="cb5-5"><a href="single-cell-with-bioconductor-exercises.html#cb5-5" tabindex="-1"></a>)</span></code></pre></div>
 <p>In the code above, we are copying the file <code>sc_bioconductor_data.RData</code> from the Workspace <code>demos-single-cell-bioconductor</code>. It was created under the <code>anvil-outreach</code> Billing Project.</p>
 </div>
-<div id="installing-isee" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> Installing <code>iSEE</code></h2>
+<div id="installing-isee" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> Installing <code>iSEE</code><a href="single-cell-with-bioconductor-exercises.html#installing-isee" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Once you’ve loaded the data, you’ll want to install and load the <code>iSEE</code> library. You can easily install it into your own personal RStudio environment using the pre-installed <code>BiocManager</code> commands.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="single-cell-with-bioconductor-exercises.html#cb6-1" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&#39;iSEE&#39;</span>)</span>
-<span id="cb6-2"><a href="single-cell-with-bioconductor-exercises.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(iSEE)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="single-cell-with-bioconductor-exercises.html#cb6-1" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&#39;iSEE&#39;</span>)</span>
+<span id="cb6-2"><a href="single-cell-with-bioconductor-exercises.html#cb6-2" tabindex="-1"></a><span class="fu">library</span>(iSEE)</span></code></pre></div>
 </div>
-<div id="panel-display" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Panel Display</h2>
+<div id="panel-display" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> Panel Display<a href="single-cell-with-bioconductor-exercises.html#panel-display" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>First we will take a look at the interactive plots that iSEE can display.</p>
 <p><img src="03-single-cell-with-bioconductor_files/figure-html/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU_g24f58a64a6b_0_53.png" width="100%" /></p>
 </div>
-<div id="visualize-cell-type-assignment" class="section level2" number="11.4">
-<h2><span class="header-section-number">11.4</span> Visualize Cell Type Assignment</h2>
+<div id="visualize-cell-type-assignment" class="section level2 hasAnchor" number="11.4">
+<h2><span class="header-section-number">11.4</span> Visualize Cell Type Assignment<a href="single-cell-with-bioconductor-exercises.html#visualize-cell-type-assignment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Next, let’s focus specifically on visualizing cell type assignment by cluster membership. The goal is to identify the predominant cell type in each cluster. We can do this by plotting the column data in a <code>ColumnDataPlot</code>.</p>
 <p>First, select the panel organization button and select “Organize panels”.</p>
 <p><img src="03-single-cell-with-bioconductor_files/figure-html/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU_g254b1a8b951_0_12.png" width="100%" /></p>
@@ -354,8 +358,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="03-single-cell-with-bioconductor_files/figure-html/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU_g24f58a64a6b_0_134.png" width="100%" /></p>
 <p><img src="03-single-cell-with-bioconductor_files/figure-html/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU_g24f58a64a6b_0_139.png" width="100%" /></p>
 </div>
-<div id="visualize-expression-of-a-single-gene" class="section level2" number="11.5">
-<h2><span class="header-section-number">11.5</span> Visualize Expression of a Single Gene</h2>
+<div id="visualize-expression-of-a-single-gene" class="section level2 hasAnchor" number="11.5">
+<h2><span class="header-section-number">11.5</span> Visualize Expression of a Single Gene<a href="single-cell-with-bioconductor-exercises.html#visualize-expression-of-a-single-gene" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now let’s take a look at the expression data of a single gene across all the clusters. We can use the “Feature assay plot” panel to plot the distribution of the logcount values for a particular gene.</p>
 <p>Click on the “Organize Panels” icon in the top right corner. Remove the “column plot” and choose “feature assay plot”. Change the width of the plot to 12.</p>
 <p><img src="03-single-cell-with-bioconductor_files/figure-html/18J1x5rkWJisiv3EOMVZOma52XWxAVKANTg0Q2FXbOWU_g254b1a8b951_0_33.png" width="100%" /></p>
@@ -385,17 +389,17 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>CD14 is a marker gene for the same type of cells as LYZ. Does it have the same cluster expression pattern as what we saw for LYZ?</p>
 </div>
 </div>
-<div id="get-session-info" class="section level2" number="11.6">
-<h2><span class="header-section-number">11.6</span> Get Session Info</h2>
+<div id="get-session-info" class="section level2 hasAnchor" number="11.6">
+<h2><span class="header-section-number">11.6</span> Get Session Info<a href="single-cell-with-bioconductor-exercises.html#get-session-info" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>It’s a good idea to document information about the packages (and their versions) you used while running the analysis. The last codeblock uses the <code>sessionInfo()</code> command to do just that. Here’s an example of what that might look like:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="single-cell-with-bioconductor-exercises.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
-<pre><code>## R version 4.0.2 (2020-06-22)
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="single-cell-with-bioconductor-exercises.html#cb7-1" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
+<pre><code>## R version 4.3.2 (2023-10-31)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 20.04.5 LTS
+## Running under: Ubuntu 22.04.4 LTS
 ## 
 ## Matrix products: default
-## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
-## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/liblapack.so.3
+## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
+## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 ## 
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
@@ -405,37 +409,43 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
 ## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 ## 
+## time zone: Etc/UTC
+## tzcode source: system (glibc)
+## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.12       highr_0.8         bslib_0.6.1       compiler_4.0.2   
-##  [5] pillar_1.9.0      jquerylib_0.1.4   tools_4.0.2       digest_0.6.25    
-##  [9] lattice_0.20-41   jsonlite_1.7.1    udpipe_0.8.3      evaluate_0.23    
-## [13] lifecycle_1.0.4   tibble_3.2.1      pkgconfig_2.0.3   rlang_1.1.3      
-## [17] Matrix_1.2-18     igraph_1.2.6      cli_3.6.2         curl_5.2.1       
-## [21] yaml_2.2.1        xfun_0.26         fastmap_1.1.1     xml2_1.3.2       
-## [25] dplyr_1.0.2       stringr_1.4.0     httr_1.4.2        knitr_1.33       
-## [29] hms_0.5.3         askpass_1.1       fs_1.5.0          generics_0.0.2   
-## [33] vctrs_0.6.5       sass_0.4.8        gitcreds_0.1.1    grid_4.0.2       
-## [37] rprojroot_2.0.4   tidyselect_1.1.0  glue_1.4.2        data.table_1.13.0
-## [41] R6_2.4.1          cow_0.0.0.9000    fansi_0.4.1       textrank_0.3.0   
-## [45] ottrpal_1.2.1     rmarkdown_2.10    bookdown_0.24     readr_1.4.0      
-## [49] purrr_0.3.4       magrittr_2.0.3    htmltools_0.5.7   utf8_1.1.4       
-## [53] stringi_1.5.3     openssl_1.4.3     cachem_1.0.8</code></pre>
+##  [1] sass_0.4.8        utf8_1.2.4        generics_0.1.3    xml2_1.3.6       
+##  [5] stringi_1.8.3     lattice_0.21-9    hms_1.1.3         digest_0.6.34    
+##  [9] magrittr_2.0.3    evaluate_0.23     grid_4.3.2        timechange_0.3.0 
+## [13] bookdown_0.41     fastmap_1.1.1     rprojroot_2.0.4   jsonlite_1.8.8   
+## [17] Matrix_1.6-1.1    processx_3.8.3    chromote_0.3.1    ps_1.7.6         
+## [21] promises_1.2.1    httr_1.4.7        fansi_1.0.6       ottrpal_1.3.0    
+## [25] udpipe_0.8.11     cow_0.0.0.9000    jquerylib_0.1.4   cli_3.6.2        
+## [29] rlang_1.1.4       gitcreds_0.1.2    cachem_1.0.8      yaml_2.3.8       
+## [33] tools_4.3.2       tzdb_0.4.0        dplyr_1.1.4       curl_5.2.0       
+## [37] vctrs_0.6.5       R6_2.5.1          lifecycle_1.0.4   lubridate_1.9.3  
+## [41] snakecase_0.11.1  stringr_1.5.1     janitor_2.2.0     pkgconfig_2.0.3  
+## [45] later_1.3.2       pillar_1.9.0      bslib_0.6.1       data.table_1.15.0
+## [49] glue_1.7.0        Rcpp_1.0.12       highr_0.11        xfun_0.48        
+## [53] tibble_3.2.1      tidyselect_1.2.0  knitr_1.48        textrank_0.3.1   
+## [57] websocket_1.4.2   htmltools_0.5.7   igraph_2.0.2      rmarkdown_2.25   
+## [61] webshot2_0.1.1    readr_2.1.5       compiler_4.3.2    askpass_1.2.0    
+## [65] openssl_2.1.1</code></pre>
 </div>
-<div id="shutting-down" class="section level2" number="11.7">
-<h2><span class="header-section-number">11.7</span> Shutting Down</h2>
+<div id="shutting-down" class="section level2 hasAnchor" number="11.7">
+<h2><span class="header-section-number">11.7</span> Shutting Down<a href="single-cell-with-bioconductor-exercises.html#shutting-down" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="borrowed_chunk">
 <ol style="list-style-type: decimal">
 <li><p>Pausing your cloud environment only temporarily stops your work. When you are ready to delete the cloud environment, click on the RStudio icon on the right-hand side and select “Settings”. If you don’t see this icon, you may need to scroll to the right.</p>
-<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_41.png" title="Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted" alt="Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted" width="100%" /></p></li>
+<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_41.png" alt="Screenshot of the Workspace page. The RStudio icon associated with the cloud environment is highlighted. The Settings button is also highlighted" width="100%" /></p></li>
 <li><p>Click on “Delete Environment”.</p>
-<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_20.png" title="Screenshot of the cloud environment popout. &quot;Delete environment&quot; is highlighted." alt="Screenshot of the cloud environment popout. &quot;Delete environment&quot; is highlighted." width="100%" /></p></li>
+<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_20.png" alt="Screenshot of the cloud environment popout. &quot;Delete environment&quot; is highlighted." width="100%" /></p></li>
 <li><p>If you are certain that you do not need the data and configuration on your disk, you should select “Delete everything, including persistent disk”. If there is anything you would like to save, open the compute environment and copy the file(s) from your compute environment to another location, such as the Workspace bucket, GitHub, or your local machine, depending on your needs.</p>
-<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_46.png" title="Screenshot of the cloud environment popout. &quot;Delete everything, including persistent disk&quot; is highlighted." alt="Screenshot of the cloud environment popout. &quot;Delete everything, including persistent disk&quot; is highlighted." width="100%" /></p></li>
+<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_46.png" alt="Screenshot of the cloud environment popout. &quot;Delete everything, including persistent disk&quot; is highlighted." width="100%" /></p></li>
 <li><p>Select “DELETE”.</p>
-<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_51.png" title="Screenshot of the cloud environment popout. &quot;Delete&quot; is highlighted." alt="Screenshot of the cloud environment popout. &quot;Delete&quot; is highlighted." width="100%" /></p></li>
+<p><img src="03-single-cell-with-bioconductor_files/figure-html/1eypYLLqD11-NwHLs4adGpcuSB07dYEJfAaALSMvgzqw_ge1182913a6_0_51.png" alt="Screenshot of the cloud environment popout. &quot;Delete&quot; is highlighted." width="100%" /></p></li>
 </ol>
 <div class="notice">
 <p>You can also delete your cloud environment(s) and disk storage at <a href="https://anvil.terra.bio/#clusters" class="uri">https://anvil.terra.bio/#clusters</a>.</p>

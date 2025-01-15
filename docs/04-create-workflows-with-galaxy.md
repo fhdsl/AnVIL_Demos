@@ -30,9 +30,17 @@ For this demo, you will need your own copy of the [`SARS-CoV-2-Genome`](https://
 
 Note that, in order to use Galaxy, you must have access to a Terra Workspace with permission to compute (i.e. you must be a "Writer" or "Owner" of the Workspace).
 
-Open your Workspace, and click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.
+Open your Workspace, and click on the “Environment configuration” button, a cloud icon on the righthand side of the screen. 
 
-<img src="04-create-workflows-with-galaxy_files/figure-html//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" title="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="100%" />
+<img src="04-create-workflows-with-galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_9.png" alt="Screenshot of the Workspace that points to the Environment configuration button, an icon of a cloud with a lightning bolt." width="100%" />
+
+Under Galaxy, click on “Create new Environment”. Click on “Next” and “Create” to keep all settings as-is. This will take 8-10 minutes.
+
+<img src="04-create-workflows-with-galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge1182914a6_0_36.png" alt="The button that starts a cloud environment for Galaxy has been highlighted," width="100%" />
+
+Click on "Open Galaxy" when the environment is ready.
+
+<img src="04-create-workflows-with-galaxy_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge1182914a6_0_57.png" alt="The Open Galaxy button is highlighted in the ready environment popup." width="100%" />
 ::::
 
 # Exercises {#create-workflows-with-galaxy-exercises}
