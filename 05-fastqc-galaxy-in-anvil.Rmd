@@ -29,7 +29,7 @@ This activity will teach you how to use the AnVIL platform to:
 1. Learn how to save your history back to AnVIL
 1. Show how to shut down Galaxy in AnVIL
 
-# Getting Started
+# Getting Started {#run-tool-with-galaxy-getting-started}
 
 ## Account Login
 
@@ -74,9 +74,9 @@ cow::borrow_chapter(
 ```
 ::::
 
-# Activity
+# Activity {#run-tool-with-galaxy-activity}
 
-## Launching Galaxing in AnVIL
+## Launching Galaxy in AnVIL
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
@@ -117,7 +117,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 ::: {.notice}
 If you had files locally on your computer that you wanted to upload, you would use the "Choose local file" button.
 
-Or if you had files you wanted to import from a data repository like zenodo, you would use the "Paste/Fetch data" button.
+Or if you had files you wanted to import from a data repository like Zenodo, you would use the "Paste/Fetch data" button.
 
 We're using the "Choose remote files" button because we have data in our AnVIL workspace that we can import into the Galaxy in AnVIL instance.
 :::
@@ -300,3 +300,7 @@ cow::borrow_chapter(
 )
 ```
 ::::
+
+# Next steps {#run-tool-with-galaxy-next-steps}
+
+This tutorial is just a first step in working with this data, specifically considering the quality scores of one set of the sequencing reads. Next steps include running FastQC on the reverse reads and downstream applications such as alignment and variant detection.
