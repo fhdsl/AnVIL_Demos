@@ -1,0 +1,249 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
+```{r echo=FALSE}
+library(cow)
+```
+
+# (PART\*) Run a Tool With Galaxy {-}   
+
+# Overview {#run-tool-with-galaxy-overview}
+
+This chapter contains instructions for the SARS-CoV-2 sequencing data FastQC analysis with Galaxy in AnVIL activity.
+
+Galaxy is a free computing platform that allows users to upload or "fetch" data from online repositories and analyze that data with supported tools using a point and click user interface (UI) rather than with a terminal or other API. Galaxy in AnVIL provides a cloud instance of Galaxy within AnVIL such that the benefits of AnVIL (such as secure data sharing, access to controlled access data) are combined with the benefits of running a reproducible analysis with Galaxy. However, Galaxy in AnVIL is not free. 
+
+This activity will 
+
+## Learning Objectives
+
+This activity will teach you how to use the AnVIL platform to:
+
+1. Launch Galaxy in AnVIL
+1. Import data into Galaxy in AnVIL
+1. Examine sequence data files (fastq files)
+1. Understand how to find, open, and run a tool (FastQC)
+1. Examine the quality control summary report (Webpage)
+1. Learn how to export your results for future viewing
+1. Learn how to save your history back to AnVIL
+1. Show how to shut down Galaxy in AnVIL
+
+# Getting Started
+
+## Account Login
+
+If you don't have an AnVIL account, you will need to create one using the steps below in the AnVIL Account Creation Dropdown section.
+
+<details><summary>AnVIL Account Creation</summary>
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_student_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+</details>
+
+
+Once you have an account, you can login and access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/). Open Terra, and you should be prompted to sign in with your Google account.
+
+## Workspace Set Up
+
+Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. 
+
+Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space. The data for this activity is already available on AnVIL, specifically the [`demos-galaxy-fastqc` workspace](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc), so you'll want to clone the repository. 
+
+When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!
+
+::: {.notice}
+The screenshots included below show a different workspace than what this tutorial will be using. For this tutorial, you want to clone the [`demos-galaxy-fastqc` workspace](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc) 
+
+Be sure to name the cloned workspace a unique name in step 6. We recommend adding `_yourfirstname_yourlastname` to the workspace name.
+:::
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+# Activity
+
+## Launching Galaxing in AnVIL
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_start.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+### Navigating Galaxy in AnVIL
+
+:::: {.borrowed_chunk}
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_navigate.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+## Importing Data into Galaxy in AnVIL
+
+When we cloned our workspace, our cloned workspace linked to the original data in the workspace! We will upload three files from the AnVIL workspace into Galaxy, though we need only one `fastq` data sequence file for our activity. The others will be used if you want to continue with a related activity that performs alignment and variant discovery after quality control. These three files are (1) the forward and (2) the reverse reads for our sample, as well as, (3) the reference genome for SARS-CoV-2. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The sample files we are looking at end in `fastq` because they are raw data from the sequencer. The reference genome ends in `.fasta` because it has already been cleaned up by scientists. 
+
+1. Click on “Upload Data” in the Tools pane.  
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy homepage. The Upload Data link has been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_29")
+```
+
+2. Click on “Choose remote files” at the bottom of the popup.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page and upload options.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1112")
+```
+
+::: {.notice}
+If you had files locally on your computer that you wanted to upload, you would use the "Choose local file" button.
+
+Or if you had files you wanted to import from a data repository like zenodo, you would use the "Paste/Fetch data" button.
+
+We're using the "Choose remote files" button because we have data in our AnVIL workspace that we can import into the Galaxy in AnVIL instance.
+:::
+
+
+3. Double-click the Workspace folder.
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the AnVIL workspace where your data is linked"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1117")
+```
+
+4. Then double-click “Tables/” and then “sample/”. Click the two sample `.fastq` file checkboxes so that they are highlighted in green and click “Ok”.
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
+```
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the sample/ folder where the data sequence .fastq files will be found"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1126")
+```
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, selecting the two data sequence .fastq files"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1132")
+```
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the selected data sequence .fastq files and the Ok button."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1136")
+```
+
+<details><summary>Upload the reference genome (steps 5-6)</summary>
+
+5. Repeat steps 2 and 3 from above.
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page and upload options.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1143")
+```
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the AnVIL workspace where your data is linked"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1117")
+```
+
+6. Again, double click "Tables/". This time, double click "reference/". Click the `fasta` file so it is highlighted green and click "Ok".
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
+```
+
+```{r, echo = FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the reference/ folder where the reference genome fasta file will be found."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_56")
+```
+
+```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the reference genome .fasta file"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1148")
+```
+
+```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the selected reference genome .fasta file and the Ok button."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1153")
+```
+
+</details>
+
+7. Click “Start” and once complete, you can click “Close”. 
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page. All three files are ready to be imported and the Start button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1159")
+```
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane. All trhee files are highlighted green and the Close button is highlighted." }
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1164")
+```
+
+8. Confirm that the files uploaded successfully by looking at the file names in the Galaxy History pane.
+
+Note that the files will be highlighted in green in the Galaxy History pane once they are uploaded and available.
+
+```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1169")
+```
+
+## Examining `fastq` sequence data files
+
+We will examine data in `fastq` format. This is the typical output from an Illumina Sequencer, but also the standard format output from most sequencers.
+
+1. Use your mouse and click on the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) of the first `fastq` file (**VA_sample_forward_reads.fastq**). 
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy homepage. Highlighting the eye icon for the forward reads .fastq file.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_67")
+```
+
+2. After clicking the eye icon, in the Main screen you will see something like this:
+
+```{r, echo=FALSE, fig.alt='Screnshot of a fastq file in the middle panel of Galaxy. The data includes DNA sequences but also includes many coded characters, making it hard to understand.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1174")
+```
+
+<details><summary>FASTQ files explained</summary>
+
+For more information on the [contents of a FASTQ file, consider this resource from Illumina](https://knowledge.illumina.com/software/general/software-general-reference_material-list/000002211).
+
+::: {.reflection}
+QUESTIONS:
+
+1. How many lines in a .fastq file represent an individual read?
+
+2. What does each line represent?
+
+3. Why is the final line for each read (the quality score) important?
+:::
+
+</details>
+
+## Finding and Using FastQC
+
+## Examining the FastQC quality control summary report
+
+## Exporting your results
+
+## Exporting your history
+
+## Shutting down Galaxy in AnVIL
+
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_galaxy_delete.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::

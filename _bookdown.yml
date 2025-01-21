@@ -4,11 +4,11 @@ rmd_files: ["index.Rmd",
             "01-what-is-anvil.Rmd",
             "02-scale-with-workflows.Rmd",
             "03-single-cell-with-bioconductor.Rmd",
-            "04-create-workflows-with-galaxy.Rmd"]
+            "04-create-workflows-with-galaxy.Rmd",
+            "05-fastqc-galaxy-in-anvil.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
 output_dir: "docs"
 output:
     bookdown::html_book
-      
