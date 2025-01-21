@@ -16,6 +16,10 @@ dex
 dexamethasone
 Dockstore
 dropdown
+fastq
+FASTQ
+FastQC
+Firstname
 GATK
 GDSCN
 github
@@ -31,6 +35,7 @@ iSEE
 iSEEWorkshopEuroBioc
 JBrowse
 Jupyter
+Lastname
 limma
 logcount
 logcounts
@@ -57,6 +62,7 @@ OTTR
 ottrpal
 Pangenome
 pangenomes
+Phred
 plotMDS
 pre
 precompiled
@@ -78,9 +84,11 @@ SummarizedExperiment
 superpopulations
 terra
 timeframe
+UI
 underserved
 wdl
 workspaces
 Workspaces
 Workspace's
 www
+Zenodo
