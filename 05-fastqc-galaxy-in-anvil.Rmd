@@ -129,19 +129,27 @@ We're using the "Choose remote files" button because we have data in our AnVIL w
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1117")
 ```
 
-4. Then double-click “Tables/” and then “sample/”. Click the two sample `.fastq` file checkboxes so that they are highlighted in green and click “Ok”.
+4. Upload the sample sequence data files
+
+A. Double-click “Tables/”
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
 ```
 
+B. Then double-click “sample/”.
+
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the sample/ folder where the data sequence .fastq files will be found"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1126")
 ```
 
+C. Click the two sample `.fastq` file checkboxes to select them.
+
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, selecting the two data sequence .fastq files"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1132")
 ```
+
+D. These files will be highlighted in green and click “Ok”.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the selected data sequence .fastq files and the Ok button."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1136")
@@ -151,27 +159,39 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 5. Repeat steps 2 and 3 from above.
 
+A. Click on “Choose remote files” at the bottom of the popup.
+
 ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page and upload options.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1143")
 ```
+
+B. Double-click the Workspace folder.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the AnVIL workspace where your data is linked"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1117")
 ```
 
-6. Again, double click "Tables/". This time, double click "reference/". Click the `fasta` file so it is highlighted green and click "Ok".
+6. Upload the reference genome file
+
+A. Again, double click "Tables/".
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
 ```
 
+B. This time, double click "reference/".
+
 ```{r, echo = FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the reference/ folder where the reference genome fasta file will be found."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_56")
 ```
 
+C. Click the `fasta` file.
+
 ```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the reference genome .fasta file"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1148")
 ```
+
+D. This file will be highlighted green and click "Ok".
 
 ```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the selected reference genome .fasta file and the Ok button."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1153")
@@ -179,17 +199,19 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 </details>
 
-7. Click “Start” and once complete, you can click “Close”. 
+7. Click “Start”  
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page. All three files are ready to be imported and the Start button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1159")
 ```
 
+8. Once complete, click “Close”.
+
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane. All trhee files are highlighted green and the Close button is highlighted." }
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1164")
 ```
 
-8. Confirm that the files uploaded successfully by looking at the file names in the Galaxy History pane.
+9. Confirm that the files uploaded successfully by looking at the file names in the Galaxy History pane.
 
 Note that the files will be highlighted in green in the Galaxy History pane once they are uploaded and available.
 
@@ -226,11 +248,42 @@ QUESTIONS:
 3. Why is the final line for each read (the quality score) important?
 :::
 
+::: {.dictionary}
+**Breakout Box: Learn more about quality scores**
+
+To save space, the sequencer records an [ASCII character](http://drive5.com/usearch/manual/quality_score.html) to represent scores 0-42. For example 10 corresponds to “+” and 40 corresponds to “I”. FastQC (a tool we'll be using next) knows how to translate this. This way of encoding the data is often called “Phred” scoring.
+
+What does 0-42 represent? These numbers, when plugged into a formula, tell us the probability of an error for that base. This is the formula, where Q is our quality score (0-42) and P is the probability of an error:
+
+Q = -10 log10(P)
+
+Using this formula, we can calculate that a quality score of 40 means only 0.00010 probability of an error!
+:::
+
+
 </details>
 
 ## Finding and Using FastQC
 
+FastQC is a tool which aims to provide simple quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a set of analyses which you can use to get a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.
+
 ## Examining the FastQC quality control summary report
+
+<details><summary>FastQC summary report explained</summary>
+
+For more information on the [contents of the output quality control summary report from FastQC, consider this resource from Michigan State](https://rtsf.natsci.msu.edu/genomics/technical-documents/fastqc-tutorial-and-faq.aspx)
+
+::: {.reflection}
+QUESTIONS:
+
+1. Explore “Basic Statistics”. How many total reads are there? Have any been flagged as poor quality? What is the sequence length?
+
+2. Explore “Per base sequence quality”. Based on the Basic Statistics, is 28-40 a good or bad quality score? 
+
+3. Is it okay to proceed based on the per base sequence quality?
+:::
+
+</details>
 
 ## Exporting your results
 
