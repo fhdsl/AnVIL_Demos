@@ -26,7 +26,6 @@ This activity will teach you how to use the AnVIL platform to:
 1. Understand how to find, open, and run a tool (FastQC)
 1. Examine the quality control summary report (Webpage)
 1. Learn how to export your results for future viewing
-1. Learn how to save your history back to AnVIL
 1. Show how to shut down Galaxy in AnVIL
 
 # Getting Started {#run-tool-with-galaxy-getting-started}
@@ -131,25 +130,25 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 4. Upload the sample sequence data files
 
-A. Double-click “Tables/”
+  4A. Double-click “Tables/”
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
 ```
 
-B. Then double-click “sample/”.
+  4B. Then double-click “sample/”.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the sample/ folder where the data sequence .fastq files will be found"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1126")
 ```
 
-C. Click the two sample `.fastq` file checkboxes to select them.
+  4C. Click the two sample `.fastq` file checkboxes to select them.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, selecting the two data sequence .fastq files"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1132")
 ```
 
-D. These files will be highlighted in green and click “Ok”.
+  4D. These files will be highlighted in green and click “Ok”.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the selected data sequence .fastq files and the Ok button."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1136")
@@ -159,13 +158,13 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 5. Repeat steps 2 and 3 from above.
 
-A. Click on “Choose remote files” at the bottom of the popup.
+  5A. Click on “Choose remote files” at the bottom of the popup.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page and upload options.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1143")
 ```
 
-B. Double-click the Workspace folder.
+  5B. Double-click the Workspace folder.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the AnVIL workspace where your data is linked"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1117")
@@ -173,31 +172,32 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 6. Upload the reference genome file
 
-A. Again, double click "Tables/".
+  6A. Again, double click "Tables/".
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
 ```
 
-B. This time, double click "reference/".
+  6B. This time, double click "reference/".
 
 ```{r, echo = FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the reference/ folder where the reference genome fasta file will be found."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_56")
 ```
 
-C. Click the `fasta` file.
+  6C. Click the `fasta` file.
 
 ```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the reference genome .fasta file"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1148")
 ```
 
-D. This file will be highlighted green and click "Ok".
+  6D. This file will be highlighted green and click "Ok".
 
 ```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the selected reference genome .fasta file and the Ok button."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1153")
 ```
 
 </details>
+
 
 7. Click “Start”  
 
@@ -224,6 +224,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 We will examine data in `fastq` format. This is the typical output from an Illumina Sequencer, but also the standard format output from most sequencers.
 
 1. Use your mouse and click on the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) of the first `fastq` file (**VA_sample_forward_reads.fastq**). 
+
 ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy homepage. Highlighting the eye icon for the forward reads .fastq file.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_67")
 ```
@@ -267,7 +268,83 @@ Using this formula, we can calculate that a quality score of 40 means only 0.000
 
 FastQC is a tool which aims to provide simple quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a set of analyses which you can use to get a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.
 
+1. Use the search tools bar in the upper left (within the tools pane in Galaxy)
+
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL with an arrow pointing to the tool search bar in the upper left corner. THe tools icon is also highlighted on the far left in case you have to first navigate there to see the search bar."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e0e3cbaf5_0_2")
+```
+
+2. Type `fast` to search for FastQC, and select the tool in the list below.
+
+```{r, echo=FALSE, fig.alt="Highlighting searching part of hte FastQC tool's name in the search bar and then selecting FastQC from the list below."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1195")
+```
+
+3. This will open the tool menu in the middle pane. 
+
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL showing the FastQC tool menu has been opened in the middle pane."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1200")
+```
+
+4. Switch the version of FastQC to `0.73+galaxy0`
+
+4A. Select the Versions icon (3 cubes).
+
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting the versions icon in the gray banner at the top of the middle pane"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_7")
+```
+
+4B. Select "Switch to 0.73+galaxy0" from the dropdown menu.
+
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting which version of FastQC to switch to in the dropdown menu for tool versions."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_0")
+```
+
+4C. Confirm that the version now says "Selected 0.73+galaxy0".
+
+```{r, ehco=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting what the version dropdown menu should display."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_4")
+```
+
+5. Confirm or select the correct input for FastQC (the forward reads fastq file).
+
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting the input for the tool, specifically selecting the forward reads fastq file for the 'Raw read data from your current history'"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_2")
+```
+
+6. Run FastQC by clicking the blue "Run Tool" button.
+
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL highlighting the blue 'Run Tool' button in the top right corner of the middle pane."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_19")
+```
+
+7. After submitting the job to run, the middle pane should have a message highlighted in green. 
+
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL showing how the middle pane and history pane look after submitting a job before it successfully runs."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1204")
+```
+
+The history pane should also list what will be the output(s) from the tool. Note, before the job has finished running, these output(s) will be highlighted in gray. While running, the output(s) will be highlighted in an orange cream color. And once the tool runs successfully, the output(s) will be highlighted in green.
+
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL showing the outputs highlighted in green within the history pane."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_127")
+```
+
 ## Examining the FastQC quality control summary report
+
+We will examine the FastQC output in webpage or `html` format. This form of the output provides graphs and a flag of "Passed", "Warn", or "Fail" for each subsection within the quality control analysis.
+
+1. Use your mouse and click on the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) of the FastQC Webpage output (**FastQC on data 1: Webpage**). 
+
+```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy homepage. Highlighting the eye icon for the forward reads .fastq file.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_67")
+```
+
+2. This will open up a summary report for the sequencing file in the middle pane that you can scroll.
+
+```{r, echo=FALSE, fig.alt = "Screenshot of an example summary report from FastQC"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1216")
+```
 
 <details><summary>FastQC summary report explained</summary>
 
@@ -287,10 +364,17 @@ QUESTIONS:
 
 ## Exporting your results
 
-## Exporting your history
+In case you want to view the results later, you can download the file. 
+
+1.  Click on the name of the results you want to export/save, and it will expand the info shown for that file. Click the floppy disk/save icon.
+
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL highlighting the floppy disk/save icon for the results that you want to export."}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_107")
+```
+
+This will download a zip (compressed) file with the results to your computer. Uncompress it to view it locally
 
 ## Shutting down Galaxy in AnVIL
-
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
@@ -303,4 +387,4 @@ cow::borrow_chapter(
 
 # Next steps {#run-tool-with-galaxy-next-steps}
 
-This tutorial is just a first step in working with this data, specifically considering the quality scores of one set of the sequencing reads. Next steps include running FastQC on the reverse reads and downstream applications such as alignment and variant detection.
+This tutorial is just a first step in working with this data, specifically considering the quality scores of one set of the sequencing reads. Next steps include running FastQC on the reverse reads and downstream applications such as alignment and variant detection. Walk throughs for these next steps can be found in this [Genomic Data Science Community Network Lab Exercise Book](https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#alignment) or [this AnVIL Demos Recording](https://www.youtube.com/watch?v=_uT0IWL1wso)
