@@ -302,7 +302,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 4C. Confirm that the version now says "Selected 0.73+galaxy0".
 
-```{r, ehco=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting what the version dropdown menu should display."}
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting what the version dropdown menu should display."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_4")
 ```
 
