@@ -36,7 +36,7 @@ This activity will teach you how to use the AnVIL platform to:
 
 If you don't have an AnVIL account, you will need to create one using the steps below in the AnVIL Account Creation Dropdown section.
 
-<details><summary>AnVIL Account Creation</summary>
+<details><summary>Expand for AnVIL account creation instructions</summary>
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
@@ -50,7 +50,7 @@ cow::borrow_chapter(
 </details>
 
 
-Once you have an account, you can login and access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/). Open Terra, and you should be prompted to sign in with your Google account.
+<br/>Once you have an account, you can login and access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/). Open Terra, and you should be prompted to sign in with your Google account.
 
 ## Workspace Set Up
 
@@ -132,41 +132,41 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 4. Upload the sample sequence data files
 
-  4A. Double-click “Tables/”
+  - Double-click “Tables/”
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
 ```
 
-  4B. Then double-click “sample/”.
+  - Then double-click “sample/”.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the sample/ folder where the data sequence .fastq files will be found"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1126")
 ```
 
-  4C. Click the two sample `.fastq` file checkboxes to select them.
+  - Click the two sample `.fastq` file checkboxes to select them.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, selecting the two data sequence .fastq files"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1132")
 ```
 
-  4D. These files will be highlighted in green when ready. Click “Ok”.
+  - These files will be highlighted in green when ready. Click “Ok”.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the selected data sequence .fastq files and the Ok button."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1136")
 ```
 
-<details><summary>Upload the reference genome (steps 5-6)</summary>
+<details><summary>Expand for Steps 5- 6: Upload the reference genome</summary>
 
 5. Repeat steps 2 and 3 from above.
 
-  5A. Click on “Choose remote files” at the bottom of the popup.
+  - Click on “Choose remote files” at the bottom of the popup.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page and upload options.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1143")
 ```
 
-  5B. Double-click the Workspace folder.
+  - Double-click the Workspace folder.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the AnVIL workspace where your data is linked"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1117")
@@ -174,25 +174,25 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 6. Upload the reference genome file
 
-  6A. Again, double click "Tables/".
+  - Again, double click "Tables/".
 
 ```{r, echo=FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the Tables/ folder where linked data will be in a cloned workspace"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1122")
 ```
 
-  6B. This time, double click "reference/".
+  - This time, double click "reference/".
 
 ```{r, echo = FALSE, fig.alt="Screenshot of the Galaxy Data upload popup pane, highlighting the reference/ folder where the reference genome fasta file will be found."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_56")
 ```
 
-  6C. Click the `fasta` file.
+  - Click the `fasta` file.
 
 ```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the reference genome .fasta file"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1148")
 ```
 
-  6D. This file will be highlighted green and click "Ok".
+  - This file will be highlighted green and click "Ok".
 
 ```{r, echo=FALSE, fig.alt = "Screenshot of the Galaxy Data upload popup pane, highlighting the selected reference genome .fasta file and the Ok button."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1153")
@@ -200,7 +200,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 </details>
 
-
+<br/>
 7. Click “Start”  
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload popup page. All three files are ready to be imported and the Start button is highlighted.'}
@@ -237,7 +237,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1174")
 ```
 
-<details><summary>FASTQ files explained</summary>
+<details><summary>Expand for FASTQ files explained</summary>
 
 For more information on the [contents of a FASTQ file, consider this resource from Illumina](https://knowledge.illumina.com/software/general/software-general-reference_material-list/000002211).
 
@@ -290,19 +290,19 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 4. Switch the version of FastQC to `0.73+galaxy0`
 
-4A. Select the Versions icon (3 cubes).
+  - Select the Versions icon (3 cubes).
 
 ```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting the versions icon in the gray banner at the top of the middle pane"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_7")
 ```
 
-4B. Select "Switch to 0.73+galaxy0" from the dropdown menu.
+  - Select "Switch to 0.73+galaxy0" from the dropdown menu.
 
 ```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting which version of FastQC to switch to in the dropdown menu for tool versions."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_0")
 ```
 
-4C. Confirm that the version now says "Selected 0.73+galaxy0".
+  - Confirm that the version now says "Selected 0.73+galaxy0".
 
 ```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting what the version dropdown menu should display."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_4")
@@ -348,7 +348,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1216")
 ```
 
-<details><summary>FastQC summary report explained</summary>
+<details><summary>Expand for FastQC summary report explained</summary>
 
 For more information on the [contents of the output quality control summary report from FastQC, consider this resource from Michigan State](https://rtsf.natsci.msu.edu/genomics/technical-documents/fastqc-tutorial-and-faq.aspx)
 
