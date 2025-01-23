@@ -12,7 +12,9 @@ library(cow)
 
 This chapter contains instructions for the SARS-CoV-2 sequencing data FastQC analysis with Galaxy in AnVIL activity.
 
-Galaxy is a free computing platform that allows users to upload or "fetch" data from online repositories and analyze that data with supported tools using a point and click user interface (UI) rather than with a terminal or other API. Galaxy in AnVIL provides a cloud instance of Galaxy within AnVIL such that the benefits of AnVIL (such as secure data sharing, access to controlled access data) are combined with the benefits of running a reproducible analysis with Galaxy. However, Galaxy in AnVIL is not free. 
+Galaxy is a free computing platform that allows users to upload or "fetch" data from online repositories and analyze that data with supported tools using a [point and click user interface](https://en.wikipedia.org/wiki/Point_and_click) (UI) rather than with a [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface). Galaxy in AnVIL means that the benefits of AnVIL (such as secure data sharing, access to controlled access data) are combined with the benefits of running a reproducible analysis with Galaxy. 
+
+Like all compute on AnVIL, Galaxy in AnVIL will incur costs. 
 
 This activity will 
 
