@@ -29,6 +29,7 @@ Gmail
 GTEx
 HPRC
 ilmn
+Illumina
 impactful
 Inclusivity
 iSEE
@@ -77,14 +78,17 @@ Quickstart
 README
 reproducibility
 REStrictions
+righthand
 Rmd
 RStudio
 scalable
+SingleCellExperiment
 SummarizedExperiment
 superpopulations
 terra
 timeframe
 UI
+Uncompress
 underserved
 wdl
 workspaces
