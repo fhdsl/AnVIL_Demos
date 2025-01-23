@@ -22,7 +22,7 @@ This activity will teach you how to use the AnVIL platform to:
 
 1. Launch Galaxy in AnVIL
 1. Import data into Galaxy in AnVIL
-1. Examine sequence data files (fastq files)
+1. Examine sequence data files (`.fastq` files)
 1. Understand how to find, open, and run a tool (FastQC)
 1. Examine the quality control summary report (Webpage)
 1. Learn how to export your results for future viewing
