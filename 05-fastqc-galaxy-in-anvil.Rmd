@@ -80,15 +80,6 @@ cow::borrow_chapter(
 ```
 ::::
 
-:::: {.borrowed_chunk}
-```{r, echo = FALSE, results='asis'}
-cow::borrow_chapter(
-  doc_path = "child/_child_workspace_clone.Rmd",
-  repo_name = "jhudsl/AnVIL_Template"
-)
-```
-::::
-
 # Activity {#run-tool-with-galaxy-activity}
 
 ## Launching Galaxy on AnVIL
