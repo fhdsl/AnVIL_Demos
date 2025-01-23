@@ -372,7 +372,7 @@ In case you want to view the results later, you can download the file.
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_107")
 ```
 
-This will download a zip (compressed) file with the results to your computer. Uncompress it to view it locally
+This will download a zip (compressed) file with the results to your computer. Uncompress it to view it locally.
 
 ## Shutting down Galaxy in AnVIL
 
