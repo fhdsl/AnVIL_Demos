@@ -66,6 +66,22 @@ Be sure to name the cloned workspace a unique name in step 6. We recommend addin
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
+# Specify variables
+AnVIL_module_settings <- list(
+  workspace_name = "demos-galaxy-fastqc",
+  workspace_link = "https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc",
+  billing_project = "sri-lanka-2025"
+)
+
+cow::borrow_chapter(
+  doc_path = "child/_child_student_workspace_clone.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "child/_child_workspace_clone.Rmd",
   repo_name = "jhudsl/AnVIL_Template"
