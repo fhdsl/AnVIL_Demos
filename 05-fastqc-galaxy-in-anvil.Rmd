@@ -10,11 +10,11 @@ library(cow)
 
 # Overview {#run-tool-with-galaxy-overview}
 
-This chapter contains instructions for the SARS-CoV-2 sequencing data FastQC analysis with Galaxy in AnVIL activity.
+This chapter contains instructions for the SARS-CoV-2 sequencing data FastQC analysis with Galaxy on AnVIL activity.
 
-Galaxy is a free computing platform that allows users to upload or "fetch" data from online repositories and analyze that data with supported tools using a [point and click user interface](https://en.wikipedia.org/wiki/Point_and_click) (UI) rather than with a [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface). Galaxy in AnVIL means that the benefits of AnVIL (such as secure data sharing, access to controlled access data) are combined with the benefits of running a reproducible analysis with Galaxy. 
+Galaxy is a free computing platform that allows users to upload or "fetch" data from online repositories and analyze that data with supported tools using a [point and click user interface](https://en.wikipedia.org/wiki/Point_and_click) (UI) rather than with a [command-line interface](https://en.wikipedia.org/wiki/Command-line_interface). Galaxy on AnVIL means that the benefits of AnVIL (such as secure data sharing, access to controlled access data) are combined with the benefits of running a reproducible analysis with Galaxy. 
 
-Like all compute on AnVIL, Galaxy in AnVIL will incur costs. 
+Like all compute on AnVIL, Galaxy on AnVIL will incur costs. 
 
 This activity will 
 
@@ -22,13 +22,13 @@ This activity will
 
 This activity will teach you how to use the AnVIL platform to:
 
-1. Launch Galaxy in AnVIL
-1. Import data into Galaxy in AnVIL
+1. Launch Galaxy on AnVIL
+1. Import data into Galaxy on AnVIL
 1. Examine sequence data files (`.fastq` files)
 1. Find, open, and run a tool (FastQC)
 1. Examine the quality control summary report (Webpage)
 1. Learn how to export your results for future viewing
-1. Show how to shut down Galaxy in AnVIL
+1. Show how to shut down Galaxy on AnVIL
 
 # Getting Started {#run-tool-with-galaxy-getting-started}
 
@@ -77,7 +77,7 @@ cow::borrow_chapter(
 
 # Activity {#run-tool-with-galaxy-activity}
 
-## Launching Galaxy in AnVIL
+## Launching Galaxy on AnVIL
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
@@ -88,7 +88,7 @@ cow::borrow_chapter(
 ```
 ::::
 
-### Navigating Galaxy in AnVIL
+### Navigating Galaxy on AnVIL
 
 :::: {.borrowed_chunk}
 ```{r, echo=FALSE, results='asis'}
@@ -99,7 +99,7 @@ cow::borrow_chapter(
 ```
 ::::
 
-## Importing Data into Galaxy in AnVIL
+## Importing Data into Galaxy on AnVIL
 
 When we cloned our workspace, our cloned workspace linked to the original data in the workspace! We will upload three files from the AnVIL workspace into Galaxy, though we need only one `fastq` data sequence file for our activity. The others will be used if you want to continue with a related activity that performs alignment and variant discovery after quality control. These three files are (1) the forward and (2) the reverse reads for our sample, as well as, (3) the reference genome for SARS-CoV-2. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The sample files we are looking at end in `fastq` because they are raw data from the sequencer. The reference genome ends in `.fasta` because it has already been cleaned up by scientists. 
 
@@ -120,7 +120,7 @@ If you had files locally on your computer that you wanted to upload, you would u
 
 Or if you had files you wanted to import from a data repository like Zenodo, you would use the "Paste/Fetch data" button.
 
-We're using the "Choose remote files" button because we have data in our AnVIL workspace that we can import into the Galaxy in AnVIL instance.
+We're using the "Choose remote files" button because we have data in our AnVIL workspace that we can import into the Galaxy on AnVIL instance.
 :::
 
 
@@ -272,7 +272,7 @@ FastQC is a tool which aims to provide simple quality control checks on raw sequ
 
 1. Use the search tools bar in the upper left (within the tools pane in Galaxy)
 
-```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL with an arrow pointing to the tool search bar in the upper left corner. THe tools icon is also highlighted on the far left in case you have to first navigate there to see the search bar."}
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy on AnVIL with an arrow pointing to the tool search bar in the upper left corner. THe tools icon is also highlighted on the far left in case you have to first navigate there to see the search bar."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e0e3cbaf5_0_2")
 ```
 
@@ -284,7 +284,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 3. This will open the tool menu in the middle pane. 
 
-```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL showing the FastQC tool menu has been opened in the middle pane."}
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy on AnVIL showing the FastQC tool menu has been opened in the middle pane."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1200")
 ```
 
@@ -292,43 +292,43 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 4A. Select the Versions icon (3 cubes).
 
-```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting the versions icon in the gray banner at the top of the middle pane"}
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting the versions icon in the gray banner at the top of the middle pane"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_7")
 ```
 
 4B. Select "Switch to 0.73+galaxy0" from the dropdown menu.
 
-```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting which version of FastQC to switch to in the dropdown menu for tool versions."}
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting which version of FastQC to switch to in the dropdown menu for tool versions."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_0")
 ```
 
 4C. Confirm that the version now says "Selected 0.73+galaxy0".
 
-```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting what the version dropdown menu should display."}
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting what the version dropdown menu should display."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_4")
 ```
 
 5. Confirm or select the correct input for FastQC (the forward reads fastq file).
 
-```{r, echo=FALSE, fig.alt="Screenshot of Galaxy in AnVIL highlighting the input for the tool, specifically selecting the forward reads fastq file for the 'Raw read data from your current history'"}
+```{r, echo=FALSE, fig.alt="Screenshot of Galaxy on AnVIL highlighting the input for the tool, specifically selecting the forward reads fastq file for the 'Raw read data from your current history'"}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_2")
 ```
 
 6. Run FastQC by clicking the blue "Run Tool" button.
 
-```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL highlighting the blue 'Run Tool' button in the top right corner of the middle pane."}
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy on AnVIL highlighting the blue 'Run Tool' button in the top right corner of the middle pane."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g32e28ad1f0a_0_19")
 ```
 
 7. After submitting the job to run, the middle pane should have a message highlighted in green. 
 
-```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL showing how the middle pane and history pane look after submitting a job before it successfully runs."}
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy on AnVIL showing how the middle pane and history pane look after submitting a job before it successfully runs."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g325209e7a14_0_1204")
 ```
 
 The history pane should also list what will be the output(s) from the tool. Note, before the job has finished running, these output(s) will be highlighted in gray. While running, the output(s) will be highlighted in an orange cream color. And once the tool runs successfully, the output(s) will be highlighted in green.
 
-```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL showing the outputs highlighted in green within the history pane."}
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy on AnVIL showing the outputs highlighted in green within the history pane."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_127")
 ```
 
@@ -370,13 +370,13 @@ In case you want to view the results later, you can download the file.
 
 1.  Click on the name of the results you want to export/save, and it will expand the info shown for that file. Click the floppy disk/save icon.
 
-```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy in AnVIL highlighting the floppy disk/save icon for the results that you want to export."}
+```{r, echo=FALSE, fig.alt = "Screenshot of Galaxy on AnVIL highlighting the floppy disk/save icon for the results that you want to export."}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjusIF3XcuHoxqGf30nfdvjwCoEMd8o/edit#slide=id.g3257f1d5e0e_0_107")
 ```
 
 This will download a zip (compressed) file with the results to your computer. Uncompress it to view it locally.
 
-## Shutting down Galaxy in AnVIL
+## Shutting down Galaxy on AnVIL
 
 :::: {.borrowed_chunk}
 ```{r, echo = FALSE, results='asis'}
