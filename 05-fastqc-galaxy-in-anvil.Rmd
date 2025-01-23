@@ -115,7 +115,7 @@ cow::borrow_chapter(
 
 ## Importing Data into Galaxy on AnVIL
 
-When we cloned our workspace, our cloned workspace linked to the original data in the workspace! We will upload three files from the AnVIL workspace into Galaxy, though we need only one `fastq` data sequence file for our activity. The others will be used if you want to continue with a related activity that performs alignment and variant discovery after quality control. These three files are (1) the forward and (2) the reverse reads for our sample, as well as, (3) the reference genome for SARS-CoV-2. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The sample files we are looking at end in `fastq` because they are raw data from the sequencer. The reference genome ends in `.fasta` because it has already been cleaned up by scientists. 
+When we cloned our workspace, our cloned workspace linked to the original data! We will upload three files from the AnVIL workspace into Galaxy, though we need only one `fastq` data sequence file for our activity. The others will be used if you want to continue with a related activity that performs alignment and variant discovery after quality control. These three files are (1) the forward and (2) the reverse reads for our sample, as well as, (3) the reference genome for SARS-CoV-2. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The sample files we are looking at end in `fastq` because they are raw data from the sequencer. The reference genome ends in `.fasta` because it has already been cleaned up by scientists. 
 
 1. Click on “Upload Data” in the Tools pane.  
 
