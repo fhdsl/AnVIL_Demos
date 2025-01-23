@@ -16,8 +16,6 @@ Galaxy is a free computing platform that allows users to upload or "fetch" data 
 
 Like all compute on AnVIL, Galaxy on AnVIL will incur costs. 
 
-This activity will 
-
 ## Learning Objectives
 
 This activity will teach you how to use the AnVIL platform to:
