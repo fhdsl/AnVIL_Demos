@@ -25,7 +25,7 @@ This activity will teach you how to use the AnVIL platform to:
 1. Examine sequence data files (`.fastq` files)
 1. Find, open, and run a tool (FastQC)
 1. Examine the quality control summary report (Webpage)
-1. Learn how to export your results for future viewing
+1. Export your results for future viewing
 1. Show how to shut down Galaxy on AnVIL
 
 # Getting Started {#run-tool-with-galaxy-getting-started}
