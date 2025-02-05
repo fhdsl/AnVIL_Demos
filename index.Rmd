@@ -33,4 +33,3 @@ Whether you are new to the field of genomics or an experienced researcher, these
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
 
-
