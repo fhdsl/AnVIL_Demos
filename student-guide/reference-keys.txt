@@ -77,3 +77,4 @@ export-history
 shut-down-1
 create-workflows-with-galaxy-instructor-guide
 timeline-2
+references
