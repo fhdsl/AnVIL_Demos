@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Demos"
-date: "January 23, 2025"
+date: "February 05, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -32,5 +32,4 @@ Whether you are new to the field of genomics or an experienced researcher, these
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
-
 
