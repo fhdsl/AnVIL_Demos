@@ -14,7 +14,6 @@ This particular course is comprised of several "demos", modules which can be use
 
 ## Learning Objectives
 
-*An example of learning objectives from this series are the following which apply to the first in the series (What is AnVIL?) but they seem appropriate for the general series as well.*
 
 This course will teach learners to:  
 
