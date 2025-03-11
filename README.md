@@ -10,6 +10,8 @@ You can see the rendered course material here: [https://hutchdatascience.org/AnV
 
 This course contains a series of demos introducing the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). The AnVIL is a cloud-based platform designed to provide researchers with secure and controlled access to genomic data, as well as tools for analysis and visualization.
 
+This particular course is comprised of several "demos", modules which can be used in an interactive classroom setting. These demos should take anywhere from 30 minutes to 1 hour, depending on the experience of the audience.
+
 ## Learning Objectives
 
 *An example of learning objectives from this series are the following which apply to the first in the series (What is AnVIL?) but they seem appropriate for the general series as well.*
