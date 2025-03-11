@@ -4,7 +4,7 @@
 
 This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style), which is based on [the OTTR Template](https://github.com/jhudsl/OTTR_Template)
 
-You can see the rendered course material here: [https://hutchdatascience.org/AnVIL_Demos/]([https://hutchdatascience.org/AnVIL_Demos/index.html](https://hutchdatascience.org/AnVIL_Demos/))
+You can see the rendered course material here: [https://hutchdatascience.org/AnVIL_Demos/](https://hutchdatascience.org/AnVIL_Demos/index.html)
 
 ## About this course
 
