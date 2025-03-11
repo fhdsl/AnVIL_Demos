@@ -23,6 +23,7 @@ This course will teach learners to:
 - Learn how to navigate and access a Workspace, the starting point for a basic analysis using the AnVIL tools.
 - Identify potential use cases for the AnVIL platform in your own research projects.
 - Learn about additional resources to self-guide your discovery on AnVIL.
+- Work through a variety of specific bioinformatic use cases on AnVIL.
 
 ## Encountering problems?
 
