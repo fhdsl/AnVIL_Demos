@@ -42,7 +42,7 @@ rendered_tables <- read_html("https://raw.githubusercontent.com/fhdsl/AnVIL_Coll
 ##unlist together with which grabs the index of the table that has the Demos in it
 which_table <- which(unlist(lapply(1:length(rendered_tables), function(i) nrow(rendered_tables[[i]]) == sum(str_detect(unlist(rendered_tables[[i]][,1]), "Demos")))))
 
-knitr::kable(rendered_tables[[which_table]])
+knitr::kable(rendered_tables[[which_table]], format = "html")
 ```
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
