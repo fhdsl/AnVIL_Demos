@@ -35,6 +35,7 @@ Collection of monthly AnVIL Demo recordings on YouTube:
 
 ```{r echo=FALSE, message = FALSE, warning = FALSE}
 library(rvest)
+library(stringr)
 rendered_tables <- read_html("https://raw.githubusercontent.com/fhdsl/AnVIL_Collection/refs/heads/main/docs/index.md") %>% html_table() #returns a list of tibbles of the tables
 
 #using lapply to look at all the tables in the list from rvest
