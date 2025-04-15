@@ -34,9 +34,15 @@ Whether you are new to the field of genomics or an experienced researcher, these
 Collection of monthly AnVIL Demo recordings on YouTube:
 
 ```{r echo=FALSE, message = FALSE, warning = FALSE}
-source("scripts/render_youtube_list.R")
+library(rvest)
+rendered_tables <- read_html("https://raw.githubusercontent.com/fhdsl/AnVIL_Collection/refs/heads/main/docs/index.md") %>% html_table() #returns a list of tibbles of the tables
 
-knitr::kable(make_youtube_table("https://raw.githubusercontent.com/fhdsl/AnVIL_Collection/refs/heads/main/resources/youtube_demos_data.csv"), format = "html")
+#using lapply to look at all the tables in the list from rvest
+##specifically comparing the number of rows of each table to the number of rows in the first column of the table that has the word "Demos" in it -- expecting them to be equal
+##unlist together with which grabs the index of the table that has the Demos in it
+which_table <- which(unlist(lapply(1:length(rendered_tables), function(i) nrow(rendered_tables[[i]]) == sum(str_detect(unlist(rendered_tables[[i]][,1]), "Demos")))))
+
+knitr::kable(rendered_tables[[which_table]])
 ```
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
