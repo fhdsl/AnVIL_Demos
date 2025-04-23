@@ -41,7 +41,6 @@ rendered_tables <- read_html("https://raw.githubusercontent.com/fhdsl/AnVIL_Coll
 # using lapply to look at all the tables in the list from rvest
 ## this expects that every Demos youtube video will have the word "Demos" in the title (first column)
 ## Compares total rows vs rows containing "Demos" in first column, then selects this index from all tables
-## unlist together with which grabs the index of the table that has the Demos in it (meets the assumption of every title containing the word "Demos")
 which_table <- which(unlist(
                 lapply(1:length(rendered_tables),
                        function(i) 
