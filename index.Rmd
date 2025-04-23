@@ -29,21 +29,30 @@ Whether you are new to the field of genomics or an experienced researcher, these
 <!-- knitr::kable(make_events_table(), format = "html") -->
 <!-- ``` -->
 
-## AnVIL Collection {-}
+## AnVIL Monthly Demos  {-}
 
 Collection of monthly AnVIL Demo recordings on YouTube:
 
 ```{r echo=FALSE, message = FALSE, warning = FALSE}
 library(rvest)
 library(stringr)
-rendered_tables <- read_html("https://raw.githubusercontent.com/fhdsl/AnVIL_Collection/refs/heads/main/docs/index.md") %>% html_table() #returns a list of tibbles of the tables
+rendered_tables <- read_html("https://raw.githubusercontent.com/fhdsl/AnVIL_Collection/refs/heads/main/docs/index.md") %>% html_table() # returns a list of tibbles of the tables
 
-#using lapply to look at all the tables in the list from rvest
-##specifically comparing the number of rows of each table to the number of rows in the first column of the table that has the word "Demos" in it -- expecting them to be equal
-##unlist together with which grabs the index of the table that has the Demos in it
-which_table <- which(unlist(lapply(1:length(rendered_tables), function(i) nrow(rendered_tables[[i]]) == sum(str_detect(unlist(rendered_tables[[i]][,1]), "Demos")))))
+# using lapply to look at all the tables in the list from rvest
+## this expects that every Demos youtube video will have the word "Demos" in the title (first column)
+## specifically comparing the number of rows of each table (left side of the double equals) to the number of rows in the first column of the table that has the word "Demos" in it (right side of the double equals) 
+## unlist together with which grabs the index of the table that has the Demos in it (meets the assumption of every title containing the word "Demos")
+which_table <- which(unlist(
+                lapply(1:length(rendered_tables),
+                       function(i) 
+                       nrow(rendered_tables[[i]]) == 
+                         sum(str_detect(unlist(rendered_tables[[i]][, 1]), "Demos"))
+                )
+               ))
 
 knitr::kable(rendered_tables[[which_table]], format = "html")
 ```
+
+## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
