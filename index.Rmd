@@ -51,3 +51,4 @@ knitr::kable(rendered_tables[[which_table]], format = "html")
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
+
