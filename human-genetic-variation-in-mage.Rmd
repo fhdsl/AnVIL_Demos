@@ -6,6 +6,8 @@ knitr::opts_chunk$set(out.width = "100%")
 
 # Overview {#human-genetic-variation-in-mage-overview}
 
+Introduce AnVIL, Bioconductor, and Galaxy using MAGE
+
 ## Learning Objectives
 
 1. Explore MAGE Workspace 
