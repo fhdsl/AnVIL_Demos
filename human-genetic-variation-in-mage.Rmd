@@ -23,6 +23,10 @@ Introduce AnVIL, Bioconductor, and Galaxy using MAGE
 
 ## Clone Workspace
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g36877bec10a_0_0")
+```
+
 # Exercises {#human-genetic-variation-in-mage-exercises}
 
 ## Explore MAGE Workspace
