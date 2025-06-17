@@ -147,7 +147,18 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ## Shut Down Compute
 
-## Provide Feedback
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_110")
+```
 
 ## Learn More
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_126")
+```
+
+## Provide Feedback
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_120")
+```
