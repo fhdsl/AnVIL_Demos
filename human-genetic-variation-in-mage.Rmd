@@ -35,13 +35,25 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ## Explore MAGE Workspace
 
-```{r, echo=FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_7")
-```
-
 ### Review Key Concepts
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g33d1f69b524_1_1")
+```
+
 ### Scavenger Hunt
+
+Original Workspace
+
+- https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
+- Explore Data Tables e.g. counts.csv, PCA.nb.html
+- Find files in Workspace Bucket
+
+Your Cloned Workspace
+
+- https://anvil.terra.bio/#workspaces/ &lt;billing-project&gt; / &lt;workspace-name&gt;
+- Explore Data Tables
+- Look for files in Workspace Bucket
 
 ## Analysis with Jupyter/Terminal
 
