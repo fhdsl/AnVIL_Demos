@@ -35,6 +35,25 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ## Explore MAGE Workspace
 
+The demos-explore-mage Workspace allows you to explore how data is organized on AnVIL using a subset of data from the [Multi-ancestry Analysis of Gene Expression](https://pubmed.gov/39020179) (MAGE) and [1000 Genomes Project](https://www.internationalgenome.org) (1KGP) projects.
+
+<br>
+
+Importantly, pay close attention to the relationship between file **links** in Data Tables and the actual files in Workspace Buckets, especially after cloning a Workspace.
+
+<br>
+
+You can navigate to MAGE Workspace directly through this link: [https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage)
+
+- Key components of this Workspace are:
+
+1. DASHBOARD tab - which will tell you more about the Workspace.
+1. DATA tab - which has Data Tables with links to data relevant for demo exercises.
+1. ANALYSES tab - which has notebooks relevant for demo exercises with Jupyter and RStudio.
+1. 'Environment Configuration' button - to select the Cloud Environment of choice.
+1. 'Browse workspace files' button - which contains any files stored in this Workspace (see Review Key Concepts for important note about Cloned Workspaces) as well as notebooks listed in the ANALYSIS tab.
+
+
 ### Review Key Concepts
 
 ```{r, echo=FALSE}
