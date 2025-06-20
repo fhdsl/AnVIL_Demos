@@ -73,6 +73,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 
 ### Review Key Concepts
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_158")
+```
+
 ### Enter Terminal
 
 ```{r, echo=FALSE}
