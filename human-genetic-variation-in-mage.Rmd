@@ -30,7 +30,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 Follow these instructions to create an AnVIL Account
 
-- https://jhudatascience.org/AnVIL_Book_Getting_Started/data-analysts.html
+- https://jhudatascience.org/AnVIL_Book_Getting_Started/data-analysts.html#data-analysts-step-1
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_0")
@@ -62,8 +62,7 @@ Key components of this Workspace are:
 1. DATA tab - which has Data Tables with links to data relevant for demo exercises.
 1. ANALYSES tab - which has notebooks relevant for demo exercises with Jupyter and RStudio.
 1. 'Environment Configuration' button - to select the Cloud Environment of choice.
-1. 'Browse workspace files' button - which contains any files stored in this Workspace (see Review Key Concepts for important note about Cloned Workspaces) as well as notebooks listed in the ANALYSIS tab.
-
+1. 'Browse workspace files' button - which contains any files stored in this Workspace (see Review Key Concepts for important note about Cloned Workspaces) as well as notebooks listed in the ANALYSES tab.
 
 ### Review Key Concepts
 
@@ -109,6 +108,12 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ### Enter Terminal
 
+Copy a file from the original Workspace Bucket to your Persistent Disk using `gcloud storage`
+
+```
+gcloud storage cp gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/sample.metadata.MAGE.v1.0.txt .
+```
+
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_32")
 ```
@@ -149,6 +154,15 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ### Use AnVILGCP
 
+Copy a file to your Persistent Disk using the link in the Data Table and the Bioconductor [AnVILGCP](https://bioconductor.org/packages/AnVILGCP) package
+
+```
+BiocManager::install( "AnVILGCP" )
+library( "AnVILGCP" )
+avtable( "MAGE" )
+gcloud_storage( paste( "cp", avtable( "MAGE" )[2,2], "." ) )
+```
+
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_80")
 ```
@@ -172,6 +186,20 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT1
 ### Review Key Concepts
 
 ### Run FastQC
+
+Copy a file to your Persistent Disk using the Galaxy Upload tool
+
+- Click "Upload" in the left hand menu
+- Click "Choose remote files" at the bottom
+- Select the `demos-explore-mage` Workspace
+- Select `Tables` and then `1KGP`
+- Tick the box next to `NA12878.1mil.fastq.gz` and click "Ok"
+- Click "Start" and then "Close"
+
+You can now
+
+- Run the FastQC tool and view FastQC on data 1: Webpage
+- Export data back to AnVIL using "Export History to File" (must target `Other Data/Files`)
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_90")
