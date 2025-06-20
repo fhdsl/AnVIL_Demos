@@ -19,13 +19,28 @@ Introduce AnVIL, Bioconductor, and Galaxy using MAGE
 
 ## Review Background
 
+Learn how the NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space, or AnVIL, inverts the model of genomics data sharing by providing a cloud environment for the analysis of large genomic and related datasets (see [slidedeck](https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit?slide=id.g336d9ca244f_0_6#slide=id.g336d9ca244f_0_6)).
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g36a25834c74_19_108
+")
+```
+
 ## Create AnVIL Account
+
+Follow these instructions to create an AnVIL Account
+
+- https://jhudatascience.org/AnVIL_Book_Getting_Started/data-analysts.html
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_0")
 ```
 
 ## Clone Workspace
+
+Navigate to `demos-explore-mage` and clone the Workspace
+
+- https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g36877bec10a_0_0")
@@ -187,6 +202,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 ```
 
 ## Learn More
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_136")
+```
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_126")
