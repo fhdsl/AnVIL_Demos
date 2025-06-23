@@ -32,6 +32,10 @@ Follow these instructions to create an AnVIL Account
 
 - https://jhudatascience.org/AnVIL_Book_Getting_Started/data-analysts.html#data-analysts-step-1
 
+::: {.notice}
+Fill out [this poll](https://docs.google.com/forms/d/e/1FAIpQLScEF5Z9alzqEM3XfFFCFTcBDdm2MxCciSaMRTPehALHz4CsiA/viewform) to share your AnVIL ID
+:::
+
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_0")
 ```
@@ -236,6 +240,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 ```
 
 ## Provide Feedback
+
+::: {.notice}
+Fill out [this poll](https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=GBCC2025) to share your feedback
+:::
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_120")
