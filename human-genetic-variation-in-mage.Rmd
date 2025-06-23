@@ -209,6 +209,18 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ## Workflows with Galaxy
 
+[Galaxy](https://usegalaxy.org) is a free, open-source web-based platform for data intensive biomedical research.
+Through its graphical-user interface, over 10,000 tools are ready to run without the need for software installation or prior coding experience.
+In addition to providing a secure space for analysis and data sharing, Galaxy on AnVIL automatically grants you system administrator privileges, enabling you to install and soon configure any tool in the [toolshed](https://toolshed.g2.bx.psu.edu).
+
+In this exercise you will learn how to: 
+
+1. Launch Galaxy Environment in your Cloned Workspace.
+1. Upload and export data from/to your Workspace Bucket.
+1. Run a tool.
+1. Install a tool.
+
+
 ### Launch Galaxy
 
 ```{r, echo=FALSE}
