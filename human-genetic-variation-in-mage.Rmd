@@ -76,6 +76,13 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ### Scavenger Hunt
 
+In this exercise you will go on a scavenger hunt to explore the Original Workspace and your Cloned Workspace to look for and understand the differences between them.
+
+The focus of this scavenger hunt within the Workspaces will be on:
+
+1. Entries in Data Tables
+2. Files in Workspace Buckets
+
 Original Workspace
 
 - https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage
