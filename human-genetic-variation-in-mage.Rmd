@@ -97,6 +97,17 @@ Your Cloned Workspace
 
 ## Analysis with Jupyter/Terminal
 
+The Jupyter Cloud Environment allows for both interactive analysis using Jupyter Notebooks as well as a UNIX Terminal.
+Pre-configured with conda, Python, R, and GATK, you can further personalize your environment using startup scripts and custom Docker images.
+In this Workspace you will find a Jupyter Notebook demonstrating how to generate a quick summary of 1000 Genomes variants.
+In this exercise you will learn how to: 
+
+1. Launch Jupyter Cloud Environment in your Cloned Workspace.
+1. Access a UNIX Terminal.
+1. Transfer data using between Workspace Bucket and  Persistent Disk using `gcloud storage`
+1. Run a Jupyter Notebook to plot a histogram of 1000 Genomes variants per chromosome.
+
+
 ### Launch Jupyter
 
 ```{r, echo=FALSE}
