@@ -158,6 +158,16 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ## Bioconductor with RStudio
 
+The next Cloud Environment we will explore is RStudio which comes pre-configured with support for both the recent and prior release of Bioconductor.
+In 2024, the [Bioconductor project](https://www.bioconductor.org/about) provided almost 4,000 packages covering a “broad range of powerful statistical and graphical methods for the analysis of genomic data”.
+AnVIL enables analysis using Bioconductor in a single secure environment with direct access to results from additional tools like Galaxy and WDL Workflows.
+In this exercise you will learn how to:
+
+1. Launch RStudio Cloud Environment in your Cloned Workspace.
+2. Transfer data between your Workspace and Persistent Disk using the Bioconductor AnVILGCP package.
+3. Run an R Notebook to make a PCA plot of MAGE RNA expression counts.
+
+
 ### Launch RStudio
 
 ```{r, echo=FALSE}
