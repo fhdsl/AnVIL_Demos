@@ -154,8 +154,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1-IU5l40UxmpoBqFi
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_40")
 ```
 
-### Next Steps
-
 ## Bioconductor with RStudio
 
 The next Cloud Environment we will explore is RStudio which comes pre-configured with support for both the recent and prior release of Bioconductor.
@@ -184,6 +182,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 
 ### Review Key Concepts
 
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g33d1f69b524_2_78")
+```
+
 ### Use AnVILGCP
 
 Copy a file to your Persistent Disk using the link in the Data Table and the Bioconductor [AnVILGCP](https://bioconductor.org/packages/AnVILGCP) package
@@ -204,8 +206,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_84")
 ```
-
-### Next Steps
 
 ## Workflows with Galaxy
 
@@ -228,6 +228,10 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1yYCg4cPVBMMDghT1
 ```
 
 ### Review Key Concepts
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g33d1f69b524_2_73")
+```
 
 ### Run FastQC
 
@@ -258,8 +262,6 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_100")
 ```
-
-### Next Steps
 
 # Wrap Up {#human-genetic-variation-in-mage-wrap-up}
 
