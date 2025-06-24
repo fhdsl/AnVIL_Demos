@@ -6,7 +6,13 @@ knitr::opts_chunk$set(out.width = "100%")
 
 # Overview {#human-genetic-variation-in-mage-overview}
 
-Introduce AnVIL, Bioconductor, and Galaxy using MAGE
+AnVIL provides a secure, scalable computing platform for controlled access data.
+Hosting over 7 petabytes of data across 113 dbGaP accessions and 103 consent codes, AnVIL inverts the model of genomics data sharing by providing tools such as Jupyter, RStudio, Galaxy, and WDL Workflows.
+This AnVIL Demo introduces datasets from the MAGE and 1KGP projects to showcase notable features including how to import and export results between these various tools.
+
+```{r, echo=FALSE}
+ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.p")
+```
 
 ## Learning Objectives
 
@@ -202,6 +208,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 ```
 
 ### Run R Notebook
+
+Two notebooks are available showcasing notable features of Bioconductor and RStudio on AnVIL
+
+- PCA.Rmd – Make a PCA plot of gene expression counts from MAGE, demonstrating how AnVILGCP facilitates access to Data Tables (`avtable()`) and Workspace Buckets (`gcloud_storage()`)
+- eQTL.Rmd (requires using the  `install-conda.sh` startup script) – Visualize an eQTL (expression quantitative trait locus) correlated with expression of GSTP1, combining datasets from the MAGE and 1KGP Workspaces
 
 ```{r, echo=FALSE}
 ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_84")
