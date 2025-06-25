@@ -9,7 +9,10 @@ Hosting over 7 petabytes of data across 113 dbGaP accessions and 103 consent cod
 This AnVIL Demo introduces datasets from the [MAGE](https://github.com/mccoy-lab/MAGE) and [1000 Genomes Project (1KGP)](https://www.internationalgenome.org/) projects to showcase notable features of working in AnVIL including how to import data and export results between these various tools.
 
 <img src="human-genetic-variation-in-mage_files/figure-html//16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_p.png" width="100%" />
-This demonstration will specifically explore workspaces, noting how cloned workspaces differ from the original; run an analysis in a Jupyter Notebook, run an analysis using RStudio, and submit a workflow in Galaxy. All analyses will showcase human genetic variation concepts and results from the MAGE and 1KGP datasets.
+
+This demonstration will specifically explore workspaces, noting how cloned workspaces differ from the original; run an analysis in a Jupyter Notebook, run an analysis using RStudio, and submit a workflow in Galaxy.
+All analyses will showcase human genetic variation concepts and results from the MAGE and 1KGP datasets.
+
 ## Learning Objectives
 
 1. Explore MAGE Workspace 

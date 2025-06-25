@@ -81,6 +81,7 @@ exporting-your-results
 shutting-down-galaxy-on-anvil
 run-tool-with-galaxy-next-steps
 human-genetic-variation-in-mage-overview
+learning-objectives-4
 human-genetic-variation-in-mage-preparation
 review-background-1
 create-anvil-account-2
