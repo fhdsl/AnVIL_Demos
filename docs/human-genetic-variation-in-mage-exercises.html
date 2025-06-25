@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 Instructor Guide | AnVIL Demos</title>
+  <title>19 Exercises | AnVIL Demos</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 Instructor Guide | AnVIL Demos" />
+  <meta property="og:title" content="19 Exercises | AnVIL Demos" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 Instructor Guide | AnVIL Demos" />
+  <meta name="twitter:title" content="19 Exercises | AnVIL Demos" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="scale-with-workflows-exercises.html"/>
-<link rel="next" href="single-cell-with-bioconductor-overview.html"/>
+<link rel="prev" href="human-genetic-variation-in-mage-preparation.html"/>
+<link rel="next" href="human-genetic-variation-in-mage-wrap-up.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -352,80 +352,170 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="scale-with-workflows-instructor-guide" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">8</span> Instructor Guide<a href="scale-with-workflows-instructor-guide.html#scale-with-workflows-instructor-guide" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="timeline-1" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Timeline<a href="scale-with-workflows-instructor-guide.html#timeline-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Here is one possible way to budget time for a synchronous event:</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Activity</th>
-<th align="left">Duration</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">1-slide Overview, Clone, Launch</td>
-<td align="left">5 min</td>
-</tr>
-<tr class="even">
-<td align="left">Key Concepts</td>
-<td align="left">5 min</td>
-</tr>
-<tr class="odd">
-<td align="left">Exercises</td>
-<td align="left">15 min</td>
-</tr>
-<tr class="even">
-<td align="left">Q &amp; A</td>
-<td align="left">5 min</td>
-</tr>
-</tbody>
-</table>
-<p>Here is one way to balance exercises between hands-on (HO) and follow-along (FA):</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Activity</th>
-<th align="left">Style</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Explore Dataset Catalog</td>
-<td align="left">FA</td>
-</tr>
-<tr class="even">
-<td align="left">Explore Workspace</td>
-<td align="left">FA</td>
-</tr>
-<tr class="odd">
-<td align="left">Combine Data Workspace</td>
-<td align="left">HO</td>
-</tr>
-<tr class="even">
-<td align="left">Explore Dockstore Workflows</td>
-<td align="left">FA</td>
-</tr>
-<tr class="odd">
-<td align="left">Run qc-analysis-pipeline</td>
-<td align="left">HO</td>
-</tr>
-</tbody>
-</table>
+<div id="human-genetic-variation-in-mage-exercises" class="section level1 hasAnchor" number="19">
+<h1><span class="header-section-number">19</span> Exercises<a href="human-genetic-variation-in-mage-exercises.html#human-genetic-variation-in-mage-exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="explore-mage-workspace" class="section level2 hasAnchor" number="19.1">
+<h2><span class="header-section-number">19.1</span> Explore MAGE Workspace<a href="human-genetic-variation-in-mage-exercises.html#explore-mage-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The demos-explore-mage Workspace allows you to explore how data is organized on AnVIL using a subset of data from the <a href="https://pubmed.gov/39020179">Multi-ancestry Analysis of Gene Expression</a> (MAGE) and <a href="https://www.internationalgenome.org">1000 Genomes Project</a> (1KGP) projects.
+Importantly, pay close attention to the relationship between file <strong>links</strong> in Data Tables and the actual files in Workspace Buckets, especially after cloning a Workspace.
+You can navigate to MAGE Workspace directly through this link:</p>
+<ul>
+<li><a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage" class="uri">https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage</a></li>
+</ul>
+<p>Key components of this Workspace are:</p>
+<ol style="list-style-type: decimal">
+<li>DASHBOARD tab - which will tell you more about the Workspace.</li>
+<li>DATA tab - which has Data Tables with links to data relevant for demo exercises.</li>
+<li>ANALYSES tab - which has notebooks relevant for demo exercises with Jupyter and RStudio.</li>
+<li>‘Environment Configuration’ button - to select the Cloud Environment of choice.</li>
+<li>‘Browse workspace files’ button - which contains any files stored in this Workspace (see Review Key Concepts for important note about Cloned Workspaces) as well as notebooks listed in the ANALYSES tab.</li>
+</ol>
+<div id="review-key-concepts-2" class="section level3 hasAnchor" number="19.1.1">
+<h3><span class="header-section-number">19.1.1</span> Review Key Concepts<a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g33d1f69b524_1_1.png" width="100%" /></p>
 </div>
-<div id="example" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> Example<a href="scale-with-workflows-instructor-guide.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Here is a recording of this material at our monthly AnVIL Demos series</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1vz4kupdkms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
-
+<div id="scavenger-hunt" class="section level3 hasAnchor" number="19.1.2">
+<h3><span class="header-section-number">19.1.2</span> Scavenger Hunt<a href="human-genetic-variation-in-mage-exercises.html#scavenger-hunt" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this exercise you will go on a scavenger hunt to explore the Original Workspace and your Cloned Workspace to look for and understand the differences between them.</p>
+<p>The focus of this scavenger hunt within the Workspaces will be on:</p>
+<ol style="list-style-type: decimal">
+<li>Entries in Data Tables</li>
+<li>Files in Workspace Buckets</li>
+</ol>
+<p>Original Workspace</p>
+<ul>
+<li><a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage" class="uri">https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage</a></li>
+<li>Explore Data Tables e.g. counts.csv, PCA.nb.html</li>
+<li>Find files in Workspace Bucket</li>
+</ul>
+<p>Your Cloned Workspace</p>
+<ul>
+<li><a href="https://anvil.terra.bio/#workspaces/" class="uri">https://anvil.terra.bio/#workspaces/</a> &lt;billing-project&gt; / &lt;workspace-name&gt;</li>
+<li>Explore Data Tables</li>
+<li>Look for files in Workspace Bucket</li>
+</ul>
 </div>
 </div>
-
-
-
+<div id="analysis-with-jupyterterminal" class="section level2 hasAnchor" number="19.2">
+<h2><span class="header-section-number">19.2</span> Analysis with Jupyter/Terminal<a href="human-genetic-variation-in-mage-exercises.html#analysis-with-jupyterterminal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Jupyter Cloud Environment allows for both interactive analysis using Jupyter Notebooks as well as a UNIX Terminal.
+Pre-configured with conda, Python, R, and GATK, you can further personalize your environment using startup scripts and custom Docker images.
+In this Workspace you will find a Jupyter Notebook demonstrating how to generate a quick summary of 1000 Genomes variants.
+In this exercise you will learn how to:</p>
+<ol style="list-style-type: decimal">
+<li>Launch Jupyter Cloud Environment in your Cloned Workspace.</li>
+<li>Access a UNIX Terminal.</li>
+<li>Transfer data using between Workspace Bucket and Persistent Disk using <code>gcloud storage</code></li>
+<li>Run a Jupyter Notebook to plot a histogram of 1000 Genomes variants per chromosome.</li>
+</ol>
+<div id="launch-jupyter" class="section level3 hasAnchor" number="19.2.1">
+<h3><span class="header-section-number">19.2.1</span> Launch Jupyter<a href="human-genetic-variation-in-mage-exercises.html#launch-jupyter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_22.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_18.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g14ea2db115d_0_41.png" width="100%" /></p>
+</div>
+<div id="review-key-concepts-3" class="section level3 hasAnchor" number="19.2.2">
+<h3><span class="header-section-number">19.2.2</span> Review Key Concepts<a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_158.png" width="100%" /></p>
+</div>
+<div id="enter-terminal-1" class="section level3 hasAnchor" number="19.2.3">
+<h3><span class="header-section-number">19.2.3</span> Enter Terminal<a href="human-genetic-variation-in-mage-exercises.html#enter-terminal-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Copy a file from the original Workspace Bucket to your Persistent Disk using <code>gcloud storage</code></p>
+<pre><code>gcloud storage cp gs://fc-8c4a998b-0e6f-4750-b6de-c2d8a2da9d90/sample.metadata.MAGE.v1.0.txt .</code></pre>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_32.png" width="100%" /></p>
+</div>
+<div id="run-jupyter-notebook" class="section level3 hasAnchor" number="19.2.4">
+<h3><span class="header-section-number">19.2.4</span> Run Jupyter Notebook<a href="human-genetic-variation-in-mage-exercises.html#run-jupyter-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_36.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_82.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_40.png" width="100%" /></p>
+</div>
+</div>
+<div id="bioconductor-with-rstudio" class="section level2 hasAnchor" number="19.3">
+<h2><span class="header-section-number">19.3</span> Bioconductor with RStudio<a href="human-genetic-variation-in-mage-exercises.html#bioconductor-with-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The next Cloud Environment we will explore is RStudio which comes pre-configured with support for both the recent and prior release of Bioconductor.
+In 2024, the <a href="https://www.bioconductor.org/about">Bioconductor project</a> provided almost 4,000 packages covering a “broad range of powerful statistical and graphical methods for the analysis of genomic data”.
+AnVIL enables analysis using Bioconductor in a single secure environment with direct access to results from additional tools like Galaxy and WDL Workflows.
+In this exercise you will learn how to:</p>
+<ol style="list-style-type: decimal">
+<li>Launch RStudio Cloud Environment in your Cloned Workspace.</li>
+<li>Transfer data between your Workspace and Persistent Disk using the Bioconductor AnVILGCP package.</li>
+<li>Run an R Notebook to make a PCA plot of MAGE RNA expression counts.</li>
+</ol>
+<div id="launch-rstudio" class="section level3 hasAnchor" number="19.3.1">
+<h3><span class="header-section-number">19.3.1</span> Launch RStudio<a href="human-genetic-variation-in-mage-exercises.html#launch-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g14ea2db115d_0_18.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1a35Mb8f0M-bQkBcHa1cyQc6YxXoBLtExCz96nv08vkA_g256428d32e5_0_10.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_71.png" width="100%" /></p>
+</div>
+<div id="review-key-concepts-4" class="section level3 hasAnchor" number="19.3.2">
+<h3><span class="header-section-number">19.3.2</span> Review Key Concepts<a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g33d1f69b524_2_78.png" width="100%" /></p>
+</div>
+<div id="use-anvilgcp" class="section level3 hasAnchor" number="19.3.3">
+<h3><span class="header-section-number">19.3.3</span> Use AnVILGCP<a href="human-genetic-variation-in-mage-exercises.html#use-anvilgcp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Copy a file to your Persistent Disk using the link in the Data Table and the Bioconductor <a href="https://bioconductor.org/packages/AnVILGCP">AnVILGCP</a> package</p>
+<pre><code>BiocManager::install( &quot;AnVILGCP&quot; )
+library( &quot;AnVILGCP&quot; )
+avtable( &quot;MAGE&quot; )
+gcloud_storage( paste( &quot;cp&quot;, avtable( &quot;MAGE&quot; )[2,2], &quot;.&quot; ) )</code></pre>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_80.png" width="100%" /></p>
+</div>
+<div id="run-r-notebook" class="section level3 hasAnchor" number="19.3.4">
+<h3><span class="header-section-number">19.3.4</span> Run R Notebook<a href="human-genetic-variation-in-mage-exercises.html#run-r-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Two notebooks are available showcasing notable features of Bioconductor and RStudio on AnVIL</p>
+<ul>
+<li>PCA.Rmd – Make a PCA plot of gene expression counts from MAGE, demonstrating how AnVILGCP facilitates access to Data Tables (<code>avtable()</code>) and Workspace Buckets (<code>gcloud_storage()</code>)</li>
+<li>eQTL.Rmd (requires using the <code>install-conda.sh</code> startup script) – Visualize an eQTL (expression quantitative trait locus) correlated with expression of GSTP1, combining datasets from the MAGE and 1KGP Workspaces</li>
+</ul>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_84.png" width="100%" /></p>
+</div>
+</div>
+<div id="workflows-with-galaxy" class="section level2 hasAnchor" number="19.4">
+<h2><span class="header-section-number">19.4</span> Workflows with Galaxy<a href="human-genetic-variation-in-mage-exercises.html#workflows-with-galaxy" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://usegalaxy.org">Galaxy</a> is a free, open-source web-based platform for data intensive biomedical research.
+Through its graphical-user interface, over 10,000 tools are ready to run without the need for software installation or prior coding experience.
+In addition to providing a secure space for analysis and data sharing, Galaxy on AnVIL automatically grants you system administrator privileges, enabling you to install and soon configure any tool in the <a href="https://toolshed.g2.bx.psu.edu">toolshed</a>.</p>
+<p>In this exercise you will learn how to:</p>
+<ol style="list-style-type: decimal">
+<li>Launch Galaxy Environment in your Cloned Workspace.</li>
+<li>Upload and export data from/to your Workspace Bucket.</li>
+<li>Run a tool.</li>
+<li>Install a tool.</li>
+</ol>
+<div id="launch-galaxy" class="section level3 hasAnchor" number="19.4.1">
+<h3><span class="header-section-number">19.4.1</span> Launch Galaxy<a href="human-genetic-variation-in-mage-exercises.html#launch-galaxy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge1182914a6_0_36.png" width="100%" /></p>
+</div>
+<div id="review-key-concepts-5" class="section level3 hasAnchor" number="19.4.2">
+<h3><span class="header-section-number">19.4.2</span> Review Key Concepts<a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g33d1f69b524_2_73.png" width="100%" /></p>
+</div>
+<div id="run-fastqc" class="section level3 hasAnchor" number="19.4.3">
+<h3><span class="header-section-number">19.4.3</span> Run FastQC<a href="human-genetic-variation-in-mage-exercises.html#run-fastqc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Copy a file to your Persistent Disk using the Galaxy Upload tool</p>
+<ul>
+<li>Click “Upload” in the left hand menu</li>
+<li>Click “Choose remote files” at the bottom</li>
+<li>Select the <code>demos-explore-mage</code> Workspace</li>
+<li>Select <code>Tables</code> and then <code>1KGP</code></li>
+<li>Tick the box next to <code>NA12878.1mil.fastq.gz</code> and click “Ok”</li>
+<li>Click “Start” and then “Close”</li>
+</ul>
+<p>You can now</p>
+<ul>
+<li>Run the FastQC tool and view FastQC on data 1: Webpage</li>
+<li>Export data back to AnVIL using “Export History to File” (must target <code>Other Data/Files</code>)</li>
+</ul>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_90.png" width="100%" /></p>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_96.png" width="100%" /></p>
+</div>
+<div id="install-tool" class="section level3 hasAnchor" number="19.4.4">
+<h3><span class="header-section-number">19.4.4</span> Install Tool<a href="human-genetic-variation-in-mage-exercises.html#install-tool" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="human-genetic-variation-in-mage_files/figure-html/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak_g369240085c8_0_100.png" width="100%" /></p>
+</div>
+</div>
+</div>
 <hr>
 <center> 
   <div class="footer">
@@ -439,8 +529,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="scale-with-workflows-exercises.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="single-cell-with-bioconductor-overview.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="human-genetic-variation-in-mage-preparation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="human-genetic-variation-in-mage-wrap-up.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
