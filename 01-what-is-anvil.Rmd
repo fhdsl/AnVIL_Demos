@@ -185,12 +185,21 @@ Your instructor will provide information about the billing account that you shou
 
 :::
 
-Now you may or maynot yet have access visible on this screen, but go back to clone the workspace using the menu on the far lect of the AnVIL_HPRC workspace. This time, clicking on clone should pull up a new window that asks for the billing project. Select the account that your instructor told you about, and do not change the other settings.
+Now you may or may not yet have access visible on this screen, but go back to clone the workspace using the menu on the far lect of the AnVIL_HPRC workspace. This time, clicking on clone should pull up a new window that asks for the billing project. Select the account that your instructor told you about, and do not change the other settings.
 
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="Window for cloning, fill out the appropriate billing project from your instructor"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_109#slide=id.g3af265dea68_0_109" )
 ```
+
+Leave everything on the next two screens (sharing and Extra Security Options) as is as well.
+
+Finally, click the blue "Create Workspace" button in the lower right corner on the Extra Security Options screen.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The create workspace button"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_119#slide=id.g3af265dea68_0_119" )
+```
+
 
 
 ## Start a Cloud Environment
