@@ -131,13 +131,17 @@ You may get a warning that you also need to set up two factor authentication, if
 ```{r, echo=FALSE, out.width="100%", fig.alt="warning about 2 factor authentication", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_54#slide=id.g3af265dea68_0_54" )
 ```
-Next you will go to STEP 2. For this you will select "I have a billing account".
+
+
 
 Otherwise, or after you set up two factor authentication, you should get a message about having some free credits to use. Select to allow for any needed authorization and then click on the button that says "Try for free".
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="Google Cloud $300 free credits", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_61#slide=id.g3af265dea68_0_61" )
 ```
+
+
+
 
 You will then need to set up your payment information. Don't worry, you will not be exceeding the free credit amount, so you will not actually be charged!
 
@@ -155,11 +159,39 @@ You will then see a message saying that you set up your account and have free cr
 
 Next you will need to add terra to your billing account. Follow [Step 2](https://support.terra.bio/hc/en-us/articles/360026182251-How-to-set-up-billing-in-Terra-GCP#h_94f3a2f9-6c06-4ea7-9892-2df158c47788) in this guide to do so. Note that you will need to select "Project Billing Manager" instead though.
 
-It may take a few minutes for these changes to become active, but then you can go back to AnVIL and check that you have added terra as a billing manager.
+It may take a few minutes for these changes to become active, but then you can go back to AnVIL and check that you have added a billing manager for Step 2.
+
+For this STEP 2, you will select "I have a billing account".
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Step 2 menu", fig.align="center"}
+https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_97#slide=id.g3af265dea68_0_97" )
+```
+
+Next for STEP 3, check that you have added terra as a billing manager.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Step 3 menu", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_104#slide=id.g3af265dea68_0_104" )
+```
 
 You will need to authenticate the connection with terra again.
 
 Finally you will do STEP 4 to create a Terra billing project. If step 4 has a warning about your account not being set up right, you may need to click the refresh button that is in the warning. 
+
+
+
+::: {.notice}
+
+Your instructor will provide information about the billing account that you should use and will set you up with one.
+
+:::
+
+Now you may or maynot yet have access visible on this screen, but go back to clone the workspace using the menu on the far lect of the AnVIL_HPRC workspace. This time, clicking on clone should pull up a new window that asks for the billing project. Select the account that your instructor told you about, and do not change the other settings.
+
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Window for cloning, fill out the appropriate billing project from your instructor"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_109#slide=id.g3af265dea68_0_109" )
+```
+
 
 ## Start a Cloud Environment
 
