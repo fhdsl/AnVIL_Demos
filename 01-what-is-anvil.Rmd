@@ -115,8 +115,8 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 
 You will likely get a message that you need to start a Google Cloud billing account.
 
-```{r, echo=FALSE, out.width="100%", fig.alt="Message about needing a Google Cloud billing account", fig.align="center"}
-ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
+```{r, echo=FALSE, out.width="100%", fig.alt="Message about needing a billing account", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_37#slide=id.g3af265dea68_0_37" )
 ```
 
 
@@ -126,6 +126,40 @@ This will open a new page about linking a Google Cloud billing account to Terra.
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_49#slide=id.g3af265dea68_0_49" )
 ```
 
+You may get a warning that you also need to set up two factor authentication, if so please do so with your credentials. If you run into challenges, try one of your other accounts, in which you have full administrative access.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="warning about 2 factor authentication", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_54#slide=id.g3af265dea68_0_54" )
+```
+Next you will go to STEP 2. For this you will select "I have a billing account".
+
+Otherwise, or after you set up two factor authentication, you should get a message about having some free credits to use. Select to allow for any needed authorization and then click on the button that says "Try for free".
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Google Cloud $300 free credits", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_61#slide=id.g3af265dea68_0_61" )
+```
+
+You will then need to set up your payment information. Don't worry, you will not be exceeding the free credit amount, so you will not actually be charged!
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Payment information window", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_68#slide=id.g3af265dea68_0_68" )
+```
+
+Once you do this, you will see a "Start free" button become active.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Start free button", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_80#slide=id.g3af265dea68_0_80" )
+```
+
+You will then see a message saying that you set up your account and have free credits. 
+
+Next you will need to add terra to your billing account. Follow [Step 2](https://support.terra.bio/hc/en-us/articles/360026182251-How-to-set-up-billing-in-Terra-GCP#h_94f3a2f9-6c06-4ea7-9892-2df158c47788) in this guide to do so. Note that you will need to select "Project Billing Manager" instead though.
+
+It may take a few minutes for these changes to become active, but then you can go back to AnVIL and check that you have added terra as a billing manager.
+
+You will need to authenticate the connection with terra again.
+
+Finally you will do STEP 4 to create a Terra billing project. If step 4 has a warning about your account not being set up right, you may need to click the refresh button that is in the warning. 
 
 ## Start a Cloud Environment
 
