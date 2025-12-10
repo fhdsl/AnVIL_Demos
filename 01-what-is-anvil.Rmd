@@ -53,11 +53,44 @@ Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is
 
 ## Launch Terra
 
-Open [anvilproject.org](https://anvilproject.org) and click on "Launch" Terra
+Go to [anvilproject.org](https://anvilproject.org), find the box that says Terra and click on "Launch".
 
-```{r, echo=FALSE, out.width="100%", fig.alt=""}
+```{r, echo=FALSE, out.width="100%", fig.alt="The terra launch button on AnVIL", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24303c0c340_0_0" )
 ```
+Next, you will need Log in. 
+
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The log in button for AnVIL",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g24303c0c340_0_6#slide=id.g24303c0c340_0_6" )
+```
+
+
+If you have never used AnVIL before, you will need to create a new account. You can use a gmail or microsoft account to log in.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="the first window when starting an account with AnVIL",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g24303c0c340_0_12#slide=id.g24303c0c340_0_12" )
+```
+
+To create an account you will need to supply some information and read the Terra terms of Service. 
+
+If you accept the terms of service, check the box for agreement and the register button will become active.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The inactive register button because the box has not been checked for agreement with the terms of service.",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_0#slide=id.g3af265dea68_0_0" )
+```
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The active reister button",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_9#slide=id.g3af265dea68_0_9" )
+```
+
+This will open a new tab for you of the AnVIL workspaces, now you are ready to start working in AnVIL!
+
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The workspaces window for AnVIL",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_4#slide=id.g3af265dea68_0_4" )
+```
+
 
 ## Clone HPRC Workspace
 
@@ -65,12 +98,34 @@ At [anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces)
 
 - Enter `hprc` in the search box
 - Click on the "Public" tab
-- Click on AnVIL_HPRC
-- Click on the circle with three vertical dots in the upper right corner and select "Clone"
+- Find the AnVIL_HPRC workspace
+- Click on the circle with three vertical dots on the right side of the workspace information window
 
-```{r, echo=FALSE, out.width="100%", fig.alt=""}
+```{r, echo=FALSE, out.width="100%", fig.alt="An image of the workspace window showing searching for the hprc workspace", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
 ```
+
+
+Select "Clone" from the menu options.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="An image of the workspace options menu to clone the workspace", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
+```
+
+
+You will likely get a message that you need to start a Google Cloud billing account.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Message about needing a Google Cloud billing account", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
+```
+
+
+This will open a new page about linking a Google Cloud billing account to Terra. Click on the "Go to Google Cloud Console" button.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Billing account page", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_49#slide=id.g3af265dea68_0_49" )
+```
+
 
 ## Start a Cloud Environment
 
