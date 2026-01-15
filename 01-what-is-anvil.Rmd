@@ -164,7 +164,7 @@ It may take a few minutes for these changes to become active, but then you can g
 For this STEP 2, you will select "I have a billing account".
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="Step 2 menu", fig.align="center"}
-https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_97#slide=id.g3af265dea68_0_97" )
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_97#slide=id.g3af265dea68_0_97" )
 ```
 
 Next for STEP 3, check that you have added terra as a billing manager.
