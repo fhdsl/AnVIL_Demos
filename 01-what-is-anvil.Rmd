@@ -159,7 +159,7 @@ Once you do this, you will see a "Start free" button become active.
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_80#slide=id.g3af265dea68_0_80" )
 ```
 
-You will then see a message saying that you set up your account and have free credits. 
+You will then see a message confirming you set up your account and have free credits. 
 
 Next you will need to add terra to your billing account. Follow [Step 2](https://support.terra.bio/hc/en-us/articles/360026182251-How-to-set-up-billing-in-Terra-GCP#h_94f3a2f9-6c06-4ea7-9892-2df158c47788) in this guide to do so. Note that you will need to select "Project Billing Manager" instead though.
 
