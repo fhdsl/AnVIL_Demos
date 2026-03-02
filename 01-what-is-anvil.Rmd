@@ -94,7 +94,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 
 ## Clone HPRC Workspace
 
-At [anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces)
+At [anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces):
 
 - Enter `hprc` in the search box
 - Click on the "Public" tab
