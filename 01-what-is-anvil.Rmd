@@ -113,7 +113,11 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 ```
 
 
-You will likely get a message that you need to start a Google Cloud billing account.
+### First Time Billing Setup
+
+If you have set up billing before, or if your instructor has provided a billing project you can skip ahead to [<link here>].
+
+If this is your first time on AnVIL, you will likely get a message that you need to start a Google Cloud billing account.
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="Message about needing a billing account", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_37#slide=id.g3af265dea68_0_37" )
