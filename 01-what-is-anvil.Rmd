@@ -130,7 +130,7 @@ This will open a new page about linking a Google Cloud billing account to Terra.
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_49#slide=id.g3af265dea68_0_49" )
 ```
 
-You may get a warning that you also need to set up two factor authentication, if so please do so with your credentials. If you run into challenges, try one of your other accounts, in which you have full administrative access.
+You may get a warning that you also need to set up two factor authentication. If so, please do so with your credentials. If you run into challenges, try one of your other accounts in which you have full administrative access.
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="warning about 2 factor authentication", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_54#slide=id.g3af265dea68_0_54" )
