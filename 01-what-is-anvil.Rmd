@@ -74,7 +74,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 
 To create an account you will need to supply some information and read the Terra Terms of Service. 
 
-If you accept the terms of service, check the box for agreement and the register button will become active.
+If you accept the Terms of Service, check the box for agreement and the register button will become active.
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="The inactive register button because the box has not been checked for agreement with the terms of service.",  fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_0#slide=id.g3af265dea68_0_0" )
