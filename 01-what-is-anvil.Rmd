@@ -53,7 +53,7 @@ Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is
 
 ## Launch Terra
 
-Go to [anvilproject.org](https://anvilproject.org), find the box that says Terra and click on "Launch".
+Go to [anvilproject.org](https://anvilproject.org), find the box that says Terra, and click on "Launch".
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="The terra launch button on AnVIL", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24303c0c340_0_0" )
