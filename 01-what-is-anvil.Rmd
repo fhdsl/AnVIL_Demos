@@ -115,7 +115,6 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 
 ### First Time Billing Setup
 
-If you have set up billing before, or if your instructor has provided a billing project you can skip ahead to [<link here>].
 
 If this is your first time on AnVIL, you will likely get a message that you need to start a Google Cloud billing account.
 
