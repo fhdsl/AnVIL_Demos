@@ -177,7 +177,7 @@ Next for STEP 3, check that you have added terra as a billing manager.
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_104#slide=id.g3af265dea68_0_104" )
 ```
 
-You will need to authenticate the connection with terra again.
+You will need to authenticate the connection with Terra again.
 
 Finally you will do STEP 4 to create a Terra billing project. If step 4 has a warning about your account not being set up right, you may need to click the refresh button that is in the warning. 
 
