@@ -210,7 +210,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 
 
 
-## Start a Cloud Environment
+## Start a Cloud Environment{#start-a-cloud-environment}
 
 - Click on the Environment Configuration (cloud icon)
 - Select Jupyter Settings
