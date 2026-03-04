@@ -66,7 +66,7 @@ ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-x
 ```
 
 
-If you have never used AnVIL before, you will need to create a new account. You can use a [Google or Institutional account](https://support.terra.bio/hc/en-us/articles/360028235911-How-to-register-on-Terra-Google-SSO) to log in. Otherwise if you already have an account, you can skip ahead to the [next section](#clone-hprc-workspace).
+If you have never used AnVIL before, you will need to create a new account. You can use a [Google or Institutional account](https://support.terra.bio/hc/en-us/articles/360028235911-How-to-register-on-Terra-Google-SSO) to log in. Otherwise if you already have an account, you can skip ahead to the [next section](#clone-hprc-workspace). 
 
 ```{r, echo=FALSE, out.width="100%", fig.alt="the first window when starting an account with AnVIL",  fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g24303c0c340_0_12#slide=id.g24303c0c340_0_12" )
