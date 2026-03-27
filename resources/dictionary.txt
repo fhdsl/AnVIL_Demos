@@ -1,4 +1,5 @@
 AnVIL
+AnVILGCP
 anvilproject
 AnVIL's
 BiocManager
@@ -11,11 +12,15 @@ Callout
 CNVs
 codeblock
 colData
+conda
 CoV
+csv
+dbGaP
 dex
 dexamethasone
 Dockstore
 dropdown
+eQTL
 fastq
 FASTQ
 FastQC
@@ -26,6 +31,7 @@ github
 Glimma
 glimmaMDS
 Gmail
+GSTP
 GTEx
 HPRC
 ilmn
@@ -36,6 +42,7 @@ iSEE
 iSEEWorkshopEuroBioc
 JBrowse
 Jupyter
+KGP
 Lastname
 limma
 logcount
@@ -55,6 +62,7 @@ Monocyte
 monocytes
 Monocytes
 mononuclear
+nb
 NCI
 NHGRI
 NRES
@@ -83,10 +91,13 @@ Rmd
 RStudio
 scalable
 SingleCellExperiment
+slidedeck
 SummarizedExperiment
 superpopulations
 terra
+throughs
 timeframe
+toolshed
 UI
 Uncompress
 underserved

@@ -53,26 +53,169 @@ Learn about why AnVIL has been created, what features AnVIL offers, how AnVIL is
 
 ## Launch Terra
 
-Open [anvilproject.org](https://anvilproject.org) and click on "Launch" Terra
+Go to [anvilproject.org](https://anvilproject.org), find the box that says Terra, and click on "Launch".
 
-```{r, echo=FALSE, out.width="100%", fig.alt=""}
+```{r, echo=FALSE, out.width="100%", fig.alt="The terra launch button on AnVIL", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24303c0c340_0_0" )
 ```
+Next, you will need Log in. 
 
-## Clone HPRC Workspace
 
-At [anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces)
+```{r, echo=FALSE, out.width="100%", fig.alt="The log in button for AnVIL",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g24303c0c340_0_6#slide=id.g24303c0c340_0_6" )
+```
+
+
+If you have never used AnVIL before, you will need to create a new account. You can use a [Google or Institutional account](https://support.terra.bio/hc/en-us/articles/360028235911-How-to-register-on-Terra-Google-SSO) to log in. Otherwise if you already have an account, you can skip ahead to the [next section](#clone-hprc-workspace). 
+
+```{r, echo=FALSE, out.width="100%", fig.alt="the first window when starting an account with AnVIL",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g24303c0c340_0_12#slide=id.g24303c0c340_0_12" )
+```
+
+To create an account you will need to supply some information and read the Terra Terms of Service. 
+
+If you accept the Terms of Service, check the box for agreement and the register button will become active.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The inactive register button because the box has not been checked for agreement with the terms of service.",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_0#slide=id.g3af265dea68_0_0" )
+```
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The active reister button",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_9#slide=id.g3af265dea68_0_9" )
+```
+
+This will open a new tab for you of the AnVIL workspaces, now you are ready to start working in AnVIL!
+
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The workspaces window for AnVIL",  fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_4#slide=id.g3af265dea68_0_4" )
+```
+
+
+## Clone HPRC Workspace{#clone-hprc-workspace}
+
+At [anvil.terra.bio/#workspaces](https://anvil.terra.bio/#workspaces):
 
 - Enter `hprc` in the search box
 - Click on the "Public" tab
-- Click on AnVIL_HPRC
-- Click on the circle with three vertical dots in the upper right corner and select "Clone"
+- Find the AnVIL_HPRC workspace
+- Click on the circle with three vertical dots on the right side of the workspace information window
 
-```{r, echo=FALSE, out.width="100%", fig.alt=""}
+```{r, echo=FALSE, out.width="100%", fig.alt="An image of the workspace window showing searching for the hprc workspace", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
 ```
 
-## Start a Cloud Environment
+
+Select "Clone" from the menu options.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="An image of the workspace options menu to clone the workspace", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
+```
+
+::: {.notice}
+You can also directly access the workspace going to this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC
+:::
+
+If you have set up billing before, you can skip ahead to the [Starting a cloud environment section](#start-a-cloud-environment).
+
+If your instructor has provided a billing project, you can skip to the [Use a billing project section](#use-a-billing-project).
+
+### First Time Billing Setup
+
+
+If this is your first time on AnVIL, you will likely get a message that you need to start a Google Cloud billing account.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Message about needing a billing account", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_37#slide=id.g3af265dea68_0_37" )
+```
+
+
+This will open a new page about linking a Google Cloud billing account to Terra. Click on the "Go to Google Cloud Console" button.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Billing account page", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_49#slide=id.g3af265dea68_0_49" )
+```
+
+You may get a warning that you also need to set up two factor authentication. If so, please do so with your credentials. If you run into challenges, try one of your other accounts in which you have full administrative access.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="warning about 2 factor authentication", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_54#slide=id.g3af265dea68_0_54" )
+```
+
+
+
+Otherwise, or after you set up two factor authentication, you should get a message about having some free credits to use. Select to allow for any needed authorization and then click on the button that says "Try for free".
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Google Cloud $300 free credits", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_61#slide=id.g3af265dea68_0_61" )
+```
+
+
+
+
+You will then need to set up your payment information. Don't worry, you will not be exceeding the free credit amount, so you will not actually be charged!
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Payment information window", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_68#slide=id.g3af265dea68_0_68" )
+```
+
+Once you do this, you will see a "Start free" button become active.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Start free button", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_80#slide=id.g3af265dea68_0_80" )
+```
+
+You will then see a message confirming you set up your account and have free credits. 
+
+Next you will need to add Terra to your billing account. Follow [Step 2](https://support.terra.bio/hc/en-us/articles/360026182251-How-to-set-up-billing-in-Terra-GCP#h_94f3a2f9-6c06-4ea7-9892-2df158c47788) in this guide to do so. Note that you will need to select "Project Billing Manager" instead though.
+
+It may take a few minutes for these changes to become active, but then you can go back to AnVIL and check that you have added a billing manager for Step 2.
+
+For this STEP 2, you will select "I have a billing account".
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Step 2 menu", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_97#slide=id.g3af265dea68_0_97" )
+```
+
+Next for STEP 3, check that you have added terra as a billing manager.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Step 3 menu", fig.align="center"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_104#slide=id.g3af265dea68_0_104" )
+```
+
+You will need to authenticate the connection with Terra again.
+
+Finally you will do STEP 4 to create a Terra billing project. If step 4 has a warning about your account not being set up right, you may need to click the refresh button that is in the warning. 
+
+
+
+::: {.notice}
+
+Your instructor will provide information about the billing account that you should use and will set you up with one.
+
+:::
+
+
+## Use a Billing Project{#use-a-billing-project}
+
+Now you may or may not yet have access visible on this screen, but go back to clone the workspace using the menu on the far left of the AnVIL_HPRC workspace. This time, clicking on clone should pull up a new window that asks for the billing project. Select the account that your instructor told you about, and do not change the other settings.
+
+
+```{r, echo=FALSE, out.width="100%", fig.alt="Window for cloning, fill out the appropriate billing project from your instructor"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_109#slide=id.g3af265dea68_0_109" )
+```
+
+Leave everything on the next two screens (sharing and Extra Security Options) as is as well.
+
+Finally, click the blue "Create Workspace" button in the lower right corner on the Extra Security Options screen.
+
+```{r, echo=FALSE, out.width="100%", fig.alt="The create workspace button"}
+ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit?slide=id.g3af265dea68_0_119#slide=id.g3af265dea68_0_119" )
+```
+
+
+
+## Start a Cloud Environment{#start-a-cloud-environment}
 
 - Click on the Environment Configuration (cloud icon)
 - Select Jupyter Settings
