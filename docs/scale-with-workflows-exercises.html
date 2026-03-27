@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 Exercises | AnVIL Demos</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 Exercises | AnVIL Demos" />
   <meta property="og:type" content="book" />
@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2025-06-25" />
+<meta name="date" content="2026-03-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -169,11 +169,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html"><i class="fa fa-check"></i><b>3</b> Exercises</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#launch-terra"><i class="fa fa-check"></i><b>3.1</b> Launch Terra</a></li>
-<li class="chapter" data-level="3.2" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#clone-hprc-workspace"><i class="fa fa-check"></i><b>3.2</b> Clone HPRC Workspace</a></li>
-<li class="chapter" data-level="3.3" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#start-a-cloud-environment"><i class="fa fa-check"></i><b>3.3</b> Start a Cloud Environment</a></li>
-<li class="chapter" data-level="3.4" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#find-tidbits"><i class="fa fa-check"></i><b>3.4</b> Find Tidbits</a></li>
-<li class="chapter" data-level="3.5" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#enter-terminal"><i class="fa fa-check"></i><b>3.5</b> Enter Terminal</a></li>
-<li class="chapter" data-level="3.6" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#shut-down"><i class="fa fa-check"></i><b>3.6</b> Shut Down</a></li>
+<li class="chapter" data-level="3.2" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#clone-hprc-workspace"><i class="fa fa-check"></i><b>3.2</b> Clone HPRC Workspace</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#first-time-billing-setup"><i class="fa fa-check"></i><b>3.2.1</b> First Time Billing Setup</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#use-a-billing-project"><i class="fa fa-check"></i><b>3.3</b> Use a Billing Project</a></li>
+<li class="chapter" data-level="3.4" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#start-a-cloud-environment"><i class="fa fa-check"></i><b>3.4</b> Start a Cloud Environment</a></li>
+<li class="chapter" data-level="3.5" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#find-tidbits"><i class="fa fa-check"></i><b>3.5</b> Find Tidbits</a></li>
+<li class="chapter" data-level="3.6" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#enter-terminal"><i class="fa fa-check"></i><b>3.6</b> Enter Terminal</a></li>
+<li class="chapter" data-level="3.7" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#shut-down"><i class="fa fa-check"></i><b>3.7</b> Shut Down</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="what-is-anvil-instructor-guide.html"><a href="what-is-anvil-instructor-guide.html"><i class="fa fa-check"></i><b>4</b> Instructor Guide</a>
 <ul>
@@ -385,14 +389,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 <p>Now you know how to find AnVIL datasets! To access the data in these datasets, you will need to access the <strong>Terra Workspace</strong> where the data is stored. You can find links to the Terra Workspaces in the Workspaces tab.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f1d151022_0_4.png" alt="Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project.  The &quot;Workspaces&quot; tab is highlighted and has been selected, and the &quot;Terra Workspaces&quot; column is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f1d151022_0_4.png” alt=“Screenshot of AnVIL Dataset Catalog showing Workspaces from the GTEx project. The”Workspaces” tab is highlighted and has been selected, and the “Terra Workspaces” column is highlighted.” width=“100%” /&gt;</p>
 <p>Note that, if a Workspace contains protected data, you will need to obtain the appropriate permissions before you can open the Workspace. For these GTEx datasets, <code>AnVIL_GTEx_public_data</code> (with consent code NRES) is available to anyone on AnVIL, but other GTEx Workspaces require permission to access.</p>
 </div>
 <div id="explore-hprc-workspace" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> Explore HPRC Workspace<a href="scale-with-workflows-exercises.html#explore-hprc-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Next we will explore one of the Workspaces from the AnVIL Dataset Catalog, so you can see where the data lives. For this exercise, we will look at data from the <a href="https://humanpangenome.org/">Human Pangenome Reference Consortium</a>.</p>
 <p>You can find the Workspace that contains the data by searching for the “HPRC” Consortium in the AnVIL Dataset Catalog and clicking on the Terra Workspace link, or you can navigate there directly through this link: <a href="https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC" class="uri">https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC</a>.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_85.png" alt="Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace.  The &quot;Consortium&quot; filter is highlighted and &quot;HPRC&quot; has been selected; the &quot;Workspaces&quot; tab is highlighted and has been selected, and in the Terra Workspaces column the link to the &quot;AnVIL_HPRC&quot; Workspace is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_85.png” alt=“Screenshot of AnVIL Dataset Catalog showing the Human Pangenome Reference Consortium Workspace. The”Consortium” filter is highlighted and “HPRC” has been selected; the “Workspaces” tab is highlighted and has been selected, and in the Terra Workspaces column the link to the “AnVIL_HPRC” Workspace is highlighted.” width=“100%” /&gt;</p>
 <div id="what-is-a-workspace" class="section level3 hasAnchor" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> What is a Workspace?<a href="scale-with-workflows-exercises.html#what-is-a-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results. The <code>AnVIL_HPRC</code> Workspace is being used to store and share data from the Human Pangenome Reference Consortium.</p>
@@ -414,7 +418,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="data" class="section level3 hasAnchor" number="7.2.3">
 <h3><span class="header-section-number">7.2.3</span> Data<a href="scale-with-workflows-exercises.html#data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <strong>Data</strong> tab contains all the files associated with the Workspace - data, metadata, workflow outputs, etc. Terra provides <strong>Data Tables</strong> to help organize data and results.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png" alt="Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace.  The &quot;TABLES&quot; menu is expanded and highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_25.png” alt=“Screenshot of the Data tab for the Human Pangenome Reference Consortium Workspace. The”TABLES” menu is expanded and highlighted.” width=“100%” /&gt;</p>
 </div>
 <div id="exercise-2" class="section level3 unnumbered unlisted hasAnchor reflection">
 <h3>Exercise<a href="scale-with-workflows-exercises.html#exercise-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -437,16 +441,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">7.3.1</span> Open your Workspace<a href="scale-with-workflows-exercises.html#open-your-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To get started, navigate to your cloned copy of <code>demos-combine-data-workspaces</code>.</p>
 <p>You can find your Workspace in Terra by clicking on “Workspaces” in the dropdown menu, or you can go there directly at <a href="https://anvil.terra.bio/#workspaces"><code>anvil.terra.bio/#workspaces</code></a>. Once there, you should see your Workspace under the “MY WORKSPACES” tab. It may also show up in your recently viewed Workspaces. Click on the Workspace name to open it. <strong>Make sure you are in <em>your copy</em> of the Workspace.</strong> If you are in the original Workspace, you will not have permission to start up Jupyter and run commands.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_44.png" alt="Screenshot of Terra Workspaces page with the &quot;My Workspaces&quot; tab selected.  The name of the Workspace is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24f280a88cb_0_44.png” alt=“Screenshot of Terra Workspaces page with the”My Workspaces” tab selected. The name of the Workspace is highlighted.” width=“100%” /&gt;</p>
 </div>
 <div id="open-jupyter-notebook" class="section level3 hasAnchor" number="7.3.2">
 <h3><span class="header-section-number">7.3.2</span> Open Jupyter Notebook<a href="scale-with-workflows-exercises.html#open-jupyter-notebook" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>There are multiple ways to manage Data Tables on AnVIL; for this exercise we will use the <a href="https://bioconductor.org/packages/release/bioc/html/AnVIL.html"><code>Anvil</code></a> R package, which we will run using a Jupyter cloud environment. The <code>AnVIL</code> package provides a wide range of functions for programmatically interacting with AnVIL.</p>
 <p>To help you get started, we have provided a copy of a Jupyter Notebook that uses the <code>AnVIL</code> package to create Data Tables linking out to data in another Workspace. For this exercise, you will make a couple of adjustments to the Notebook, so that it links properly to <em>your</em> Workspace (instead of the original Workspace).</p>
 <p>Within your Workspace, the ANALYSIS tab holds your Notebooks (Jupyter and R Markdown).</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_0.png" alt="Screenshot of Terra Workspace with the &quot;ANALYSES&quot; tab selected and highlighted.  The page shows a list of Jupyter and R Notebooks." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_0.png” alt=“Screenshot of Terra Workspace with the”ANALYSES” tab selected and highlighted. The page shows a list of Jupyter and R Notebooks.” width=“100%” /&gt;</p>
 <p>By clicking on a Notebook, you can preview a static copy of the Notebook. Clicking the “OPEN” button launches the Notebook in a cloud environment so that you can edit and run code. (The “PLAYGROUND” option also lets you edit and run code, but your changes will not be saved.)</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_13.png" alt="Screenshot of a preview of a Jupyter Notebook in a Terra Workspace.  The &quot;OPEN&quot; button is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_13.png” alt=“Screenshot of a preview of a Jupyter Notebook in a Terra Workspace. The”OPEN” button is highlighted.” width=“100%” /&gt;</p>
 </div>
 <div id="exercise-3" class="section level3 unnumbered unlisted hasAnchor reflection">
 <h3>Exercise<a href="scale-with-workflows-exercises.html#exercise-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -520,7 +524,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="view-your-new-data-table" class="section level3 hasAnchor" number="7.3.7">
 <h3><span class="header-section-number">7.3.7</span> View your new Data Table<a href="scale-with-workflows-exercises.html#view-your-new-data-table" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>As a last step, take a look at the Data Tab in your Workspace. You should now see a table named <code>sample</code> that contains 6 rows - 3 with project “HPRC” and 3 with project “1000G”.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png" alt="Screenshot of Terra Workspace with the &quot;DATA&quot; tab selected.  The &quot;sample&quot; Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_19.png” alt=“Screenshot of Terra Workspace with the”DATA” tab selected. The “sample” Data Table is selected and highlighted, and the page shows a Data Table with 6 rows in it.” width=“100%” /&gt;</p>
 <div class="notice">
 <p>Note that for this exercise we preloaded the Workspace with 4 samples - if you only see 4 rows then double check your Notebook:</p>
 <ul>
@@ -538,7 +542,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p>The Dockstore platform is a repository for scalable bioinformatics tools and workflows.</p>
 <p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_30.png" alt="Screenshot of Dockstore home page." width="100%" /></p>
 <p>You can find Workflows for AnVIL by clicking on the “Organizations” tab and searching for AnVIL.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_390.png" alt="Screenshot of Dockstore Organizations page.  The searchbox is highlighted, and the text &quot;anvil&quot; has been entered.  The card for the AnVIL organization is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g24306c8bf8a_0_390.png” alt=“Screenshot of Dockstore Organizations page. The searchbox is highlighted, and the text”anvil” has been entered. The card for the AnVIL organization is highlighted.” width=“100%” /&gt;</p>
 <p>Here you can find many Workflows which you can import into your AnVIL Workspace to use in your own analyses. These Workflows are organized into collections to make them easier to find.</p>
 <div id="exercise-7" class="section level3 unnumbered unlisted hasAnchor reflection">
 <h3>Exercise<a href="scale-with-workflows-exercises.html#exercise-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -563,7 +567,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li>The “JOB HISTORY” tab is where you monitor the progress of submitted Workflows.</li>
 </ul>
 <p>Under the “WORKFLOWS” tab you will see any Workflows that have been imported into your Workspace. If you import a Workflow from Dockstore (using the Launch with AnVIL button) or from another Workspace, you will see it here. For this exercise, the <code>qc-analysis-pipeline</code> has already been imported for you.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_65.png" alt="Screenshot of Terra Workspace with the &quot;WORKFLOWS&quot; tab selected.  The qc-analysis-pipeline card is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_65.png” alt=“Screenshot of Terra Workspace with the”WORKFLOWS” tab selected. The qc-analysis-pipeline card is highlighted.” width=“100%” /&gt;</p>
 <div id="exercise-8" class="section level3 unnumbered unlisted hasAnchor reflection">
 <h3>Exercise<a href="scale-with-workflows-exercises.html#exercise-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Go to your Workspace on AnVIL and open the “WORKFLOWS” tab.</p>
@@ -577,7 +581,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>4.</strong> Click the “RUN ANALYSIS” button.</p>
 </div>
 <p>You can view the status of your Workflow run by navigating to the “JOB HISTORY” tab. You can see more details by clicking on the name of the Workflow in the “Submission” column.</p>
-<p><img src="02-scale-with-workflows_files/figure-html/1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_78.png" alt="Screenshot of Terra Workspace with the &quot;JOB HISTORY&quot; tab selected and highlighted.  The qc-analysis-pipeline submission is highlighted." width="100%" /></p>
+<p>&lt;img src=“02-scale-with-workflows_files/figure-html//1K2qqm02W_zPhrOZsUoKj1FvKWcMO0iHgaiVwvcqMrXc_g251288a74c6_0_78.png” alt=“Screenshot of Terra Workspace with the”JOB HISTORY” tab selected and highlighted. The qc-analysis-pipeline submission is highlighted.” width=“100%” /&gt;</p>
 <p>Once your Workflow run is complete, you will be able to view the results in your Workspace’s “DATA” tab.</p>
 </div>
 </div>
@@ -609,42 +613,42 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
 });
 });
 </script>

@@ -110,25 +110,25 @@ To clone an AnVIL Workspace:
 
 1. In the drop-down menu on the left, navigate to "Workspaces". Click the triple bar in the top left corner to access the menu. Click "Workspaces".
 
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The &quot;hamburger&quot; button to extend the drop-down menu is highlighted, and the menu item &quot;Workspaces&quot; is highlighted." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The 'hamburger' button to extend the drop-down menu is highlighted, and the menu item 'Workspaces' is highlighted." width="100%" />
 
 1. You are automatically directed to the "MY WORKSPACES" tab.  Here you can see any Workspaces that have been shared with you, along with your permission level.  Depending on how your instructor has set things up, you may or may not see any Workspaces in this tab.
 
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_303.png" alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected.  The &quot;MY WORKSPACES&quot; tab and the column showing permission level are highlighted." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_303.png" alt="Screenshot of Terra Workspaces page with the 'MY WORKSPACES' tab selected.  The 'MY WORKSPACES' tab and the column showing permission level are highlighted." width="100%" />
     
 1. Locate the Workspace **demos-galaxy-fastqc**.  (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Workspace  **demos-galaxy-fastqc**.)
     a. If it has been shared with you ahead of time, it will appear in "MY WORKSPACES".  
 
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_337.png" alt="Screenshot of Terra Workspaces page with the &quot;MY WORKSPACES&quot; tab selected. The &quot;MY WORKSPACES&quot; tab and a Workspace name are highlighted." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_337.png" alt="Screenshot of Terra Workspaces page with the 'MY WORKSPACES' tab selected. The 'MY WORKSPACES' tab and a Workspace name are highlighted." width="100%" />
     b. Otherwise, select the "PUBLIC" tab.  In the top search bar, type the Workspace name **demos-galaxy-fastqc**.
 
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_327.png" alt="Screenshot of Terra Workspaces page with the &quot;PUBLIC&quot; tab selected. The &quot;PUBLIC&quot; tab and search box are highlighted.  The the user has typed in the term &quot;sars&quot;. A Workspace related to SARS appears in the results." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_327.png" alt="Screenshot of Terra Workspaces page with the 'PUBLIC' tab selected. The 'PUBLIC' tab and search box are highlighted.  The the user has typed in the term 'sars'. A Workspace related to SARS appears in the results." width="100%" />
     c. You can also go directly to the Workspace by clicking this link: https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc.
     
 1. Clone the workspace by clicking the teardrop button (![teardrop button](https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png){width=25px}). Select "Clone".  Or, if you have opened the Workspace, you can find the teardrop button on the top right of the Workspace.
 
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_344.png" alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="100%" />
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The &quot;Clone&quot; option from the list is highlighted." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_344.png" alt="Screenshot showing the teardrop button. The button has been clicked revealing the 'clone' option. The Clone option and the teardrop button are highlighted." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The 'Clone' option from the list is highlighted." width="100%" />
 
 1. You will see a popup box appear, asking you to configure your Workspace
     a. Give your Workspace clone a name by adding an underscore ("_") and your name. For example, \"demos-galaxy-fastqc_Firstname_Lastname\".
@@ -136,7 +136,7 @@ To clone an AnVIL Workspace:
     a. Leave the bottom two boxes as-is.
     a. Click “CLONE WORKSPACE”.
     
-    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_352.png" alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" />
+    <img src="05-fastqc-galaxy-in-anvil_files/figure-html//1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_352.png" alt="Screenshot showing the 'clone a workspace' popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" />
 
 1. The new Workspace should now show up under "MY WORKSPACES".  You now have your own copy of the Workspace to work in.
 ::::
@@ -406,7 +406,7 @@ Return to AnVIL, and find the Galaxy logo that shows your cloud environment is r
 
 Next, click on "Settings". Click on "Delete Environment".
 
-<img src="05-fastqc-galaxy-in-anvil_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_256.png" alt="Screenshot of the cloud environment pop out menu. The &quot;Delete Environment&quot; button is highlighted." width="100%" />
+<img src="05-fastqc-galaxy-in-anvil_files/figure-html//1yYCg4cPVBMMDghT17B4XzROieqyMH99Ex9nMm_Scm9Q_ge20e585f11_0_256.png" alt="Screenshot of the cloud environment pop out menu. The 'Delete Environment' button is highlighted." width="100%" />
 
 Finally, select "Delete everything, including persistent disk". Make sure you are done with the activity and then click "Delete".
 
