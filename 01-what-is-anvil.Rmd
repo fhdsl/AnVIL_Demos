@@ -111,6 +111,11 @@ Select "Clone" from the menu options.
 ```{r, echo=FALSE, out.width="100%", fig.alt="An image of the workspace options menu to clone the workspace", fig.align="center"}
 ottrpal::include_slide( "https://docs.google.com/presentation/d/1bY6V6YTMmmBtw-xiiMlVeB-KbvHE3p33R4JHTkaxcwU/edit#slide=id.g24f58a64a6b_0_1" )
 ```
+
+::: {.notice}
+You can also directly access the workspace going to this link: https://anvil.terra.bio/#workspaces/anvil-datastorage/AnVIL_HPRC
+:::
+
 If you have set up billing before, you can skip ahead to the [Starting a cloud environment section](#start-a-cloud-environment).
 
 If your instructor has provided a billing project, you can skip to the [Use a billing project section](#use-a-billing-project).
