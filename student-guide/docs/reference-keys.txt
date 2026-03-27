@@ -8,6 +8,8 @@ review-key-concepts
 what-is-anvil-exercises
 launch-terra
 clone-hprc-workspace
+first-time-billing-setup
+use-a-billing-project
 start-a-cloud-environment
 find-tidbits
 enter-terminal

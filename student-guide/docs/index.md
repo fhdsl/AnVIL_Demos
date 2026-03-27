@@ -1,6 +1,6 @@
 ---
 title: "AnVIL Demos"
-date: "June 25, 2025"
+date: "March 27, 2026"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -95,6 +95,26 @@ Collection of monthly AnVIL Demo recordings on YouTube:
   </tr>
   <tr>
    <td style="text-align:left;"> [AnVIL Demos: Variant Analysis with the VRS Toolkit in AnVIL](https://www.youtube.com/watch?v=9t6rYA4Sx8E&amp;list=PL6aYJ_0zJ4uC978C57P3TgAAfB38uy58E) </td>
+   <td style="text-align:left;"> N/A </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> [AnVIL Demos: Galaxy Learning and Modeling (GLEAM): Machine Learning accessible and best practices](https://www.youtube.com/watch?v=tkeVZY2HJfM&amp;list=PL6aYJ_0zJ4uC978C57P3TgAAfB38uy58E) </td>
+   <td style="text-align:left;"> N/A </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> [AnVIL Demos: The All of Us and AnVIL Imputation Service](https://www.youtube.com/watch?v=Ubk8EZ1Vw1I&amp;list=PL6aYJ_0zJ4uC978C57P3TgAAfB38uy58E) </td>
+   <td style="text-align:left;"> N/A </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> [AnVIL Demos: AnVIL meets the new security requirements under the Genomic Data Sharing Policy](https://www.youtube.com/watch?v=0vP0b8ItuPM&amp;list=PL6aYJ_0zJ4uC978C57P3TgAAfB38uy58E) </td>
+   <td style="text-align:left;"> N/A </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> [AnVIL Demos: AnVIL Data Explorer: Building and Exporting Dataset Cohorts](https://www.youtube.com/watch?v=J2kIZLG5Xnc&amp;list=PL6aYJ_0zJ4uC978C57P3TgAAfB38uy58E) </td>
+   <td style="text-align:left;"> N/A </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> [AnVIL Demos: Supporting Self-Service Data Ingestion for AnVIL](https://www.youtube.com/watch?v=TJe0K_XOkK0&amp;list=PL6aYJ_0zJ4uC978C57P3TgAAfB38uy58E) </td>
    <td style="text-align:left;"> N/A </td>
   </tr>
 </tbody>

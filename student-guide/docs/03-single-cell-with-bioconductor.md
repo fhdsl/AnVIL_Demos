@@ -395,21 +395,21 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] utf8_1.2.4        generics_0.1.3    xml2_1.3.6        stringi_1.8.3    
-##  [5] lattice_0.21-9    hms_1.1.3         digest_0.6.34     magrittr_2.0.3   
-##  [9] evaluate_0.23     grid_4.3.2        timechange_0.3.0  bookdown_0.41    
-## [13] fastmap_1.1.1     rprojroot_2.0.4   jsonlite_1.8.8    Matrix_1.6-1.1   
-## [17] processx_3.8.3    chromote_0.3.1    ps_1.7.6          promises_1.2.1   
-## [21] httr_1.4.7        fansi_1.0.6       ottrpal_1.3.0     udpipe_0.8.11    
-## [25] cow_0.0.0.9000    cli_3.6.2         rlang_1.1.4       gitcreds_0.1.2   
-## [29] yaml_2.3.8        tools_4.3.2       tzdb_0.4.0        dplyr_1.1.4      
-## [33] curl_5.2.0        vctrs_0.6.5       R6_2.5.1          lifecycle_1.0.4  
-## [37] lubridate_1.9.3   snakecase_0.11.1  stringr_1.5.1     janitor_2.2.0    
-## [41] pkgconfig_2.0.3   pillar_1.9.0      later_1.3.2       data.table_1.15.0
-## [45] glue_1.7.0        Rcpp_1.0.12       xfun_0.48         tibble_3.2.1     
-## [49] tidyselect_1.2.0  knitr_1.48        textrank_0.3.1    websocket_1.4.2  
-## [53] htmltools_0.5.7   igraph_2.0.2      rmarkdown_2.25    webshot2_0.1.1   
-## [57] readr_2.1.5       compiler_4.3.2    askpass_1.2.0     openssl_2.1.1
+##  [1] utf8_1.2.4        generics_0.1.3    tidyr_1.3.1       xml2_1.5.1       
+##  [5] stringi_1.8.3     lattice_0.21-9    hms_1.1.3         digest_0.6.34    
+##  [9] magrittr_2.0.3    evaluate_1.0.5    grid_4.3.2        bookdown_0.46    
+## [13] fastmap_1.1.1     rprojroot_2.1.1   jsonlite_2.0.0    Matrix_1.6-1.1   
+## [17] processx_3.8.6    chromote_0.5.1    ps_1.9.1          promises_1.2.1   
+## [21] httr_1.4.7        rvest_1.0.5       purrr_1.0.2       fansi_1.0.6      
+## [25] ottrpal_2.0.0     udpipe_0.8.11     cow_0.0.0.9000    cli_3.6.5        
+## [29] rlang_1.1.6       gitcreds_0.1.2    yaml_2.3.12       tools_4.3.2      
+## [33] tzdb_0.4.0        dplyr_1.1.4       vctrs_0.6.5       R6_2.6.1         
+## [37] lifecycle_1.0.4   stringr_1.5.1     pkgconfig_2.0.3   pillar_1.9.0     
+## [41] later_1.3.2       data.table_1.15.0 glue_1.7.0        Rcpp_1.0.12      
+## [45] xfun_0.55         tibble_3.3.0      tidyselect_1.2.0  knitr_1.50       
+## [49] textrank_0.3.1    htmltools_0.5.7   spelling_2.3.2    websocket_1.4.4  
+## [53] igraph_2.0.2      webshot2_0.1.2    rmarkdown_2.25    readr_2.1.5      
+## [57] compiler_4.3.2
 ```
 
 ## Shutting Down

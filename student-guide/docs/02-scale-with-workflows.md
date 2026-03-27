@@ -155,10 +155,12 @@ If you are ready to proceed through the Exercises, go ahead and follow the instr
 ## Warning: Chunk option fig.alt is not supported for docx output
 ## Warning: Chunk option fig.alt is not supported for docx output
 ## Warning: Chunk option fig.alt is not supported for docx output
+## Warning: Chunk option fig.alt is not supported for docx output
 ```
 
 
 
+<!-- Callout box: warning about cloud costs-->
 
 
 
@@ -166,7 +168,13 @@ If you are ready to proceed through the Exercises, go ahead and follow the instr
 AnVIL is very versatile and can scale up to use very powerful cloud computers. It's very important that you select the cloud computing environment described here to avoid runaway costs.
 :::
 
+<!-- Reminder about Workspaces -->
 
+
+
+For this activity, you should launch Jupyter from your copy of the Workspace **specified by your instructor**. (It should be named something like `ExampleWorkspace_Firstname_Lastname`). If you don't yet have your own copy, make one now by cloning the Workspace **specified by your instructor** before following the steps below.
+
+<!-- Start of Step-by-Step Instructions -->
 
 1. Open Terra - use a web browser to go to [`anvil.terra.bio`](https://anvil.terra.bio/)
 
@@ -174,7 +182,10 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
     ![](02-scale-with-workflows_files/figure-docx//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g117989bd49c_0_150.png){width=100%}
 
-1. Click on the name of your Workspace. You should be routed to a link that looks like: `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`.
+
+1. Click on the name of your Workspace (e.g. `ExampleWorkspace_Firstname_Lastname`). You should be routed to a link that looks like:
+
+    `https://anvil.terra.bio/#workspaces/<billing-project>/<workspace-name>`
 
 1. Click on the cloud icon on the far right to access your Cloud Environment options.  If you don’t see this icon, you may need to scroll to the right.
 
@@ -218,7 +229,11 @@ AnVIL is very versatile and can scale up to use very powerful cloud computers. I
 
     ![](02-scale-with-workflows_files/figure-docx//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_73.png){width=100%}
 
-    
+
+
+1. Clicking on a Notebook name will open a static preview of the Notebook. To edit and run the Notebook, click the "OPEN" button.
+
+    ![](02-scale-with-workflows_files/figure-docx//1-IU5l40UxmpoBqFimSUmT1PNEUij2UnXMslOsiG5ncE_g25442045568_0_82.png){width=100%}
 ::::
 
 Once you have clicked "CREATE" and your cloud environment status is "Creating", you can go ahead and start the Exercises.  Your cloud environment should be ready by the time you need it.
