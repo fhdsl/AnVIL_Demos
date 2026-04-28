@@ -34,7 +34,7 @@ To read more on preconfiguring a Cloud Environment using startup scripts, click 
 
 To explore [MAGE](https://www.internationalgenome.org/data-portal/data-collection/mage_rnaseq), an open-access RNA sequencing dataset of lymphoblastoid cell lines from 731 individuals from the [1000 Genomes Project](https://www.internationalgenome.org/). As part of this exploration, we will attempt to recreate various figures from this [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11291278/).
 
-The GitHub repo can be found [here](https://github.com/mccoy-lab/MAGE).
+The GitHub repository can be found [here](https://github.com/mccoy-lab/MAGE).
 
 Processed data can be found in Zenodo [here](https://zenodo.org/records/10535719) or in Dropbox [here](##0). 
 
