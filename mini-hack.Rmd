@@ -110,7 +110,7 @@ Several optional prompts are provided to you, including faceting plots by popula
   - **Ensure that you replace _add your Google Project ID here_ with your Google Project ID in line 288 of your R Markdown file.**
   - To locate this information: In the dashboard page of your workspace, you will see **Google Project ID** under the Cloud Information section. The format of it will follow 'terra-xxxxxxxx'. 
 
-4. At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute).
+4. At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute). 
 
 
 ## Learn More
