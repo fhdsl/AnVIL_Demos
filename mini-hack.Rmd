@@ -29,6 +29,7 @@ gs://fc-7e522183-41b0-4a9b-8f48-699fe8d114e8/install-conda.sh
 Here is a video tutorial on finding the path of the startup script: <iframe src="https://support.terra.bio/hc/article_attachments/360089799392" height="500" width="800" title="Tutorial"> </iframe>.
 
 To read more on preconfiguring a Cloud Environment using startup scripts, click [here](https://support.terra.bio/hc/en-us/articles/360058193872-Preconfigure-a-Cloud-Environment-with-a-startup-script#h_01J5R7WP1WFDKV5H5P96883TXZ).
+
 # Setting up your Workspace
 
 1.  Clone the AnVIL workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
@@ -42,6 +43,7 @@ To read more on preconfiguring a Cloud Environment using startup scripts, click 
   - To locate this information: In the dashboard page of your workspace, you will see **Google Project ID** under the Cloud Information section. The format of it will follow 'terra-xxxxxxxx'. 
 
 4. At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute).  
+
 # Exercises
 
 This hands-on activity will help you explore [MAGE](https://www.internationalgenome.org/data-portal/data-collection/mage_rnaseq), an open-access RNA sequencing dataset of lymphoblastoid cell lines from 731 individuals from the [1000 Genomes Project](https://www.internationalgenome.org/). As part of this exploration, we will attempt to recreate various figures from this [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11291278/).
