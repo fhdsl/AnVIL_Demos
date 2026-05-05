@@ -6,7 +6,7 @@ knitr::opts_chunk$set(out.width = "100%")
 
 # Overview
 
-Every dataset tells a story, yet deciphering exactly how a figure was constructed can feel like solving a puzzle with missing pieces. Reproducibility is often harder than it looks; what feels intuitive to the author may be confusing with fresh eyes. This mini-hackathon challenges teams to recreate figures from the MAGE RNA sequencing study using real omics data from the 1000 Genomes Project. Teams can also create additional visualizations from the open data. Through hands-on experience with cloud-based tools on AnVIL, participants will discover that computational reproducibility requires creativity, problem-solving, and detective work that go beyond simply following published protocols.
+Every dataset tells a story, yet deciphering exactly how a figure was constructed can feel like solving a puzzle with missing pieces. Reproducibility is a common challenge. This mini-hackathon challenges teams to recreate figures from the MAGE RNA sequencing study using real omics data from the 1000 Genomes Project. Teams can also create additional visualizations from the open data. Through hands-on experience with cloud-based tools on AnVIL, participants will discover that computational reproducibility requires creativity, problem-solving, and detective work that go beyond simply following published protocols.
 
 **References**:
 
@@ -20,8 +20,8 @@ Every dataset tells a story, yet deciphering exactly how a figure was constructe
 
 ### Prepare the Workspace
 
-Use the Start-up script found in the Data tab, under other data there is a workspace option. While creating an RStudio Cloud Environment on AnVIL, paste the path below into the Startup script *Optional box* to install `AnVILGCP`, `vcfR`, and `bcftools`.
-
+Be sure to use the start up script when creating an RStudio Cloud Environment on AnVIL. Paste the path below into the Startup script _Optional_ box to install `AnVILGCP`, `vcfR`, and `bcftools`. The start-up script can be found in this workspace under the Data tab, in the other data option there it will be under Workspace data.
+For example, format of the start-up script would be: 
 ```         
 gs://fc-7e522183-41b0-4a9b-8f48-699fe8d114e8/install-conda.sh
 ```
@@ -29,10 +29,22 @@ gs://fc-7e522183-41b0-4a9b-8f48-699fe8d114e8/install-conda.sh
 Here is a video tutorial on finding the path of the startup script: <iframe src="https://support.terra.bio/hc/article_attachments/360089799392" height="500" width="800" title="Tutorial"> </iframe>.
 
 To read more on preconfiguring a Cloud Environment using startup scripts, click [here](https://support.terra.bio/hc/en-us/articles/360058193872-Preconfigure-a-Cloud-Environment-with-a-startup-script#h_01J5R7WP1WFDKV5H5P96883TXZ).
+# Setting up your Workspace
 
-# Getting started
+1.  Clone the AnVIL workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
 
-To explore [MAGE](https://www.internationalgenome.org/data-portal/data-collection/mage_rnaseq), an open-access RNA sequencing dataset of lymphoblastoid cell lines from 731 individuals from the [1000 Genomes Project](https://www.internationalgenome.org/). As part of this exploration, we will attempt to recreate various figures from this [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11291278/).
+-   For steps on launching Terra and cloning workspaces, read [here](https://hutchdatascience.org/AnVIL_Demos/what-is-anvil-exercises.html#launch-terra).
+
+2.  Then, follow [these steps](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-exercises.html#launch-rstudio) to launch RStudio within your AnVIL workspace. 
+
+3. Open `Reproducibility_in_Action.Rmd` and follow through the notebook. 
+  - **Ensure that you replace _add your Google Project ID here_ with your Google Project ID in line 288 of your R Markdown file.**
+  - To locate this information: In the dashboard page of your workspace, you will see **Google Project ID** under the Cloud Information section. The format of it will follow 'terra-xxxxxxxx'. 
+
+4. At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute).  
+# Exercises
+
+This hands-on activity will help you explore [MAGE](https://www.internationalgenome.org/data-portal/data-collection/mage_rnaseq), an open-access RNA sequencing dataset of lymphoblastoid cell lines from 731 individuals from the [1000 Genomes Project](https://www.internationalgenome.org/). As part of this exploration, we will attempt to recreate various figures from this [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11291278/).
 
 The GitHub repository can be found [here](https://github.com/mccoy-lab/MAGE).
 
@@ -42,6 +54,7 @@ By the end of this module, you will be able to:
 
 - Set up and manage an R analysis environment on AnVIL using cloud-native tools
 - Import, reshape, and join multiple genomic data types (expression counts, sample metadata, variant calls, and genome annotations)
+- Import data into an AnVIL workspace from multiple sources
 - Apply core tidyverse operations including piping, filtering, joining, and mutation
 - Extract and visualize expression quantitative trait loci (eQTL) data
 - Reproduce figures from a peer-reviewed publication using open-access data
@@ -50,7 +63,7 @@ By the end of this module, you will be able to:
 
 ### Environment Setup
 
-We will load the three required R packages (`tidyverse`, `vcfR`, `AnVILGCP`) and receive an introduction to how R packages work, including the distinction between installation and loading.
+We will load the three required R packages (`tidyverse`, `vcfR`, `AnVILGCP`) and introduce how R packages work, including the distinction between installation and loading.
 
 ### Recreating Figure 5C: GSTP1 Expression by Genotype
 
@@ -100,17 +113,10 @@ Several optional prompts are provided to you, including faceting plots by popula
 
 # Setting up your Workspace
 
-1.  Clone the AnVIL workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
 
--   For steps on launching Terra and cloning workspaces, read [here](https://hutchdatascience.org/AnVIL_Demos/what-is-anvil-exercises.html#launch-terra).
 
-2.  Then, follow [these steps](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-exercises.html#launch-rstudio) to launch RStudio within your AnVIL workspace. 
 
-3. Open `Reproducibility_in_Action.Rmd` and follow through the notebook. 
-  - **Ensure that you replace _add your Google Project ID here_ with your Google Project ID in line 288 of your R Markdown file.**
-  - To locate this information: In the dashboard page of your workspace, you will see **Google Project ID** under the Cloud Information section. The format of it will follow 'terra-xxxxxxxx'. 
 
-4. At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute).  
 
 
 ## Learn More
