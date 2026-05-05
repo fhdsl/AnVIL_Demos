@@ -111,7 +111,6 @@ You will independently apply the full workflow to a second eQTL (rs7927381 × GS
 
 Several optional prompts are provided to you, including faceting plots by population or continental group, visualizing genotype frequency distributions, comparing GSTP1 expression by sex, and replicating Figure 1B using principal component data. 
 
-# Setting up your Workspace
 
 
 
