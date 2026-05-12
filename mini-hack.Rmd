@@ -63,6 +63,8 @@ By the end of this module, you will be able to:
 
 ## Structure of steps
 
+**Reminder**: The following steps are found in the detailed notebook `Reproducibility_in_Action.Rmd` in your workspace. To set up your workspace, read through [the steps here](#setting-up-your-workspace).
+
 ### Environment Setup
 
 We will load the three required R packages (`tidyverse`, `vcfR`, `AnVILGCP`) and introduce how R packages work, including the distinction between installation and loading.
