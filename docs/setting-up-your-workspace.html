@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>14 Getting Started | AnVIL Demos</title>
+  <title>22 Setting up your Workspace | AnVIL Demos</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="14 Getting Started | AnVIL Demos" />
+  <meta property="og:title" content="22 Setting up your Workspace | AnVIL Demos" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="14 Getting Started | AnVIL Demos" />
+  <meta name="twitter:title" content="22 Setting up your Workspace | AnVIL Demos" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="run-tool-with-galaxy-overview.html"/>
-<link rel="next" href="run-tool-with-galaxy-activity.html"/>
+<link rel="prev" href="overview.html"/>
+<link rel="next" href="exercises.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -378,106 +378,25 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="run-tool-with-galaxy-getting-started" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">14</span> Getting Started<a href="run-tool-with-galaxy-getting-started.html#run-tool-with-galaxy-getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="account-login" class="section level2 hasAnchor" number="14.1">
-<h2><span class="header-section-number">14.1</span> Account Login<a href="run-tool-with-galaxy-getting-started.html#account-login" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you don’t have an AnVIL account, you will need to create one using the steps below in the AnVIL Account Creation Dropdown section.</p>
-<details>
-<summary>
-Expand for AnVIL account creation instructions
-</summary>
-<div class="borrowed_chunk">
-<p>In order to run your analyses, you will use the <a href="https://anvilproject.org/">AnVIL cloud computing platform</a>. The AnVIL (Analysis Visualization and Informatics Lab-space) platform is specially designed for analyzing biological data, and is used by scientists doing all sorts of biological research.</p>
-<div class="notice">
-<p><strong>AnVIL in a nutshell</strong></p>
-<ul>
-<li>Behind the scenes, AnVIL relies on Google Cloud Platform to provide computing infrastructure. Basically, AnVIL lets you “rent” computers through the internet. The analysis is run on the rented computer. AnVIL lets you see the results in your browser.</li>
-<li>AnVIL uses <a href="https://anvil.terra.bio/">Terra</a> to provide many computational tools useful for biological data analysis, such as <a href="https://www.rstudio.com/products/rstudio/">RStudio</a>, <a href="https://usegalaxy.org/">Galaxy</a>, and <a href="https://jupyter.org/">Jupyter Notebooks</a>. Terra takes care of installing these tools so you can use them right away.</li>
-</ul>
-</div>
-<div id="create-google-account" class="section level3 hasAnchor" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> Create Google Account<a href="run-tool-with-galaxy-getting-started.html#create-google-account" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>First, you will need to set up a (free) Google account.</p>
-<p>A Google account usually looks like “<code>myname@gmail.com</code>”. Alternatively, you can enable Google for an existing non-Gmail email address using <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</p>
-<p>If you do not already have a Google account that you would like to use for accessing AnVIL, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
-</div>
-<div id="log-in-to-terra" class="section level3 hasAnchor" number="14.1.2">
-<h3><span class="header-section-number">14.1.2</span> Log In to Terra<a href="run-tool-with-galaxy-getting-started.html#log-in-to-terra" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Next, make sure you can log in to Terra – you will use Terra to perform computations on AnVIL.</p>
-<p>You can access Terra by going to <a href="https://anvil.terra.bio/"><code>anvil.terra.bio</code></a>. Open Terra, and you should be prompted to sign in with your Google account.</p>
-</div>
-<div id="share-username" class="section level3 hasAnchor" number="14.1.3">
-<h3><span class="header-section-number">14.1.3</span> Share Username<a href="run-tool-with-galaxy-getting-started.html#share-username" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Make sure your instructor has your Google account username (e.g. <code>myname@gmail.com</code>), so they can give you access to everything you need.</p>
-<ul>
-<li>Make sure there are no typos!</li>
-<li>If you have multiple Google accounts, make sure you give them the username that you will be using to log in to <code>anvil.terra.bio</code>.</li>
-</ul>
-<div class="warning">
-<p>It is <em>very important</em> that you share the Google account you will be using to access AnVIL with with your instructor! Otherwise, the instructor cannot add you to Billing Projects or Workspaces, and you will be unable to proceed with your assignments.</p>
-</div>
-</div>
-</div>
-</details>
-<p><br/>Once you have an account, you can login and access Terra by going to <a href="https://anvil.terra.bio/"><code>anvil.terra.bio</code></a>. Open Terra, and you should be prompted to sign in with your Google account.</p>
-</div>
-<div id="workspace-set-up" class="section level2 hasAnchor" number="14.2">
-<h2><span class="header-section-number">14.2</span> Workspace Set Up<a href="run-tool-with-galaxy-getting-started.html#workspace-set-up" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Workspaces are the building blocks of projects in Terra. Inside a Workspace, you can run analyses, launch interactive tools like RStudio and Galaxy, store data, and share results.</p>
-<p>Cloning an existing Workspace allows you to copy existing documentation, code, and/or data into your own experimental space. The data for this activity is already available on AnVIL, specifically the <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc"><code>demos-galaxy-fastqc</code> workspace</a>, so you’ll want to clone the repository.</p>
-<p>When cloning, AnVIL makes a copy of notebooks and code for you to modify. Data however, is linked back to the original Workspace through Data Tables, which saves space!</p>
-<div class="notice">
-<p>The screenshots included below show a different workspace than what this tutorial will be using. For this tutorial, you want to clone the <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc"><code>demos-galaxy-fastqc</code> workspace</a></p>
-<p>Be sure to name the cloned workspace a unique name in step 6. We recommend adding <code>_yourfirstname_yourlastname</code> to the workspace name.</p>
-</div>
-<div class="borrowed_chunk">
-<div class="warning">
-<p>This <strong>will not work</strong> until your instructor has given you permission to spend money to “rent” the computers that will power your analyses (by adding you to a “Billing Project”).</p>
-</div>
-<p>On AnVIL, you access files and computers through <strong>Workspaces</strong>. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment. This will give you access to</p>
-<ul>
-<li>the files you will need (data, code)</li>
-<li>the computing environment you will use</li>
-</ul>
-<div class="notice">
-<p><strong>Tip</strong>
-At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.</p>
-</div>
-<p>To clone an AnVIL Workspace:</p>
+<div id="setting-up-your-workspace" class="section level1 hasAnchor" number="22">
+<h1><span class="header-section-number">22</span> Setting up your Workspace<a href="setting-up-your-workspace.html#setting-up-your-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <ol style="list-style-type: decimal">
-<li><p>Open Terra - use a web browser to go to <a href="https://anvil.terra.bio/"><code>anvil.terra.bio</code></a></p></li>
-<li><p>In the drop-down menu on the left, navigate to “Workspaces”. Click the triple bar in the top left corner to access the menu. Click “Workspaces”.</p>
-<p><img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117989bd49c_0_150.png" alt="Screenshot of Terra drop-down menu.  The 'hamburger' button to extend the drop-down menu is highlighted, and the menu item 'Workspaces' is highlighted." width="100%" /></p></li>
-<li><p>You are automatically directed to the “MY WORKSPACES” tab. Here you can see any Workspaces that have been shared with you, along with your permission level. Depending on how your instructor has set things up, you may or may not see any Workspaces in this tab.</p>
-<p><img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_303.png" alt="Screenshot of Terra Workspaces page with the 'MY WORKSPACES' tab selected.  The 'MY WORKSPACES' tab and the column showing permission level are highlighted." width="100%" /></p></li>
-<li><p>Locate the Workspace <strong>demos-galaxy-fastqc</strong>. (The images below show the SARS-CoV-2-Genome Workspace as an example, but you should look for the Workspace <strong>demos-galaxy-fastqc</strong>.)</p>
-<ol style="list-style-type: lower-alpha">
-<li>If it has been shared with you ahead of time, it will appear in “MY WORKSPACES”.</li>
+<li>Clone the AnVIL workspace: <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack" class="uri">https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack</a></li>
 </ol>
-<p><img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_337.png" alt="Screenshot of Terra Workspaces page with the 'MY WORKSPACES' tab selected. The 'MY WORKSPACES' tab and a Workspace name are highlighted." width="100%" /></p>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>Otherwise, select the “PUBLIC” tab. In the top search bar, type the Workspace name <strong>demos-galaxy-fastqc</strong>.</li>
+<ul>
+<li>For steps on launching Terra and cloning workspaces, read <a href="https://hutchdatascience.org/AnVIL_Demos/what-is-anvil-exercises.html#launch-terra">here</a>.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Then, follow <a href="https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-exercises.html#launch-rstudio">these steps</a> to launch RStudio within your AnVIL workspace.</p></li>
+<li><p>Open <code>Reproducibility_in_Action.Rmd</code> and follow through the notebook.</p></li>
 </ol>
-<p><img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_327.png" alt="Screenshot of Terra Workspaces page with the 'PUBLIC' tab selected. The 'PUBLIC' tab and search box are highlighted.  The the user has typed in the term 'sars'. A Workspace related to SARS appears in the results." width="100%" /></p>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>You can also go directly to the Workspace by clicking this link: <a href="https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc" class="uri">https://anvil.terra.bio/#workspaces/anvil-outreach/demos-galaxy-fastqc</a>.</li>
-</ol></li>
-<li><p>Clone the workspace by clicking the teardrop button (<img src="https://raw.githubusercontent.com/jhudsl/AnVIL_Template/main/child/child_assets/teardrop_button.png" width="25" alt="teardrop button" />). Select “Clone”. Or, if you have opened the Workspace, you can find the teardrop button on the top right of the Workspace.</p>
-<p><img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_344.png" alt="Screenshot showing the teardrop button. The button has been clicked revealing the 'clone' option. The Clone option and the teardrop button are highlighted." width="100%" />
-<img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g117abafa453_0_577.png" alt="Screenshot of the Dashboard for the Workspace that we want to clone. The teardrop button has been clicked to bring up the options. The 'Clone' option from the list is highlighted." width="100%" /></p></li>
-<li><p>You will see a popup box appear, asking you to configure your Workspace</p>
-<ol style="list-style-type: lower-alpha">
-<li>Give your Workspace clone a name by adding an underscore (“_“) and your name. For example, "demos-galaxy-fastqc_Firstname_Lastname".</li>
-<li>Select the Billing Project sri-lanka-2025.</li>
-<li>Leave the bottom two boxes as-is.</li>
-<li>Click “CLONE WORKSPACE”.</li>
+<ul>
+<li><strong>Ensure that you replace <em>add your Google Project ID here</em> with your Google Project ID in line 288 of your R Markdown file.</strong></li>
+<li>To locate this information: In the dashboard page of your workspace, you will see <strong>Google Project ID</strong> under the Cloud Information section. The format of it will follow ‘terra-xxxxxxxx’.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>At the end of the exercise, remember to shut down compute! Refer to steps <a href="https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute">here</a>.</li>
 </ol>
-<p><img src="05-fastqc-galaxy-in-anvil_files/figure-html/1a5Da6qX9BG7Q_6XAz7MvlDyWTvssm2hWwuo1WFJXb_0_g17144dbacd0_0_352.png" alt="Screenshot showing the 'clone a workspace' popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" /></p></li>
-<li><p>The new Workspace should now show up under “MY WORKSPACES”. You now have your own copy of the Workspace to work in.</p></li>
-</ol>
-</div>
-</div>
 </div>
 <hr>
 <center> 
@@ -492,8 +411,8 @@ At this point, it might make things easier to open up a new window in your brows
           </div>
         </div>
       </div>
-<a href="run-tool-with-galaxy-overview.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="run-tool-with-galaxy-activity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="overview.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercises.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
