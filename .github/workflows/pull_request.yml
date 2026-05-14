@@ -56,6 +56,7 @@ jobs:
       toggle_render_preview: "${{ env.RENDER_PREVIEW }}"
       toggle_dictionary_sort: "${{ env.DICTIONARY_SORT }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
+      toggle_feedback_link: "${{ env.FEEDBACK_LINK }}"
 
 ########################## Make the error reports ##############################
   ottr-reports:
@@ -129,10 +130,51 @@ jobs:
           github-token: ${{ secrets.GH_PAT }}
           glob: '**/*.md'
 
+############################# Create Feedback Link #############################
+
+  create-feedback-link:
+    name: Create Feedback Link
+    needs: yaml-check
+    runs-on: ubuntu-latest
+    container:
+      image: ${{needs.yaml-check.outputs.rendering_docker_image}}
+    if: ${{needs.yaml-check.outputs.toggle_render_preview == 'yes'}}
+
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Set up git checkout
+      - name: Set up git checkout
+        run: |
+          git config --global --add safe.directory $GITHUB_WORKSPACE
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          branch_name='preview-${{ github.event.pull_request.number }}'
+          git fetch --all
+          git checkout $branch_name
+          git merge -s recursive --strategy-option=theirs origin/${{ github.head_ref }} --allow-unrelated-histories
+        shell: bash
+
+      # Make sure the link for AnVIL feedback is prepopulated for the specific course
+      - name: Set up feedback link
+        id: feedback
+        if: ${{needs.yaml-check.outputs.toggle_feedback_link == 'yes'}}
+        run: |
+          bash .github/AnVIL_Feedback_Script.sh
+          git add _output.yml
+          git commit -m 'Set up feedback link' || echo "No changes to commit"
+          git pull --rebase --set-upstream origin $branch_name --allow-unrelated-histories --strategy-option=ours
+          git push --force || echo "No changes to commit"
+
 ############################# Render Preview ###################################
+
   render-preview:
     name: Render preview
-    needs: yaml-check
+    needs: [yaml-check, create-feedback-link]
     runs-on: ubuntu-latest
     if: ${{needs.yaml-check.outputs.toggle_render_preview == 'true'}}
     permissions:
