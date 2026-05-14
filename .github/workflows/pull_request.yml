@@ -138,7 +138,10 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
-    if: ${{needs.yaml-check.outputs.toggle_render_preview == 'yes'}}
+    if: ${{needs.yaml-check.outputs.toggle_render_preview == 'true'}}
+    permissions:
+      pull-requests: write
+      contents: write
 
     steps:
       - name: Checkout files
