@@ -5,7 +5,9 @@ rmd_files: ["index.Rmd",
             "02-scale-with-workflows.Rmd",
             "03-single-cell-with-bioconductor.Rmd",
             "05-fastqc-galaxy-in-anvil.Rmd",
-            "human-genetic-variation-in-mage.Rmd"]
+            "human-genetic-variation-in-mage.Rmd",
+            "mini-hack.Rmd"
+            ]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
