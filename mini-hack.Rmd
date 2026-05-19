@@ -16,21 +16,21 @@ Every dataset tells a story, yet deciphering exactly how a figure was constructe
 
 -   Data from the paper can be found here: <https://zenodo.org/records/10535719>
 
--   Original Workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-explore-mage>
+-   Original Workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
 
 ## Locate the Startup Script
 
 We will use a start up script when creating an RStudio Cloud Environment on AnVIL. Copy the path below: it will help us install `AnVILGCP`, `vcfR`, and `bcftools` automatically. The start-up script can be found in the original workspace under the [Data tab](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack/data), under "Workspace Data", or in the [workspace files](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack/files). 
 For example, format of the start-up script would be: 
 ```         
-gs://fc-7e522183-41b0-4a9b-8f48-699fe8d114e8/install-conda.sh
+gs://fc-9a141623-268f-47f8-8466-1747b5980b67/install-conda.sh
 ```
 
 Here is a video tutorial on finding the path of the startup script: <iframe src="https://support.terra.bio/hc/article_attachments/360089799392" height="500" width="800" title="Tutorial"> </iframe>.
 
 To read more on preconfiguring a Cloud Environment using startup scripts, click [here](https://support.terra.bio/hc/en-us/articles/360058193872-Preconfigure-a-Cloud-Environment-with-a-startup-script#h_01J5R7WP1WFDKV5H5P96883TXZ).
 
-# Setting up your Workspace
+# Setting up your Workspace {#mini-hack-preparation}
 
 1.  Clone the AnVIL workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
 
@@ -60,7 +60,9 @@ By the end of this module, you will be able to:
 - Apply core tidyverse operations including piping, filtering, joining, and mutation
 - Extract and visualize expression quantitative trait loci (eQTL) data
 - Reproduce figures from a peer-reviewed publication using open-access data
-
+:::{.notice}
+To follow along with these exercises, you will need to complete the steps described in the [Preparation](#mini-hack-preparation) guide for this demo.
+:::
 ## Structure of steps
 
 **Reminder**: The following steps are found in the detailed notebook `Reproducibility_in_Action.Rmd` in your workspace. To set up your workspace, read through [the steps here](setting-up-your-workspace.html#setting-up-your-workspace).
@@ -135,7 +137,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKz
 ## Provide Feedback
 
 ::: {.notice}
-Fill out [this poll](https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=GBCC2025) to share your feedback
+Fill out [this poll](https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=AnVIL+Demos+Mini+Hack) to share your feedback
 :::
 
 ```{r, echo=FALSE}
