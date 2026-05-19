@@ -111,3 +111,14 @@ human-genetic-variation-in-mage-wrap-up
 shut-down-compute
 learn-more
 provide-feedback
+overview
+locate-the-startup-script
+mini-hack-preparation
+exercises
+environment-setup
+recreating-figure-5c-gstp1-expression-by-genotype
+recreating-figure-5d-gstp1-expression-by-population
+independent-extension-a-second-eqtl
+additional-exploration
+learn-more-1
+provide-feedback-1
