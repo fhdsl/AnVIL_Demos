@@ -20,7 +20,7 @@ Every dataset tells a story, yet deciphering exactly how a figure was constructe
 
 ## Locate the Startup Script
 
-Be sure to use the start up script when creating an RStudio Cloud Environment on AnVIL. Paste the path below into the Startup script _Optional_ box to install `AnVILGCP`, `vcfR`, and `bcftools`. The start-up script can be found in this workspace under the Data tab, in the other data option there it will be under Workspace data.
+We will use a start up script when creating an RStudio Cloud Environment on AnVIL. Copy the path below: it will help us install `AnVILGCP`, `vcfR`, and `bcftools` automatically. The start-up script can be found in the original workspace under the [Data tab](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack/data), under "Workspace Data", or in the [workspace files](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack/files). 
 For example, format of the start-up script would be: 
 ```         
 gs://fc-7e522183-41b0-4a9b-8f48-699fe8d114e8/install-conda.sh
