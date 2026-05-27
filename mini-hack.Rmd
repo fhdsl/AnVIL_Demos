@@ -2,7 +2,7 @@
 knitr::opts_chunk$set(out.width = "100%")
 ```
 
-# (PART\*) MAGE mini-hackathon {.unnumbered}
+# (PART\*) MAGE mini-hackathon {-}
 
 # Overview
 
