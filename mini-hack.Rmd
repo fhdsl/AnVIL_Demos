@@ -127,7 +127,7 @@ Several optional prompts are provided to you, including faceting plots by popula
 ## Learn More
 
 ```{r, echo=FALSE}
-ottrpal::include_slide("https://docs.google.com/presentation/d/16DHXD2KNyjjP2mKzPDHmNE9loYy6OgqGG0-Kn8CLFak/edit#slide=id.g369240085c8_0_136")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1wVFAuh0x1Oog79Dkgsp7QPpnCwkhGTxqezebDMPt15c/edit?slide=id.p#slide=id.p")
 ```
 
 ```{r, echo=FALSE}
