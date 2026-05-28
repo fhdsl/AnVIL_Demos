@@ -86,8 +86,6 @@ To read more on preconfiguring a Cloud Environment using startup scripts, click 
 -   **Ensure that you replace *add your Google Project ID here* with your Google Project ID in line 288 of your R Markdown file.**
 -   To locate this information: In the dashboard page of your workspace, you will see **Google Project ID** under the Cloud Information section. The format of it will follow 'terra-xxxxxxxx'.
 
-4.  At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute).
-
 # Exercises
 
 This hands-on activity will help you explore [MAGE](https://www.internationalgenome.org/data-portal/data-collection/mage_rnaseq), an open-access RNA sequencing dataset of lymphoblastoid cell lines from 731 individuals from the [1000 Genomes Project](https://www.internationalgenome.org/). As part of this exploration, we will attempt to recreate various figures from this [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11291278/).
@@ -152,6 +150,8 @@ You will independently apply the full workflow to a second eQTL (rs7927381 × GS
 ### Additional Exploration
 
 Several optional prompts are provided to you, including faceting plots by population or continental group, visualizing genotype frequency distributions, comparing GSTP1 expression by sex, and replicating Figure 1B using principal component data.
+
+At the end of the exercise, remember to shut down compute! Refer to steps [here](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-wrap-up.html#shut-down-compute).
 
 ## Learn More
 
