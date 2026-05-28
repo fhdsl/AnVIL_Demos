@@ -42,6 +42,15 @@ By the end of this module, you will be able to:
 
 -   Original Workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
 
+
+# Setting up your Workspace {#mini-hack-preparation}
+
+1.  Clone the AnVIL workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
+
+-   For steps on launching Terra and cloning workspaces, read [here](https://hutchdatascience.org/AnVIL_Demos/what-is-anvil-exercises.html#launch-terra).
+
+2.  Then, follow [these steps](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-exercises.html#launch-rstudio) to launch RStudio within your AnVIL workspace. When creating your RStudio workspace you will need to paste the startup script in your workspace into the cloud environment. The next step walks you through how to locate the startup script and where to paste it. 
+
 ## Locate the Startup Script
 
 We will use a start up script when creating an RStudio Cloud Environment on AnVIL. Copy the path below: it will help us install `AnVILGCP`, `vcfR`, and `bcftools` automatically. The start-up script can be found in the original workspace under the [Data tab](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack/data), under "Workspace Data", or in the [workspace files](https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack/files). For example, format of the start-up script would be:
@@ -62,15 +71,14 @@ Here's where you find the start-up script:
 
 ![](resources/images/startup_script.png)
 
+4. Navigate to your RStudio workspace. 
+5. Paste it into the cloud environment settings: 
+
+![](resources/images/rstudio_startup.png)
+
 To read more on preconfiguring a Cloud Environment using startup scripts, click [here](https://support.terra.bio/hc/en-us/articles/360058193872-Preconfigure-a-Cloud-Environment-with-a-startup-script#h_01J5R7WP1WFDKV5H5P96883TXZ).
 
-# Setting up your Workspace {#mini-hack-preparation}
 
-1.  Clone the AnVIL workspace: <https://anvil.terra.bio/#workspaces/anvil-outreach/demos-mage-minihack>
-
--   For steps on launching Terra and cloning workspaces, read [here](https://hutchdatascience.org/AnVIL_Demos/what-is-anvil-exercises.html#launch-terra).
-
-2.  Then, follow [these steps](https://hutchdatascience.org/AnVIL_Demos/human-genetic-variation-in-mage-exercises.html#launch-rstudio) to launch RStudio within your AnVIL workspace.
 
 3.  Open `Reproducibility_in_Action.Rmd` and follow through the notebook.
 
