@@ -22,10 +22,15 @@ Every dataset tells a story, yet deciphering exactly how a figure was constructe
 
 ## Learning Objectives
 
-1.  Launch Terra
-2.  Clone Workspace
-3.  Set up RStudio workspace
-4.  Recreate figures from the Multi-ancestry Analysis of Gene Expression (MAGE) study 
+By the end of this module, you will be able to:
+
+-   Set up and manage an R analysis environment on AnVIL using cloud-native tools
+-   Import, reshape, and join multiple genomic data types (expression counts, sample metadata, variant calls, and genome annotations)
+-   Import data into an AnVIL workspace from multiple sources
+-   Apply core tidyverse operations including piping, filtering, joining, and mutation
+-   Extract and visualize expression quantitative trait loci (eQTL) data
+-   Reproduce figures from a peer-reviewed publication using open-access data 
+
 
 **References**:
 
@@ -82,14 +87,10 @@ The GitHub repository can be found [here](https://github.com/mccoy-lab/MAGE).
 
 Processed data can be found in Zenodo [here](https://zenodo.org/records/10535719) or in Dropbox [here](##0).
 
-By the end of this module, you will be able to:
 
--   Set up and manage an R analysis environment on AnVIL using cloud-native tools
--   Import, reshape, and join multiple genomic data types (expression counts, sample metadata, variant calls, and genome annotations)
--   Import data into an AnVIL workspace from multiple sources
--   Apply core tidyverse operations including piping, filtering, joining, and mutation
--   Extract and visualize expression quantitative trait loci (eQTL) data
--   Reproduce figures from a peer-reviewed publication using open-access data :::{.notice} To follow along with these exercises, you will need to complete the steps described in the [Preparation](#mini-hack-preparation) guide for this demo. ::: \## Structure of steps
+::: notice
+To follow along with these exercises, you will need to complete the steps described in the [Preparation](#mini-hack-preparation) guide for this demo.
+::: 
 
 **Reminder**: The following steps are found in the detailed notebook `Reproducibility_in_Action.Rmd` in your workspace. To set up your workspace, read through [the steps here](setting-up-your-workspace.html#setting-up-your-workspace).
 
