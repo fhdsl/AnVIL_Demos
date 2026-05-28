@@ -79,8 +79,9 @@ Here's where you find the start-up script:
 To read more on preconfiguring a Cloud Environment using startup scripts, click [here](https://support.terra.bio/hc/en-us/articles/360058193872-Preconfigure-a-Cloud-Environment-with-a-startup-script#h_01J5R7WP1WFDKV5H5P96883TXZ).
 
 
+3. Inside your RStudio workspace, the **Files** pane is located on the bottom right. Open `Reproducibility_in_Action.Rmd` and follow through the notebook.
 
-3.  Open `Reproducibility_in_Action.Rmd` and follow through the notebook.
+![](resources/images/file_pane.png)
 
 -   **Ensure that you replace *add your Google Project ID here* with your Google Project ID in line 288 of your R Markdown file.**
 -   To locate this information: In the dashboard page of your workspace, you will see **Google Project ID** under the Cloud Information section. The format of it will follow 'terra-xxxxxxxx'.
