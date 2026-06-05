@@ -22,17 +22,20 @@ Every dataset tells a story, yet deciphering exactly how a figure was constructe
 
 ## Learning Objectives
 
-By the end of this module, you will be able to:
+1. Set up and manage an R analysis environment on AnVIL using cloud-native tools
+ 
+2. Import, reshape, and join multiple genomic data types (expression counts, sample metadata, variant calls, and genome annotations)
 
--   Set up and manage an R analysis environment on AnVIL using cloud-native tools
--   Import, reshape, and join multiple genomic data types (expression counts, sample metadata, variant calls, and genome annotations)
--   Import data into an AnVIL workspace from multiple sources
--   Apply core tidyverse operations including piping, filtering, joining, and mutation
--   Extract and visualize expression quantitative trait loci (eQTL) data
--   Reproduce figures from a peer-reviewed publication using open-access data 
+3. Import data into an AnVIL workspace from multiple sources
+
+4. Apply core tidyverse operations including piping, filtering, joining, and mutation
+
+5. Extract and visualize expression quantitative trait loci (eQTL) data
+
+6. Reproduce figures from a peer-reviewed publication using open-access data 
 
 
-**References**:
+## References:
 
 -   Paper to reproduce here: <https://pmc.ncbi.nlm.nih.gov/articles/PMC11291278/>
 
