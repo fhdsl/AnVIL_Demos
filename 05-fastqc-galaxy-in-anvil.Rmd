@@ -244,7 +244,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1zre8qeE9x56RSjus
 
 <details><summary>Expand for FASTQ files explained</summary>
 
-For more information on the [contents of a FASTQ file, consider this resource from Illumina](https://knowledge.illumina.com/software/general/software-general-reference_material-list/000002211).
+For more information on the [contents of a FASTQ file, consider this resource from Illumina](https://support.illumina.com.cn/bulletins/2016/04/fastq-files-explained.html).
 
 ::: {.reflection}
 QUESTIONS:
