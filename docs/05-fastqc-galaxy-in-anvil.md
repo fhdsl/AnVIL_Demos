@@ -283,7 +283,7 @@ We will examine data in `fastq` format. This is the typical output from an Illum
 
 <details><summary>Expand for FASTQ files explained</summary>
 
-For more information on the [contents of a FASTQ file, consider this resource from Illumina](https://knowledge.illumina.com/software/general/software-general-reference_material-list/000002211).
+For more information on the [contents of a FASTQ file, consider this resource from Illumina](https://support.illumina.com.cn/bulletins/2016/04/fastq-files-explained.html).
 
 ::: {.reflection}
 QUESTIONS:
